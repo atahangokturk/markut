@@ -1,0 +1,28 @@
+
+
+.logo{
+    background-image: url(/img/logo.svg);
+    background-size: cover;
+    width: 100px;
+    height: 55px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+
+.yazi h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 10px;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.yazi{
+    margin-top: 50px;
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 16px;
+}
+
+.mgen{
+    max-width: 700px;
+}

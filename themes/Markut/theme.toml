@@ -1,0 +1,16 @@
+name = "Markut"
+license = "MIT"
+licenselink = ""
+description = "Markut projesi için özel tasarlanmıştır."
+homepage = "https://www.markut.net/"
+min_version = "0.3"
+ 
+[author]
+  name = "Atahan Göktürk Güner"
+  homepage = "https://www.atahangokturk.com/"
+ 
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""
