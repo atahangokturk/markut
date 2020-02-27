@@ -3,10 +3,10 @@
 .logo{
     background-image: url(/img/logo.svg);
     background-size: cover;
-    width: 100px;
-    height: 55px;
+    width: 150px;
+    height: 150px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 
@@ -14,15 +14,23 @@
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 10px;
     font-size: 22px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .yazi{
-    margin-top: 50px;
+    margin-top: 10px;
     font-family: 'Open Sans' , sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
+
+
 
 .mgen{
     max-width: 700px;
+}
+.yazar{
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+
 }
