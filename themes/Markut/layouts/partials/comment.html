@@ -1,0 +1,23 @@
+<hr class="hr-text" data-content="Yorumlar">
+<div class="yorum">
+  <div class="container mgen">
+{{$postid:= .Params.postid}} 
+{{ $gistJ := getJSON "https://getsimpleform.com/messages.json?api_token=86c9fcd7230551196a8c45a918ce58b4" }}    
+{{ range first 5 $gistJ }}
+{{ if eq .data.post_id $postid }} 
+<blockquote class="blockquote">
+    <p class="mb-0">{{ .data.message }}</p>
+    <footer class="blockquote-footer">{{ .data.name }}</footer>
+  </blockquote>
+{{ end }}{{ end }}
+
+<form class="mgen " action="https://getsimpleform.com/messages?form_api_token=d85f28c8254e4ea61fe00caec4b93d06" method="post">
+    <input type='hidden' name='post_id' value='{{ .Params.postid }}' />
+    <label></label><textarea name="message" class=" form-control" rows="5" placeholder="Yorumunu yaz" required></textarea><br>
+    <label><input type='text' name='name' class="form-control" placeholder="Ad Soyad" required/></label>
+    <label><input type='email' name='email' class="form-control" style="min-width: 260px; " placeholder="Email" required/></label><br>
+    <input type='submit' value='Gönder' class="btn btn-outline-dark" style="margin-top:20px;"/>
+</form> 
+
+</div>
+</div>

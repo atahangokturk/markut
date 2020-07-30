@@ -1,0 +1,42 @@
+
+{{$postid:= .Params.postid}}
+{{ $gistJ := getJSON "https://getsimpleform.com/messages.json?api_token=040444412275994b93e8893d8cd9c54d" }}
+{{ range $gistJ }}
+{{ if eq .data.post_id $postid }}
+
+        {{ if not .data.reply_to }}
+
+<p style="margin-top: 20px; font-weight: bold;font-size: 14px; ">{{ .data.name }} <span style="font-size: 13px; font-weight: 100;">{{ dateFormat "02 January 2006" .created_at }}</span></p> 
+    
+<p style=" font-size: 16px;">{{ .data.message  }} </p>
+<div class="comment_reply">
+    <a id="{{ .id }}" href="#comment-form" onclick="changeValue('reply_to', 'yes'); changeValue('parrent_name', '{{.data.name}}'); changeValue('parrent_time','{{.created_at}}')">Yanıtla</a>
+    </div>
+       {{ end }}
+      {{$black := .created_at}}
+       {{ range sort $gistJ }}{{ if eq .data.parrent_time $black}}
+       <div style="margin-left: 100px; font-size: 14px;">
+        <p style=" font-size: 16px;">{{ .data.message  }}</p>
+        <p style=" font-weight: bold;font-size: 14px; ">{{ .data.name }} <span style="font-weight: 100;">{{ dateFormat "02 January 2006" .created_at }}</span></p>  
+        <br>
+      </div>
+       {{ end }}{{ end }}
+   
+ {{ end }}
+{{ end }}
+
+
+<form style="" id="comment-form" action="https://getsimpleform.com/messages?form_api_token=5d040a18df35de484e199ba1c582f467" method="post">
+<!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+<input type='hidden' name='post_id' value='{{ .Params.postid }}' />
+<!-- all your input fields here.... -->
+<label><input type='text' name='name' class="form-control" placeholder="Ad Soyad" required/></label>
+<label><input type='email' name='email' class="form-control" style="margin-top: 20px;" placeholder="Email" required/></label>
+<input type="hidden" id="comment-parent" name="reply_to" value="">
+<input type="hidden" id="comment-parent" name="parrent_name" value="">
+<input type="hidden" id="comment-parent" name="parrent_time" value="">
+<label></label><textarea name="message" class="form-message" style="margin-top: 20px;" placeholder="Yorumunu yaz" required></textarea>
+
+<input type='submit' value='Gönder' class=" btn btn-dark"/>
+</form>
+

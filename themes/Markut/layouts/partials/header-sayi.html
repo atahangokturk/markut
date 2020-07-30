@@ -1,0 +1,52 @@
+<body>
+      <header>
+    <nav class="navbar navbar-expand-lg fixed-top markutnav">
+      <a class="navbar-brand " href="{{.Site.BaseURL}}"><div class="logo">MARKUT</div></a>
+      <!--  Show this only on mobile to medium screens  -->
+      <nav>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="">menü</span>
+        </button>
+      </nav>
+
+      <!--  Use flexbox utility classes to change how the child elements are justified  -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+          <ul class="navbar-nav">
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle kirmizi" href="#" id="navbardrop" data-toggle="dropdown">
+               sayı {{.Params.sayi}}
+              </a>
+              <div class="dropdown-menu">
+                <!--<a class="dropdown-item" href="/sayi-1">Sayı 1</a>-->
+              </div>
+            </li>   
+             <!-- Dropdown İçindekiler -->
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle kirmizi" href="#" id="navbardrop" data-toggle="dropdown">
+                 içindekiler
+               </a>
+               <div class="dropdown-menu">
+                 {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
+                     <a class="dropdown-item" href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>                           
+                 {{ end }}
+               </div>
+             </li>  
+        </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/iletisim">iletişim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/hakkimizda">hakkımızda</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+     <!--   <div class="d-flex justify-content-between flex-wrap " style="margin-top: -50px; margin-left: 10px; margin-right: 10px;">
+     <h2 style="font-weight: bold; color: {{.Params.renk}}; ">Sayı {{.Params.sayi}}</h2>
+    <h1  style="font-size: 34px; color: {{.Params.renk}};">{{.Title}}</h1>
+     <h3 style="font-weight: normal; color: {{.Params.renk}};">{{.Params.tarih}}</h3>   
+    </div>-->

@@ -1,0 +1,65 @@
+    {{ partial "head.html" . }}
+    {{ partial "header-sayi.html" . }}    
+    {{ $number := (float .Params.sayfa) }}
+    {{ $anothernumber := 1 }}
+    {{ $total := (add $number $anothernumber) }}
+    {{ $totalsub := (sub $number $anothernumber) }}
+    
+  <div id="contentsWrapper">
+    <div class="content">
+        <div class="gecis">
+          <span class="sayfa">{{ .Params.sayfa }}</span>
+          <div class="titya"><div class="title">{{ .Params.title}}</div>
+          <div class="desc">{{ .Params.yazar}}</div></div>
+        </div>
+        {{.Content}}
+        {{$yorum:= .Params.yorum}}
+        {{ if eq $yorum "var" }}
+          {{partial "comment.html"}}
+        {{ end }}
+     </div>
+  </div>
+      
+
+
+
+
+
+<!--
+{{ $zeooo := trim $totalsub " " }}
+    <p class="text-center">
+      {{ if eq $zeooo  "0" }}
+            <a href="/sayi-{{.Params.sayi}}">TÜM SAYFALAR</a> | 
+            <a href="/">ANA SAYFA</a>
+            <a class="pagination__next" href="/{{.Params.sonraki}}"></a>
+      {{else}}
+            <a href="/sayi-{{.Params.sayi}}">TÜM SAYFALAR</a>
+            <a class="pagination__next" href="/{{.Params.sonraki}}"></a>
+      {{end}}
+    </p>
+  <div class="container">
+    <div class="headersayfayazi">{{ $total }}. Sayfaya Geçtiniz</div> 
+  </div> 
+-->
+
+  
+
+<!--
+{{ $sayfanumara := .Params.sayfa }}
+<div class="container text-center">
+            {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
+              <a href="{{ .RelPermalink }}">
+                {{ $digernumara := .Params.sayfa }}
+              {{ if gt $sayfanumara $digernumara }} {{.Params.sayfa}} {{ end }}
+            </a>
+            {{ end }}
+  <a href="{{.Params.Sonraki}}"><h1>Sonraki Sayfa</h1></a> 
+            {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
+            <a href="{{ .RelPermalink }}">
+              {{ $digernumara := .Params.sayfa }}
+            {{ if gt $digernumara $sayfanumara }} {{.Params.sayfa}} {{ end }}
+          </a>
+    {{ end }}
+</div>
+-->
+    {{ partial "footer.html" . }}

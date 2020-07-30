@@ -1,0 +1,39 @@
+{{ partial "head.html" . }}
+{{ partial "header-sayi.html" . }}
+{{.Content}}
+
+ <div class="container markutkapak">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="kapaklogo">MARKUT</div>
+              <div class="kapaksur">Endüstriyel Tasarım Dergisi</div>
+              <div class="markutzaman">{{.Params.tarih}} | sayı {{.Params.sayi}}</div>
+              <p class="kapakdesc">{{.Params.aciklama}}</p>
+              <div class="kapakoku">okumaya başla</div>
+              <div class="kapakok">↓</div>
+            </div>
+              <div class="col-md-6">
+                <div class="markutcover"><img class="img-fluid" src="{{.Params.kapak}}" alt=""></div>
+              </div>
+            </div>
+</div>
+        
+ <div class="container toc">
+  <div class="icindekiler">içindekiler.</div>
+  {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
+  <div class="icsay">{{.Params.sayfa}}</div> <a href="{{ .RelPermalink }}"><h2 class="title">{{ .Title | markdownify }}</h2></a>
+  <p class="yazar">{{ .Params.yazar }}</p>
+  <p class="desc">{{ .Params.aciklama | markdownify }}</p>
+  {{ end }}
+  <div class="kapakoku">devam et</div>
+  <div class="kapakok">↓</div>
+</div>
+
+<div id="contentsWrapper">
+    <div class="content"> 
+       
+    </div>
+</div>
+
+{{ partial "footer.html" . }}
+

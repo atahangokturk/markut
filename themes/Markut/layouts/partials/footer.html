@@ -1,0 +1,30 @@
+  
+<footer><hr><div class="container">   
+        <div class="footericon"><img src="/img/logo.svg" alt="Markut Logo"></div>
+        <div class="footerlogo">MARKUT</div>
+        <div class="footersur">Endüstriyel Tasarım Dergisi</div>
+        <div class="footerdesc">Markut, 2020 Ağustos ayıyla birlikte yayın hayatına başlamış online endüstriyel tasarım dergisidir. Endüstri tasarımı bağlamında genel tasarım disiplinleriyle de ilişkili olarak içerikler üretmektedir. İçeriklerimizi başka platformlarda paylaşırken kaynak olarak Markut.net ibaresinin geçmesi gerekmektedir.</div>
+        <ul class="list-inline footerlinks">
+            <li class="list-inline-item"><a href="/iletisim">iletişim</a></li>
+            <li class="list-inline-item"><a href="/hakkimizda">hakkımızda</a></li>
+            <li class="list-inline-item"><a href="">reklam ve sponsorluk</a></li>
+            <li class="list-inline-item"><a href="">gizlilik sözleşmesi</a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/markutworks" target="_blank">instagram</a></li>
+        </ul>
+        <div class="copyright">Markut.net | Copyright © 2020 | Markut tarafından tasarlandı.</div>
+    </div></footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="{{.Site.BaseURL}}/js/jquery.clever-infinite-scroll.js"></script>
+    <script src="{{.Site.BaseURL}}/bootstrap/bootstrap.min.js"></script>
+
+<script>
+    $('#contentsWrapper').cleverInfiniteScroll({
+        contentsWrapperSelector: '#contentsWrapper',
+        contentSelector: '.content',
+        nextSelector: '#next',
+    });
+</script>
+
+</body>
+</html>

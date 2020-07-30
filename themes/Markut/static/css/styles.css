@@ -1,36 +1,582 @@
+body{
+ 
+}
+html {
+	scroll-snap-type: proximity;
+	scroll-snap-points-y: repeat(300px);
+	scroll-snap-type: y proximity;
+	scroll-padding: 55px;  
+}
 
+div{
+	font-family: 'Open Sans', sans-serif;
+}
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .2px;
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+h1{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  letter-spacing: 7px;
+  margin-top: 50px;
+}
+h2{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	letter-spacing: 5px;
+	margin-top: 50px;
+  }
+h3{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	letter-spacing: 3px;
+	margin-top: 50px;
+  }
+h4{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	letter-spacing: 2px;
+	margin-top: 50px;
+  }
+html,
+body {
+	font-size: 16px !important;
+}
+h1 {
+	font-size: 1.602em;
+}
+h2 {
+	font-size: 1.424em;
+}
+h3 {
+	font-size: 1.266em;
+}
+h4 {
+	font-size: 1.125em;
+}
+h5 {
+	font-size: 0.889em;
+}
+h6 {
+	font-size: 0.79em;
+}
+.display-1 {
+	font-size: 3.906em;
+}
+.display-2 {
+	font-size: 3.125em;
+}
+.display-3 {
+	font-size: 2.5em;
+}
+.display-4 {
+	font-size: 2em;
+}
+
+@media (min-width: 48em) {
+	h1 {
+	  font-size: 2.441em;
+	}
+	h2 {
+		font-size: 1.953em;
+	}
+	h3 {
+		font-size: 1.563em;
+	}
+	h4 {
+		font-size: 1.25em;
+	}
+	.display-1 {
+		font-size: 6em;
+	}
+	.display-2 {
+		font-size: 5.5em;
+	}
+	.display-3 {
+		font-size: 4.5em;
+	}
+	.display-4 {
+		font-size: 3.5em;
+	}
+}
+
+// Large devices (desktops, 62em and up)
+@media (min-width: 62em) {
+	html,
+	body {
+		font-size: 16px !important;
+	}
+}
+
+// Extra large devices (large desktops, 75em and up)
+@media (min-width: 75em) {
+	html,
+	body {
+		font-size: 18px !important;
+	}
+}
+
+// Pen Specific Styles
+.jumbotron {
+	font-size: 16px;
+	@media (min-width: 62em) {
+		font-size: 20px;
+	}
+	h1 {
+		border-bottom: 4px solid #0275d8;
+	}
+	p.lead {
+		border-radius: 4px;
+	}
+}
+
+.mavi{
+  color: #221dbf
+}
+
+.sari{
+  color: #f7c421
+}
+
+.kirmizi{
+  color: #c30000
+}
+.bg-gri{
+  background-color: #eeeeee;
+}
+
+/*
+.logo{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 64px;
+  letter-spacing: 10px;
+  text-align: center;
+  color: #000;
+}
+.markutlogo{
+  margin: 0 auto;
+  text-align: center;
+  max-width: 400px;
+}
+.description{
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 4.7px;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: -15px;
+}
+
+.markutbtn {
+  border-radius: 30px;
+  border-style: solid;
+  font-size: 18px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+}
+
+.markutbtn:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-color: #000;
+}
+.markutbtn:active {
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	border-color: #000;
+  }
+.markutbtn:focus {
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	border-color: #000;
+  } 
+
+
+.orta{
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.markutmenu{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	background-color: #fff;
+	padding: 10px;
+	font-size: 20px;
+	border: 2px solid #000;
+margin-top: 50px;
+z-index: 1;
+}
+.logomenu{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+	letter-spacing: 3px;
+	text-align: center;
+	color: #000;
+	margin: 0 auto;
+
+}
+.menulinks{
+	font-size: 14px;
+margin-top: -24px;
+}
+*/
 
 .logo{
-    background-image: url(/img/logo.svg);
-    background-size: cover;
-    width: 150px;
-    height: 150px;
-    margin: auto;
-    margin-top: 20px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 32px;
+	letter-spacing: 8px;
+	margin-top: -22px;
+	text-align: center;
+	color: #000;
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .markutnav{
+	border: 1px solid #000;
+  }
+
+  .nav-item{
+	  font-family: 'Roboto Condensed', sans-serif;
+	  font-size: 16px;
+	  letter-spacing: 2px;
+	  color: #000;
+	  padding-left: 5px
+  }
+  a.nav-link{
+	  color: #000;
+  }
+
+.navbar-toggler {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 14px;
+	color: #000;
+	border: 1px solid #000;
+}
+.navbar{
+	z-index: 1;
+	background-color: #ffffff;
+}
+.sayilar{
+	margin-top: 100px;
+}
+.icindekiler{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 36px;
+	color: #AFAFAF;
+	letter-spacing: 7px;
+	margin-top: -12px;
+}
+.icsay{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 32px;
+	color: #ffffff;
+	margin-top: 20px;
+	margin-bottom: -25px;
+	text-shadow:
+	-1px -1px 0 #AFAFAF,  
+	 1px -1px 0 #AFAFAF,
+	 -1px 1px 0 #AFAFAF,
+	  1px 1px 0 #AFAFAF;
+	
+}
+.contents{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+	color: #000000;
+	letter-spacing: 3px;
+	border-color: #fff;
+	padding-left: 0px;
+	padding-top: 5px;
 }
 
+.markutbtn {
+	border-radius: 30px;
+	border-style: solid;
+	font-size: 18px;
+	padding-left: 25px;
+	padding-right: 25px;
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #fff;
+	color: #000;
+	margin-top: 10px;
+	border: 2px solid #000;
+	letter-spacing: 3px;
+  }
+  
+  .markutbtn:hover {
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	border-color: #000;
+  }
+  .markutbtn:active {
+	  background-color: rgb(0, 0, 0);
+	  color: rgb(255, 255, 255);
+	  border-color: #000;
+	}
+  .markutbtn:focus {
+	  background-color: rgb(0, 0, 0);
+	  color: rgb(255, 255, 255);
+	  border-color: #000;
+	} 
 
-.yazi h3{
-    font-family: 'Roboto Condensed', sans-serif;
-    letter-spacing: 10px;
-    font-size: 22px;
-    margin-bottom: 20px;
+.markutcvr{
+	max-width: 300px;
+	float: right;
+	margin-bottom: 50px;
+}
+.markutsayi{
+	margin-bottom: 150px;
 }
 
-.yazi{
-    margin-top: 10px;
-    font-family: 'Open Sans' , sans-serif;
-    font-size: 14px;
+footer{
+	margin-top: 100px;
+}
+.footericon{
+	margin: 0 auto;
+	max-width: 150px;
+	text-align: center;
+	margin-bottom: -20px;
+}
+.footerlogo{
+	font-size: 64px;
+	font-family: 'Roboto Condensed', sans-serif;
+	letter-spacing: 8px;
+	color: #000000;
+	text-align: center;
+}
+.footersur{
+	color: #000;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 19px;
+	letter-spacing: 2.12px;
+	text-align: center;
+	margin-top: -20px;
+	margin-left: -5px;
+}
+.footerdesc{
+	color: #696969;
+	font-size: 16px;
+	max-width: 800px;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+.footerlinks{
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+.list-inline-item a{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+	letter-spacing: 2px;
+	color: #000;
+}
+.copyright{
+	text-align: center;
+	color: #696969;
+	padding: 20px;
 }
 
+.markutkapak{
+	margin-top: 100px;
+}
+.markutzaman{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+	letter-spacing: 2px;
+	color: rgb(100, 100, 100);
+	text-align: center;
+	margin-top: 20px;
+}
+.markutcover{
+	max-width: 350px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.kapaklogo{
+	font-size: 64px;
+	font-family: 'Roboto Condensed', sans-serif;
+	letter-spacing: 8px;
+	color: #000000;
+	text-align: center;
+}
+.kapaksur{
+	color: #000;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 19px;
+	letter-spacing: 2.12px;
+	text-align: center;
+	margin-top: -20px;
+	margin-left: -5px;
+}
+.kapakdesc{
+	margin-top: 25px;
+	font-size: 18px;
+	text-align: justify;
+}
+.kapakoku{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 24px;
+	letter-spacing: 2.12px;
+	text-align: center;
+	margin-top: 50px;
+}
+.kapakok{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 36px;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+.toc{
+	max-width: 700px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.toc .icindekiler{
+	text-decoration: underline;
+}
+.toc .title{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 32px;
+	letter-spacing: 2.12px;
+	margin-top: 20px;
+	margin-left: -1px;
+	line-height: 35px;
+	margin-bottom: -10px;
+	color: #000;
+	text-decoration-color: #AFAFAF;
+}
+.toc .title:hover{
+	text-decoration: underline;
+	text-decoration-color: #AFAFAF;
+}
+
+.toc .yazar{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 12px;
+	letter-spacing: 2.12px;
+	color: #696969;
+	margin-left: 1px;
+}
+.toc .desc{
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin-top: 10px;
+	color: #696969;
+}
+
+.gecis{
+	border: 1px solid #AFAFAF;
+	width: 100%;
+	height: 70px;
+	margin-top: 55px;
+	
+}
+.gecis .sayfa {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 64px;
+	color: #ffffff;
+	float: left;
+	margin-top: -12px;
+	margin-left: 50px;
+	text-shadow:
+	-1px -1px 0 #AFAFAF,  
+	 1px -1px 0 #AFAFAF,
+	 -1px 1px 0 #AFAFAF,
+	  1px 1px 0 #AFAFAF;
+}
+
+.gecis .title{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 32px;
+	letter-spacing: 2.12px;
+	margin-top: 0px;
+	color: #AFAFAF;
+	scroll-snap-align: start;
+}
+.gecis .desc{
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin-top: -6px;
+	color: #AFAFAF;
+}
+.gecis .titya{
+	padding-left: 150px;
+}
+
+.markutcontent{
+	max-width: 800px;
+	margin: auto;
+	margin-top: 100px;
+}
+.markutcontent h1 {
+	text-decoration: underline;
+	font-size: 48px;
+}
+.markutpage{
+	letter-spacing: 1px;
+	font-size: 16px;
+}
+
+@media screen and (max-width: 768px){
+	.markutcvr{
+		float: unset;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	.icindekiler{
+		margin: 0 auto;
+	}
+	.kapaklogo {
+		margin-top: -50px;
+	}
+	.markutcover{
+		margin-top: -25px;
+	}
+}
+@media screen and (max-width:425px){
+	.gecis .title{
+		font-size: 16px;
+		line-break: 10px;
+		margin-top: 7px;
+	}
+	.gecis .sayfa{
+		margin-left: 5px;
+	}
+	.gecis .titya{
+		padding-left: 80px;
+	}
+	.gecis .desc{
+		font-size: 12px;
+	}
+}
 
 
 .mgen{
-    max-width: 700px;
+	max-width: 700px;
 }
-.yazar{
-    margin-top: 20px;
-    font-size: 12px;
-    font-weight: 700;
+.mauto{
+	margin: 0 auto;
+}
+.dropdown-item{
+	font-size: 14px;
+}
 
-}
+  
