@@ -9,9 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{.Site.BaseURL}}/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <meta name="robots" content="noindex, nofollow">
-    <!-- geçici
-    {{ with .Params.robotsdisallow }}<meta name="robots" content="noindex, nofollow">{{ else }}<meta name="robots" content="index, follow">{{ end }} -->
+    {{ with .Params.robotsdisallow }}<meta name="robots" content="noindex, nofollow">{{ else }}<meta name="robots" content="index, follow">{{ end }}
     <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png">
@@ -35,11 +33,11 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
-    <meta name="twitter:title" content="{{ .Title }}{{ if .IsHome }} - {{ .Site.Params.Tagline }}{{ else }} - {{ .Site.Title }}{{ end }}" />
+    <meta name="twitter:title" content="{{ .Title }} {{ if .IsHome }}| Endüstriyel Tasarım Dergisi {{ .Site.Params.Tagline }}{{ else }}| {{ .Site.Title }}{{ end }}" />
     <!-- OG data -->
     <meta property="og:locale" content="tr_TR" />
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
-    <meta content="{{ .Title }}{{ if .IsHome }} - {{ .Site.Params.Tagline }}{{ else }} - {{ .Site.Title }}{{ end }}" property="og:title">
+    <meta content="{{ .Title }} {{ if .IsHome }}| Endüstriyel Tasarım Dergisi {{ .Site.Params.Tagline }}{{ else }}| {{ .Site.Title }}{{ end }}" property="og:title">
     <meta content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" property="og:description">
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:site_name" content="{{ .Site.Title }}" />

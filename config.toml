@@ -2,10 +2,13 @@ baseURL = "https://www.markut.net/"
 languageCode = "tr-tr"
 title = "Markut"
 theme = "Markut"
-
 #10 şubat 2020
 
 [caches]
 [caches.getjson]
 dir = ":cacheDir/:project"
 maxAge = "1m"
+
+
+[params]
+description ="Markut, endüstriyel tasarım dergisidir. Endüstri tasarımı bağlamında genel tasarım disiplinleriyle de ilişkili olarak içerikler üreten online dergidir."
