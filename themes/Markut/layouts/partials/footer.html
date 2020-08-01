@@ -7,8 +7,9 @@
         <ul class="list-inline footerlinks">
             <li class="list-inline-item"><a href="/iletisim">iletişim</a></li>
             <li class="list-inline-item"><a href="/hakkimizda">hakkımızda</a></li>
-            <li class="list-inline-item"><a href="">reklam ve sponsorluk</a></li>
-            <li class="list-inline-item"><a href="">gizlilik sözleşmesi</a></li>
+            <li class="list-inline-item"><a href="/reklam-sponsorluk">reklam ve sponsorluk</a></li>
+            <li class="list-inline-item"><a href="/bize-gonder">bize gönder</a></li>
+            <li class="list-inline-item"><a href="/okuyucu-sozlesmesi">okuyucu sözleşmesi</a></li>
             <li class="list-inline-item"><a href="https://www.instagram.com/markutworks" target="_blank">instagram</a></li>
         </ul>
         <div class="copyright">Markut.net | Copyright © 2020 | Markut tarafından tasarlandı.</div>
@@ -24,6 +25,21 @@
         contentSelector: '.content',
         nextSelector: '#next',
     });
+</script>
+<script>
+    function changeValue(elementName, newValue){
+      document.getElementsByName(elementName)[0].value=newValue;
+      window.location.hash = "#comment-form";
+    };
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122967892-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122967892-3');
 </script>
 
 </body>

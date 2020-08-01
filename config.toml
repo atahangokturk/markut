@@ -4,3 +4,8 @@ title = "Markut"
 theme = "Markut"
 
 #10 şubat 2020
+
+[caches]
+[caches.getjson]
+dir = ":cacheDir/:project"
+maxAge = "1m"

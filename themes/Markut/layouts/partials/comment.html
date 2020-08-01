@@ -2,7 +2,7 @@
 <div class="yorum">
   <div class="container mgen">
 {{$postid:= .Params.postid}} 
-{{ $gistJ := getJSON "https://getsimpleform.com/messages.json?api_token=86c9fcd7230551196a8c45a918ce58b4" }}    
+{{ $gistJ := getJSON "https://getsimpleform.com/messages.json?api_token=7dc3fb305c1a7e75a2f26a86535f9974" }}    
 {{ range first 5 $gistJ }}
 {{ if eq .data.post_id $postid }} 
 <blockquote class="blockquote">
@@ -10,8 +10,8 @@
     <footer class="blockquote-footer">{{ .data.name }}</footer>
   </blockquote>
 {{ end }}{{ end }}
-
-<form class="mgen " action="https://getsimpleform.com/messages?form_api_token=d85f28c8254e4ea61fe00caec4b93d06" method="post">
+      
+<form class="mgen " action="https://getsimpleform.com/messages?form_api_token=04d0d4343419a0e7db01dd9c6e464355" method="post">
     <input type='hidden' name='post_id' value='{{ .Params.postid }}' />
     <label></label><textarea name="message" class=" form-control" rows="5" placeholder="Yorumunu yaz" required></textarea><br>
     <label><input type='text' name='name' class="form-control" placeholder="Ad Soyad" required/></label>

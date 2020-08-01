@@ -15,7 +15,7 @@
         {{.Content}}
         {{$yorum:= .Params.yorum}}
         {{ if eq $yorum "var" }}
-          {{partial "comment.html"}}
+          {{partial "comment.html" . }}
         {{ end }}
      </div>
   </div>

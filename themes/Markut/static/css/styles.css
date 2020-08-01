@@ -534,6 +534,20 @@ footer{
 	font-size: 16px;
 }
 
+.form-ad{
+	float:left;
+}
+.form-email{
+	width: 300px;
+}
+.form-yorum{
+	width: 500px;
+	padding: 10px;
+}
+.yanitla{
+	color: #000000;
+	font-size: 12px;
+}
 @media screen and (max-width: 768px){
 	.markutcvr{
 		float: unset;
@@ -565,6 +579,12 @@ footer{
 	.gecis .desc{
 		font-size: 12px;
 	}
+	.form-email{
+		width: 300px;
+	}
+	.form-yorum{
+		width: 400px;
+	}
 }
 
 
@@ -578,4 +598,3 @@ footer{
 	font-size: 14px;
 }
 
-  
