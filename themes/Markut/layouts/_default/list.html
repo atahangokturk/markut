@@ -4,9 +4,9 @@
     <div class="container">
     {{- $scope := .Site }}
         {{- if .Title }}
-        <header class="page-header markutcontent"><h1>{{ .Title }}</h1><div class="title list-inline-item"><a href="/tags">Etiketler Sayfasına Geri Dönün</a></div></header>{{ $scope = . }}
+        <header class="page-header markutcontent"><h1>{{ .Title }}</h1><div class="title list-inline-item"><a href="/tags">Etiketler Sayfasına Geri Dönün</a></div></header>
+        {{ $scope = . }}
         {{ end }}
-     
         <div class="container toc">
         {{- $paginator := .Paginate (where $scope.RegularPages ".Params.type" "!=" "page" )  }}    
         {{- range $index, $page := $paginator.Pages  }}
@@ -16,13 +16,11 @@
         {{- else if .Data.Term }}
         {{- $class = "post-entry tag-entry" }}
         {{- end }}
-        <article class="{{ $class }}">
             <img class="img-fluid thumb" src="{{.Params.thumb}}" alt="">
             <a href="{{ .Permalink }}"><h2 class="title">{{ .Title | markdownify }}</h2></a>
             <p class="yazar">{{ .Params.yazar }} | {{.Params.tarih}}</p>
             <p class="desc">{{ .Summary | plainify | htmlUnescape }}...</p>
           <a href="{{ .Permalink }}"><button class="btn markutbtn" type="button">yazıyı oku</button></a>
-        </article>
         {{- end }}</div>
         <div class="markutpage">
             {{.Content}}
