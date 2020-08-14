@@ -345,6 +345,16 @@ margin-top: -24px;
 footer{
 	margin-top: 100px;
 }
+footer a{
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 16px;
+		letter-spacing: 2px;
+		color: #000;
+}
+footer a:hover{
+	color: #000;
+	font-weight: 700;
+}	
 .footericon{
 	margin: 0 auto;
 	max-width: 150px;
@@ -598,3 +608,9 @@ footer{
 	font-size: 14px;
 }
 
+.thumb{
+	max-height: 300px;
+}
+.toc article {
+	margin-top: 100px;
+}
