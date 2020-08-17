@@ -49,7 +49,6 @@
       "@type": "WebSite", 
       "url": "{{ .Permalink }}", 
       "name": "{{ .Site.Title }}",
-      "description": "{{ .Site.Params.description }}"
     }
     </script>
     {{ end }}
@@ -57,11 +56,10 @@
         <script type="application/ld+json">
             { 
                 "@context": "http://schema.org", 
-                "@type": "Dergi",
-                "headline": "{{ .Title }}",
+                "@type": "WebSite",
+                "headline": "{{$seotitle := .Params.seotitle}}{{ if isset .Params "seotitle" }}{{$seotitle}}{{else}}{{.Title}}{{ end }}",
                 "genre": "{{ range .Params.categories }}{{ . }}{{ end }}",  
                 "url": "{{ .Permalink }}",
-                "description": "{{ .Description }}"
              }
         </script>
     {{ end }}
