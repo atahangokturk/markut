@@ -48,7 +48,7 @@
       "@context": "http://schema.org", 
       "@type": "WebSite", 
       "url": "{{ .Permalink }}", 
-      "name": "{{ .Site.Title }}",
+      "name": "{{ .Site.Title }}"
     }
     </script>
     {{ end }}
@@ -59,7 +59,7 @@
                 "@type": "WebSite",
                 "headline": "{{$seotitle := .Params.seotitle}}{{ if isset .Params "seotitle" }}{{$seotitle}}{{else}}{{.Title}}{{ end }}",
                 "genre": "{{ range .Params.categories }}{{ . }}{{ end }}",  
-                "url": "{{ .Permalink }}",
+                "url": "{{ .Permalink }}"
              }
         </script>
     {{ end }}
