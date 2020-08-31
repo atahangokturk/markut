@@ -1,0 +1,94 @@
+{
+  "name": "",
+  "isOrdered": true,
+  "folders": {
+    "archetypes": {
+      "name": "archetypes",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "content": {
+      "name": "content",
+      "isOrdered": true,
+      "folders": {
+        "sayi": {
+          "name": "sayi",
+          "isOrdered": true,
+          "folders": {
+            "sayi-0": {
+              "name": "sayi-0",
+              "isOrdered": true,
+              "folders": {},
+              "files": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7": 7,
+                "8": 8
+              }
+            },
+            "sayi-1": {
+              "name": "sayi-1",
+              "isOrdered": true,
+              "folders": {},
+              "files": {
+                "0": 1,
+                "1": 0,
+                "2": 2,
+                "a": 3
+              }
+            }
+          },
+          "files": {}
+        }
+      },
+      "files": {
+        "basarili": 0,
+        "_index": 1,
+        "bize-gonder": 2,
+        "hakkimizda": 3,
+        "iletisim": 4,
+        "okuyucu-sozlesmesi": 5,
+        "reklam-sponsorluk": 6
+      }
+    },
+    "data": {
+      "name": "data",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "layouts": {
+      "name": "layouts",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "resources": {
+      "name": "resources",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "static": {
+      "name": "static",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "themes": {
+      "name": "themes",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    }
+  },
+  "files": {
+    "README": 0
+  }
+}

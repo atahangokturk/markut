@@ -6,6 +6,7 @@ theme = "Markut"
 
 [caches]
 [caches.getjson]
+[caches.getCSV]
 dir = ":cacheDir/:project"
 maxAge = "1m"
 

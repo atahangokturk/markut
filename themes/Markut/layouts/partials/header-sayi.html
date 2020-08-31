@@ -18,7 +18,8 @@
                sayı {{.Params.sayi}}
               </a>
               <div class="dropdown-menu">
-                <!--<a class="dropdown-item" href="/sayi-1">Sayı 1</a>-->
+                <a class="dropdown-item" href="/sayi-1">Sayı 01</a>
+                <a class="dropdown-item" href="/sayi-0">Sayı 00</a>
               </div>
             </li>   
              <!-- Dropdown İçindekiler -->
@@ -28,8 +29,8 @@
                </a>
                <div class="dropdown-menu">
                  {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
-                     <a class="dropdown-item" href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>                           
-                 {{ end }}
+                <a class="dropdown-item" href="{{ .RelPermalink }}">{{.Params.sayfa}} | {{ .Title | markdownify }}</a>                           
+                {{ end }}
                </div>
              </li>  
         </ul>
@@ -40,6 +41,10 @@
             <li class="nav-item">
               <a class="nav-link" href="/hakkimizda/">hakkımızda</a>
             </li>
+            <li><div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+              <label class="custom-control-label" for="darkSwitch">Dark</label>
+            </div></li>
           </ul>
         </div>
       </nav>

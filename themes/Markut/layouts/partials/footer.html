@@ -1,8 +1,7 @@
-  
 <footer><hr><div class="container">   
-        <div class="footericon"><img src="/img/logo.svg" alt="Markut Logo"></div>
+        <div class="footericon"><img src="/img/logo-color.svg" alt="Markut Logo"></div>
         <div class="footerlogo">MARKUT</div>
-        <div class="footersur">Endüstriyel Tasarım Dergisi</div>
+        <div class="footersur">Marmara Kreatif Ürün Tasarım Ekibi</div>
         <p class="footerdesc">Markut, Marmara Kreatif Ürün Tasarım ekibidir. Ekibimizle Ağustos 2020'de online endüstriyel tasarım dergimizi bu platformda yayınlamaya başladık. Dergimiz, endüstri tasarımı bağlamında genel tasarım disiplinleriyle de ilişkili olarak içerikler üretmektedir. İçeriklerimizi başka platformlarda paylaşırken kaynak olarak Markut.net ibaresinin geçmesi gerekmektedir.</p>
         <ul class="list-inline footerlinks">
             <li class="list-inline-item"><a href="/iletisim/">iletişim</a></li>
@@ -15,33 +14,36 @@
         </ul>
         <div class="copyright"><a href="{{.Site.BaseURL}}">Markut.net</a> | Copyright © 2020 | Markut tarafından tasarlandı.</div>
     </div></footer>
-
+    <script data-cfasync="false" type="text/javascript" src="{{.Site.BaseURL}}js/form-submission-handler.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="{{.Site.BaseURL}}js/jquery.clever-infinite-scroll.js"></script>
     <script src="{{.Site.BaseURL}}bootstrap/bootstrap.min.js"></script>
-
-<script>
-    $('#contentsWrapper').cleverInfiniteScroll({
-        contentsWrapperSelector: '#contentsWrapper',
-        contentSelector: '.content',
-        nextSelector: '#next',
-    });
-</script>
-<script>
-    function changeValue(elementName, newValue){
-      document.getElementsByName(elementName)[0].value=newValue;
-      window.location.hash = "#comment-form";
-    };
-    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122967892-3"></script>
+<script> $(function()
+    {
+      $('#theform').submit(function(){
+        $("input[type='submit']", this)
+          .val("Lütfen Bekleyin...")
+          .attr('disabled', 'disabled');
+        return true;
+      });
+    });</script>
+    <!--
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-122967892-3');
+</script>-->
+<script src="{{.Site.BaseURL}}js/jquery.clever-infinite-scroll.js"></script>
+<script src="{{.Site.BaseURL}}js/dark-mode-switch.min.js"></script>
+<script>
+  $('#contentsWrapper').cleverInfiniteScroll({
+      contentsWrapperSelector: '#contentsWrapper',
+      contentSelector: '.content',
+      nextSelector: '#next',
+  });
 </script>
-
 </body>
 </html>
