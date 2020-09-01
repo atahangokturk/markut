@@ -442,7 +442,8 @@ footer a:hover{
 	font-size: 64px;
 	color: #ffffff;
 	float: left;
-	margin-top: -12px;
+	line-height: 0px;
+    margin-top: 36px;
 	margin-left: 50px;
 	text-shadow:
 	-1px -1px 0 #AFAFAF,  
