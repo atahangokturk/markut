@@ -53,7 +53,7 @@
         <div class="row mt-5">
          {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
          <div class="col-md-6 mt-5"><article>    
-        <img class="img-fluid thumb" src="{{.Params.thumb}}" alt="">         
+       <a href="{{ .Permalink }}"><img class="img-fluid thumb" src="{{.Params.thumb}}" alt="">     </a>    
         <a href="{{ .Permalink }}"><h2 class="title">{{ .Title | markdownify }}</h2></a>
         <p class="yazar">{{ .Params.yazar }} | {{.Params.tarih}}</p>
         <p class="desc">{{ .Params.aciklama | plainify | htmlUnescape }}</p>
@@ -66,7 +66,7 @@
         <img class="img-fluid" src="/img/markut-mailde.png" alt="">
         <div class="mailde-title">Dergimize Abone Olun</div>
         <div class="mailde-desc">Yeni Sayıları Mailinize Gönderelim</div>
-        <form name="abonelik" method="POST" data-netlify="true" action="/basarili">   
+        <form name="abonelik" method="POST" data-netlify="true" action="/basarili/">   
           <label><input type="text" name="email" class="form-control form-email" placeholder="Mail Adresiniz" required></label>
           <button type="submit" class=" btn markutbtn">Abone Ol</button><br>
           <small>ücretsizdir.</small>
