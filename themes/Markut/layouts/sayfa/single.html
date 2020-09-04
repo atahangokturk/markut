@@ -4,12 +4,11 @@
     {{ $anothernumber := 1 }}
     {{ $total := (add $number $anothernumber) }}
     {{ $totalsub := (sub $number $anothernumber) }}
-    
   <div id="contentsWrapper">
     <div class="content">
         <div class="gecis">
           <span class="sayfa">{{ .Params.sayfa }}</span>
-          <div class="titya"><div class="title">{{ .Params.title}}</div>
+          <div class="titya"><h1 class="title">{{ .Params.title}}</h1>
           <div class="desc">{{ .Params.yazar}}</div></div>
         </div>
         {{.Content}}
@@ -19,10 +18,6 @@
         {{ end }}
      </div>
   </div>
-      
-
-
-
 
 
 <!--

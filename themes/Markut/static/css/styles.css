@@ -4,7 +4,7 @@
 		scroll-snap-type: proximity;
 		scroll-snap-points-y: repeat(50px);
 		scroll-snap-type: y proximity;
-		scroll-padding: 60px;  
+		scroll-padding: 66px;  
 	}
 }
 
@@ -147,7 +147,8 @@ h6 {
 	text-align: center;
 	color: #000000;
 	position: absolute;
-    left: 50%;
+	left: 50%;
+	line-height: 1.4;
     transform: translateX(-50%);
   }
 
@@ -400,6 +401,7 @@ footer a:hover{
 	margin-top: 10px;
 	color: #696969;
 }
+
 .onde .title{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 32px;
@@ -456,7 +458,7 @@ footer a:hover{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 32px;
 	letter-spacing: 2.12px;
-	margin-top: 0px;
+	margin-top: 5px;
 	color: #AFAFAF;
 	scroll-snap-align: start;
 }
@@ -504,61 +506,6 @@ footer a:hover{
 	color: #000000;
 	font-size: 12px;
 }
-@media screen and (max-width: 768px){
-	.gecis .title{
-		font-size: 18px;
-		line-break: 5px;
-		margin-top: 7px;
-	}
-	.gecis .sayfa{
-		margin-left: 30px;
-	}
-	.gecis .titya{
-		padding-left: 120px;
-	}
-	.markutcvr{
-		float: unset;
-		margin: 0 auto;
-		margin-bottom: 50px;
-	}
-	.icindekiler{
-		margin: 0 auto;
-	}
-	.kapaklogo {
-		margin-top: -50px;
-	}
-	.markutcover{
-		margin-top: -25px;
-	}
-}
-@media screen and (max-width:425px){
-	.gecis .title{
-		font-size: 16px;
-		line-break: 10px;
-		margin-top: 7px;
-	}
-	.gecis .sayfa{
-		margin-left: 5px;
-	}
-	.gecis .titya{
-		padding-left: 80px;
-	}
-	.gecis .desc{
-		font-size: 12px;
-	}
-	.form-email{
-		width: 300px;
-	}
-	.form-yorum{
-		width: 300px;
-	}
-	.kaynak a{
-		font-size: 10px;
-	}
-	.kaynak{
-		font-size: 14px;
-	}
-}
 
 
 .mgen{
@@ -595,7 +542,6 @@ footer a:hover{
 .mailde-title{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 36px;
-	color: #AFAFAF;
 	letter-spacing: 7px;
 }
 .mailde-desc{
@@ -690,3 +636,65 @@ footer a:hover{
 	background-color: transparent;
 	border: 1px solid #eee;
   }
+  @media screen and (max-width: 768px){
+	.gecis .title{
+		font-size: 18px;
+		line-break: 5px;
+		margin-top: 7px;
+	}
+	.gecis .sayfa{
+		margin-left: 30px;
+	}
+	.gecis .titya{
+		padding-left: 120px;
+	}
+	.markutcvr{
+		float: unset;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	.icindekiler{
+		margin: 0 auto;
+	}
+	.kapaklogo {
+		margin-top: -50px;
+	}
+	.markutcover{
+		margin-top: -25px;
+	}
+}
+@media screen and (max-width:425px){
+	.gecis .title{
+		font-size: 16px;
+		line-break: 10px;
+		margin-top: 7px;
+	}
+	.gecis .sayfa{
+		margin-left: 5px;
+	}
+	.gecis .titya{
+		padding-left: 80px;
+	}
+	.gecis .desc{
+		font-size: 12px;
+	}
+	.form-email{
+		width: 300px;
+	}
+	.form-yorum{
+		width: 300px;
+	}
+	.kaynak a{
+		font-size: 10px;
+	}
+	.kaynak{
+		font-size: 14px;
+	}
+	.mailde-title{
+		letter-spacing: 2px;
+		font-size: 28px;
+	}
+	.mailde-desc{
+		letter-spacing: 2px;
+	}
+}
