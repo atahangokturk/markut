@@ -37,7 +37,7 @@
                 </div>
                 </div>
                 <div class="col-md-6">
-                        <div class="icindekiler">içindekiler.</div>
+                        <div class="icindekiler">içindekiler</div>
                         <ul class="list-group">
                         {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}  
                         <li class="list-group-item contents">{{ .Title | markdownify }}</li>                        
