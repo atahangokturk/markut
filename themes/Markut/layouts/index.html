@@ -23,7 +23,6 @@
 </div>
 {{ end }}{{ end }}</div></div>
 -->
-
 <div class="container sayilar">
         {{ $paginator := .Paginate (where .Pages ".Params.type" "kapak") (index .Site.Params "paginate" | default 10) }}
         {{ if gt $paginator.TotalPages 0 }}
@@ -48,6 +47,7 @@
         </div>
         {{ end }}{{ end }}
 </div>
+
 <div class="container onde">
         <div class="icindekiler text-center">Öne Çıkan Sayfalar</div>
         <div class="row mt-5">
@@ -62,8 +62,8 @@
  {{ end }}
  </div>
 </div>
-<div class="mailde">
-        <div class="col-md-5 m-auto"><img class="img-fluid" src="/img/markut-mailde.svg" alt="Markut Mailde İllustrasyon"></div>
+<div class="mailde mt-5">
+        <div class="col-md-5 m-auto"><img class="img-fluid mt-5" src="/img/markut-mailde.svg" alt="Markut Mailde İllustrasyon"></div>
         <div class="mailde-title">Dergimize Abone Olun</div>
         <div class="mailde-desc">Yeni Sayıları Mailinize Gönderelim</div>
         <form name="abonelik" method="POST" data-netlify="true" action="/basarili/">   
