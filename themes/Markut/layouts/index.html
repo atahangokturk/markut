@@ -53,11 +53,11 @@
         <div class="row mt-5">
          {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
          <div class="col-md-6 mt-5"><article>    
-       <a href="{{ .Permalink }}"><img class="img-fluid thumb" src="{{.Params.thumb}}" alt="{{ .Title | markdownify }}"></a>    
-        <a href="{{ .Permalink }}"><h2 class="title">{{ .Title | markdownify }}</h2></a>
+       <a href="{{ .Permalink }}"><img class="img-fluid thumb" src="{{.Params.thumb}}" alt="{{ .Title | markdownify }}">   
+        <h2 class="title">{{ .Title | markdownify }}</h2>
         <p class="yazar">{{ .Params.yazar }} | {{.Params.tarih}}</p>
         <p class="desc">{{ .Params.aciklama | plainify | htmlUnescape }}</p>
-      <a href="{{ .Permalink }}"><button class="btn markutbtn" type="button">yazıyı oku</button></a>
+      </a>
         </article></div>
  {{ end }}
  </div>
