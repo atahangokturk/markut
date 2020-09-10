@@ -3,10 +3,13 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 media_folder: static/img
 public_folder: /img
+publish_mode: editorial_workflow
+logo_url: https://www.markut.net/img/logo-color.svg
 collections:
   - name: 'sayi'
-    label: 'Sayı'
-    folder: 'content/sayi'
+    label: 'Sayıda Çıkan'
+    folder: 'content/sayi/'
+    path: 'sayi-{{year}}/{{slug}}'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
@@ -15,4 +18,5 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
+      - {label: "Thumbnail: 700x300px", name: "thumb", widget: "image"}
       - { label: 'Body', name: 'body', widget: 'markdown' }
