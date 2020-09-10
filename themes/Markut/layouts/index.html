@@ -41,8 +41,7 @@
                         {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}  
                         <li class="list-group-item contents">{{ .Title | markdownify }}</li>                        
                         {{ end }}
-                        </ul><a href="{{ .Permalink }}">
-                        <button class="btn markutbtn" type="button">sayıyı oku</button></a>
+                        </ul><a href="{{ .Permalink }}" class="btn markutbtn" type="button">sayıyı oku</a>
                 </div>
         </div>
         {{ end }}{{ end }}
