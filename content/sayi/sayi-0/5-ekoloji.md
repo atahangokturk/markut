@@ -12,7 +12,7 @@ sayi="0"
 sayfa="05"
 yazar="Ece Çelik"
 tags= [
-"sifir", "ekoloji", "surdurulebilir tasarim", "Öne Çıkan", "Sayi Sifir"
+"sifir", "ekoloji", "surdurulebilir tasarim", "Sayi Sifir"
 ]
 +++
 <a href="/sayi-0/ikonik-tasarimlar-sandalye/" id="next"></a>

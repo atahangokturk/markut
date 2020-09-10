@@ -12,7 +12,7 @@ sayi="0"
 sayfa="04"
 yazar="Şahsenem Göksu Göktürk, Kolaj: Zeynep Yarar, Elif Ersöz"
 tags= [
-    "sifir", "tasarim sozlugu", "ikonik", "Öne Çıkan", "Sayi Sifir"
+    "sifir", "tasarim sozlugu", "ikonik", "Sayi Sifir"
 ]
 +++
 <a href="/sayi-0/ekoloji-nedir-surdurulebilir-tasarim/" id="next"></a>

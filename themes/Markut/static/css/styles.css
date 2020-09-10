@@ -478,7 +478,9 @@ footer a:hover{
 .gecis .titya{
 	padding-left: 150px;
 }
-
+.titya a{
+	text-decoration-color: #AFAFAF;
+}
 .markutcontent{
 	max-width: 800px;
 	margin: auto;

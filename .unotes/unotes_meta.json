@@ -45,6 +45,12 @@
             }
           },
           "files": {}
+        },
+        "tags": {
+          "name": "tags",
+          "isOrdered": true,
+          "folders": {},
+          "files": {}
         }
       },
       "files": {

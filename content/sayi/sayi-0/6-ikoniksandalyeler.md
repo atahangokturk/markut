@@ -12,7 +12,7 @@ sayi="0"
 sayfa="06"
 yazar="Zeynep Dağ"
 tags= [
-    "sifir", "ikonik", "Öne Çıkan", "Sayi Sifir"
+    "sifir", "ikonik", "Sayi Sifir"
 ]
 +++
 <a href="/sayi-0/markut-etiketle/" id="next"></a>

@@ -27,10 +27,11 @@
         <div class="footericon"><img src="/img/logo-color.svg" alt="Markut Logo"></div>
         <div class="footerlogo">MARKUT</div>
         <div class="footersur">Marmara Kreatif Ürün Tasarım Ekibi</div>
-        <p class="footerdesc">Markut, Marmara Kreatif Ürün Tasarım ekibidir. Ekibimizle Ağustos 2020'de online endüstriyel tasarım dergimizi bu platformda yayınlamaya başladık. Dergimiz, endüstri tasarımı bağlamında genel tasarım disiplinleriyle de ilişkili olarak içerikler üretmektedir. İçeriklerimizi başka platformlarda paylaşırken kaynak olarak Markut.net ibaresinin geçmesi gerekmektedir.</p>
+        <p class="footerdesc"><strong>Markut</strong>, Marmara Kreatif Ürün Tasarım ekibidir. Ekibimizle Ağustos 2020'de online <strong>endüstriyel tasarım dergimizi</strong> bu platformda yayınlamaya başladık. Dergimiz, endüstri tasarımı bağlamında <strong>genel tasarım</strong> disiplinleriyle de ilişkili olarak içerikler üretmektedir. İçeriklerimizi başka platformlarda paylaşırken kaynak olarak <a href="https://www.markut.net">Markut.net</a> ibaresinin geçmesi gerekmektedir.</p>
         <ul class="list-inline footerlinks">
             <li class="list-inline-item"><a href="/iletisim/">iletişim</a></li>
             <li class="list-inline-item"><a href="/hakkimizda/">hakkımızda</a></li>
+            <li class="list-inline-item"><a href="/sayi-1/markut-nedir/">markut nedir?</a></li>
             <li class="list-inline-item"><a href="/reklam-sponsorluk/">reklam ve sponsorluk</a></li>
             <li class="list-inline-item"><a href="/bize-gonder/">bize gönder</a></li>
             <li class="list-inline-item"><a href="/okuyucu-sozlesmesi/">okuyucu sözleşmesi</a></li>
@@ -42,8 +43,6 @@
     <script data-cfasync="false" src="{{.Site.BaseURL}}js/form-submission-handler.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="{{.Site.BaseURL}}bootstrap/bootstrap.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122967892-3"></script>
 <script> $(function()
     {
       $('#theform').submit(function(){
@@ -53,13 +52,16 @@
         return true;
       });
     });</script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122967892-3"></script>
+    {{ if not (in (.Site.BaseURL | string) "localhost") }}
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-122967892-3');
 </script>
+    {{end}}
 <script src="{{.Site.BaseURL}}js/jquery.clever-infinite-scroll.js"></script>
 <script src="{{.Site.BaseURL}}js/dark-mode-switch.min.js"></script>
 <script>

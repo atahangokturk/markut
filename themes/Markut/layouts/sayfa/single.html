@@ -8,7 +8,7 @@
     <div class="content">
         <div class="gecis">
           <span class="sayfa">{{ .Params.sayfa }}</span>
-          <div class="titya"><h1 class="title">{{ .Params.title}}</h1>
+          <div class="titya"><a href="{{ .Permalink }}"><h1 class="title">{{ .Params.title}}</h1></a>
           <div class="desc">{{ .Params.yazar}}</div></div>
         </div>
         {{.Content}}
