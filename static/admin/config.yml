@@ -7,7 +7,7 @@ publish_mode: editorial_workflow
 logo_url: https://www.markut.net/img/logo-color.svg
 collections:
   - name: 'sayi'
-    label: 'Sayıda Çıkan'
+    label: 'Dergi'
     folder: 'content/sayi/'
     path: 'sayi-{{year}}/{{slug}}'
     create: true
@@ -16,7 +16,33 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Url', name: 'url', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - {label: "Thumbnail: 700x300px", name: "thumb", widget: "image"}
+      - { label: 'Yazar', name: 'yazar', widget: 'string' }
+      - { label: 'Yayınlanma Tarihi: Ocak 2020', name: 'tarih', widget: 'string' }
+      - {label: "Thumbnail: 700x300px", name: "thumb", media_folder: "/static/img", widget: "image", required: false}
+      - {label: "Tags", name: "tags", widget: "list", default: ["news"]}
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Açıklama', name: 'aciklama', widget: 'text', required: false }
+      - { label: 'Seo Başlığı', name: 'seotitle', widget: 'string', required: false }
+      - { label: 'Seo Açıklaması', name: 'description', widget: 'text', required: false }
+      - { label: 'Sayı Numarası', name: 'sayi', widget: 'number', required: false}
+      - { label: 'Sayfa Numarası', name: 'sayfa', widget: 'number', required: false }
+      - { label: 'Sayfa/Kapak', name: 'type', widget: 'string', default: 'sayfa'}
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'content/blog/'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Url', name: 'url', widget: 'string' }
+      - { label: 'Yazar', name: 'yazar', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - {label: "Thumbnail: 700x300px", name: "thumb", media_folder: "/static/img", widget: "image", required: false}
+      - {label: "Tags", name: "tags", widget: "list", default: ["news"]}
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Seo Başlığı', name: 'seotitle', widget: 'string' }
+      - { label: 'Seo Açıklaması', name: 'description', widget: 'text' }
