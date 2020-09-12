@@ -1,7 +1,7 @@
 ---
 title: Lorem Ipsum Dolor ZAmet
 slug: lorem-ipsum
-draft: false
+draft: true
 yazar: Deneme
 date: 2020-09-12T10:06:26.169Z
 url: lorem-ipsum
