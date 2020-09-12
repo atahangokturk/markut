@@ -1,6 +1,6 @@
 ---
 title: Lorem Ipsum Dolor Şit ZAmet
-slug: lorem-lorem-lorem-lorem-lorem-lorem-merhaba-lorem-lorem-lorem-lorem-lorem-lorem-merhabalorem-lorem-lorelorem-lorem-lorem-lorem-lorem-lorem-merhabam-lorem-lorem-lorem-merhaba
+slug: lorem-ipsum
 yazar: Deneme
 date: 2020-09-12T10:06:26.169Z
 url: lorem-ipsum
@@ -14,3 +14,9 @@ description: Lorem Ipsum Dolor sit amet.
 Lorem Ipsum Dolor sit amet.
 
 Merhaba
+
+![komp](/img/Composition-No.I-with-Red-and-Blue.png "kompozisyon")
+
+Sonraki yazıya devamke
+
+![](/img/Lissitzky_El_1924-25_Proun.jpg)
