@@ -1,6 +1,6 @@
 ---
 title: Tasarım Sözlüğü
-url: tasarim
+url: sayi-3/deneme
 draft: true
 date: 2020-09-12T13:48:44.776Z
 yazar: Atahan Göktürk Güner
