@@ -7,7 +7,7 @@
               <div class="col-md-6">
                 <div class="kapaklogo">MARKUT</div>
               <div class="kapaksur">Endüstriyel Tasarım Dergisi</div>
-              <div class="markutzaman">{{.Params.tarih}} | sayı {{.Params.sayi}}</div>
+              <div class="markutzaman"><time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time> | sayı {{.Params.sayi}}</div>
               <p class="kapakdesc">{{.Params.aciklama}}</p>
               <div class="kapakoku">okumaya başla</div>
               <div class="kapakok">↓</div>

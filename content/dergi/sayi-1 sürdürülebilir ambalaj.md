@@ -1,12 +1,11 @@
 +++
 title = "Sürdürülebilir Ambalaj Tasarımı"
 url = "sayi-1/surdurulebilir-ambalaj-tasarimi/"
-date = "2020-08-31"
+date = "2020-09-01"
 seotitle = "Sürdürülebilir Tasarım Nedir? Sürdürülebilir Ambalaj Tasarımı"
 description="Sürdürülebilir tasarımında tasarımcının rolü, sürdürülebilir ambalaj tasarımı nedir? Hangi özellikler taşımalı? Örneklerle birlikte hepsi yeni sayımızda."
 aciklama="Dünya üzerinde varlığını sürdüren iki farklı sistemden bahsedilmektedir. Bunlardan ilki, canlı yaşamının sürmesini sağlayan toprak, hava, sudan meydana gelen ve birleşimi sonuncunda ekosistemin oluştuğu doğal sistemdir."
 thumb="/img/ekoloji-ambalaj-thumbnail.jpg"
-tarih="Eylül 2020"
 sayi="1"
 sayfa="03"
 yazar="Ece Çelik"

@@ -6,7 +6,6 @@ description="Instagramda Markutworks'ü etiketleyerek dergimizde yer alın. Mark
 aciklama="Instagram'da #MarkutWorks'ü hashtagle yeni sayıda yerini al"
 type="sayfa"
 thumb="/img/markutworks-dream.png"
-tarih="Ağustos 2020"
 date = "2020-08-01"
 sayi="0"
 sayfa="07"

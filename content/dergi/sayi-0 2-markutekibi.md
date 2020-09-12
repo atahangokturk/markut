@@ -5,7 +5,6 @@ description="Markut ekibiyle tanışın. Markut Ekibinden sevgiyle... Markut, 20
 aciklama="Markut ekibinden sevgiyle..."
 type="sayfa"
 thumb="/img/img28.jpg"
-tarih="Ağustos 2020"
 date = "2020-08-01"
 sayi="0"
 sayfa="02"

@@ -1,12 +1,11 @@
 +++
 title = "Tasarım Sözlüğü: Kompozisyon"
 url = "sayi-1/tasarimda-kompozisyon-nedir/"
-date = "2020-08-31"
+date = "2020-09-01"
 seotitle = "Tasarımda Komposizyon Nedir?"
 description="Kompozisyon nasıl oluşturulur? İyi bir kompozisyon hazırlarken nelere dikkat edilir? Tasarımda Kompozisyonun anlamı nedir? Kompozisyon oluştururken kullandığımız unsurlar"
 aciklama="Kompozisyon terimi com + position kelimelerinden oluşmaktadır. Com- (ile, birlikte) + Position (yerleştirme) böylece bir araya getirme, bir arada tutma gibi anlamları çıkarmak mümkün."
 thumb="/img/composition-thumbnail.jpg"
-tarih="Eylül 2020"
 sayi="1"
 sayfa="06"
 yazar="Şahsenem Göksu Göktürk, Atahan Göktürk Güner"

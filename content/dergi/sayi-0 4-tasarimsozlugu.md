@@ -6,7 +6,6 @@ description="İKON, ya da İKONA (ing. İcon). Ortodoks kilise sanatında Hz. İ
 aciklama="İKON, ya da İKONA (ing. İcon). Ortodoks kilise sanatında Hz. İsa, Meryem ya da azizleri betimleyen resim.  6.yy’da ortaya çıkmıştır. Önceleri Bizans'a özgü olan ikon, Ortodoks’lukla birlikte Balkanlar ve Rusya’da da yaygın bir kullanım ve uygulama alanı bulmuştur."
 type="sayfa"
 thumb="/img/ikon-kolaj-thumb.jpg"
-tarih="Ağustos 2020"
 date = "2020-08-01"
 sayi="0"
 sayfa="04"

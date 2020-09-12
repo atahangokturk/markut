@@ -6,20 +6,19 @@ public_folder: /img
 publish_mode: editorial_workflow
 logo_url: https://www.markut.net/img/logo-color.svg
 collections:
-  - name: 'sayi'
+  - name: 'dergi'
     label: 'Dergi'
-    folder: 'content/sayi/'
-    path: 'sayi-{{year}}/{{slug}}'
+    folder: 'content/dergi/'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{year}}-{{month}}-{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Url', name: 'url', widget: 'string' }
+      -  {label: "Draft", name: "draft", widget: "boolean", default: true, required: false}
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Yazar', name: 'yazar', widget: 'string' }
-      - { label: 'Yayınlanma Tarihi: Ocak 2020', name: 'tarih', widget: 'string' }
       - {label: "Thumbnail: 700x300px", name: "thumb", media_folder: "/static/img", widget: "image", required: false}
       - {label: "Tags", name: "tags", widget: "list", default: ["news"]}
       - { label: 'Body', name: 'body', widget: 'markdown' }
@@ -35,10 +34,11 @@ collections:
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Url', name: 'url', widget: 'string' }
+      - { label: 'Slug', name: 'slug', widget: 'string', pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$','A slug can have no spaces or special characters']}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
       - { label: 'Yazar', name: 'yazar', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - {label: "Thumbnail: 700x300px", name: "thumb", media_folder: "/static/img", widget: "image", required: false}

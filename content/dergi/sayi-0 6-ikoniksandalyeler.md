@@ -6,7 +6,6 @@ description="İkonik sandalyelerden 12 tanesine bu sayımızda yer verdik. Miche
 aciklama="Kökeni, Antik Roma’da en etkili figürler tarafından kullanılan antik sella curulis'e (Antik Roma'da yüksek rütbeli politikacılar ve idari makam sahiplerinin iktidar ve güç sembolü olarak yorumlanan bir çeşit oturaktır.) dayanır."
 type="sayfa"
 thumb="/img/barcelona-chair-thumb.jpg"
-tarih="Ağustos 2020"
 date = "2020-08-01"
 sayi="0"
 sayfa="06"

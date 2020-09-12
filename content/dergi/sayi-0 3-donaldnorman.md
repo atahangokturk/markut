@@ -5,7 +5,6 @@ description="Donald A. Norman, şirketlere insan merkezli tasarım yapabilmeleri
 aciklama="Donald A. Norman, şirketlere insan merkezli tasarım yapabilmeleri için danışmanlık hizmeti veren Nielsen Norman Group’ un kurucu ortağıdır. Bilişsel bilim, bilgisayar bilimi ve psikoloji departmanlarında profesörlük geçmişi bulunmaktadır."
 type="sayfa"
 thumb="/img/donald-norman-thumbnail.jpg"
-tarih="Ağustos 2020"
 date = "2020-08-01"
 sayi="0"
 sayfa="03"

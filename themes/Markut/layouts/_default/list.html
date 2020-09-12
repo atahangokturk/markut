@@ -8,7 +8,7 @@
             <article> <a href="{{ .Permalink }}">
                 <img class="img-fluid thumb" src="{{.Params.thumb}}" alt="">
                 <h2 class="title">{{ .Title | markdownify }}</h2>
-                <p class="yazar">{{ .Params.yazar }} | {{.Params.tarih}}</p>
+                <p class="yazar">{{ .Params.yazar }} | <time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time></p>
                 <p class="desc">{{ .Summary | plainify | htmlUnescape }}...</p></a>
             </article>
             {{ end }}

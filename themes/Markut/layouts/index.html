@@ -54,7 +54,7 @@
          <div class="col-md-6 mt-5"><article>    
        <a href="{{ .Permalink }}"><img class="img-fluid thumb" src="{{.Params.thumb}}" alt="{{ .Title | markdownify }}">   
         <h2 class="title">{{ .Title | markdownify }}</h2>
-        <p class="yazar">{{ .Params.yazar }} | {{.Params.tarih}}</p>
+        <p class="yazar">{{ .Params.yazar }} | <time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time></p>
         <p class="desc">{{ .Params.aciklama | plainify | htmlUnescape }}</p>
       </a>
         </article></div>

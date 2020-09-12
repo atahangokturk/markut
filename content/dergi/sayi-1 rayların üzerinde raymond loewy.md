@@ -1,12 +1,11 @@
 +++
 title = "Rayların Üzerinde Raymond Loewy"
 url = "sayi-1/raymond-loewy/"
-date = "2020-08-31"
+date = "2020-09-01"
 seotitle = "Raymond Loewy Lokomotif İç Tasarımı"
 description="Raymond Loewy, Amerika’da ürettiği eserleriyle Amerikalı tasarımcı olarak tanınmıştır. S-1 Lokomtif tasarımıyla Loewy sonsuza kadar aerodinamik (streamline) trenle özleşecek."
 aciklama="5 Kasım 1893’de Paris’te doğan Raymond Loewy, Amerika’da ürettiği eserleri sayesinde Amerikalı tasarımcı olarak tanınmıştır. Tasarım anlayışında fonksiyon ön plandadır, form ve biçim daha sade ve geri plandadır."
 thumb="/img/loewy-lokomotif-thumbnail.jpg"
-tarih="Eylül 2020"
 sayi="1"
 sayfa="04"
 yazar="Zeynep Yarar"

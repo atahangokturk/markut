@@ -9,6 +9,7 @@ thumb: /static/img/coffee-machine-thumbnail.jpg
 tags:
   - uc
 sayi: 3
+sayfa: 01
 type: sayfa
 ---
 Kahvelerinizi hazırlayın ve okumaya başlayın…

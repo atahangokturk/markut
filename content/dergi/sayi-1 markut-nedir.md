@@ -1,12 +1,11 @@
 +++
 title = "Markut Nedir?"
 url = "sayi-1/markut-nedir/"
-date = "2020-08-31"
+date = "2020-09-01"
 seotitle = "Markut Nedir?"
 description=""
 aciklama="Marmara Kreatif Ürün Tasarım ekibimizin baş harflerinden oluşan MARKUT aynı zamanda Türk mitolojisinde dişi yırtıcı kuş olarak da adlandırılıyor."
 thumb="/img/"
-tarih="Eylül 2020"
 sayi="1"
 sayfa="01"
 yazar="Markut Ekibi"

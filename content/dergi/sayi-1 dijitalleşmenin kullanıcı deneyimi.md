@@ -1,12 +1,11 @@
 +++
 title = "Dijitalleşmenin Kullanıcı Deneyimi Üzerindeki Etkisi"
 url = "sayi-1/dijitallesmenin-kullanici-deneyimi-uzerindeki-etkisi/"
-date = "2020-08-31"
+date = "2020-09-01"
 seotitle = "Dijitalleşmenin Kullanıcı Deneyimi Üzerindeki Etkisi"
 description="Fizikselden dijitale geçişle birlikte kullanıcı deneyiminin (ux) üzerindeki etkileri. Kullanıcı deneyimi sağlama unsurları nelerdir? Kullanıcı Deneyimi algıları neler?"
 aciklama="Dijital teknolojideki sürekli gelişimin hayatımızın her alanına nüfuz ettiğini her gün daha net görüyoruz. Gündelik yaşantımızı, kullandığımız tüm bu makineler, ürünler ve sistemler olmadan hayal edebilmek artık mümkün değil."
 thumb="/img/dijitale-yolculuk-thumbnail.jpg"
-tarih="Eylül 2020"
 sayi="1"
 sayfa="05"
 yazar="Merve Çetin"

@@ -1,12 +1,11 @@
 ---
 yazar: "Zeynep Dağ, İllustrasyon: Elif Ersöz"
-tarih: Eylül 2020
 sayfa: "02"
 aciklama: Kahvelerinizi hazırlayın ve okumaya başlayın… 1972'de Florian Seiffert
   tarafından (Dieter Rams'ın rehberliğinde) Almanya’ da tasarlanmıştır. Braun
   için tasarlanan KF 20 Aromaster, kaynar suyu bir kahve filtresinden geçirmek
   için yerçekimini kullanan bir elektrikli kahve makinesidir.
-date: 2020-08-31
+date: 2020-09-01
 url: sayi-1/ikonik-kahve-makinesi-tasarimlari/
 thumb: /img/coffee-machine-thumbnail.jpg
 title: "İkonik Tasarımlar: Kahve Makineleri"

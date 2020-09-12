@@ -6,7 +6,6 @@ description="Ekoloji Nedir? Sürdürülebilirlik ve Tasarımcı İlişkisi. 1870
 aciklama="Sürdürülebilirlik, insanlığın ve gelecek nesillerin gereksinimlerini de göz önünde bulundurarak, geleceği tehlikeye atmadan ihtiyaçların karşılanabilmesidir. Ekoloji ve sürdürülebilirlik birbirleriyle son derece bağlı iki kavramdır..."
 thumb="/img/peel-saver-packaging.jpg"
 type="sayfa"
-tarih="Ağustos 2020"
 date = "2020-08-01"
 sayi="0"
 sayfa="05"

@@ -7,7 +7,6 @@ description="Markut giriş yazısı. Bauhausla birlikte modern tasarım anlayı�
 aciklama="Bu sözlerle Markut ekibiyle 28 şubatta bir araya geldik ve ilk toplantılarımızı yapmaya başladık. Bir arada bulunma amacımız kendimize fayda sağlamak değil, araştırmalar yapmak, ürünler üretmek ve bunları da size sunabilmekti."
 type="sayfa"
 thumb="/img/img25.jpg"
-tarih="Ağustos 2020"
 sayi="0"
 sayfa="01"
 yazar="Atahan Göktürk Güner"
