@@ -20,3 +20,5 @@ Merhaba
 Sonraki yazıya devamke
 
 ![](/img/Lissitzky_El_1924-25_Proun.jpg)
+
+devammm
