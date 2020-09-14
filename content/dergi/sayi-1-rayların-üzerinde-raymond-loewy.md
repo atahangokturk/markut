@@ -1,20 +1,26 @@
-+++
-title = "Rayların Üzerinde Raymond Loewy"
-url = "sayi-1/raymond-loewy/"
-date = "2020-09-01"
-seotitle = "Raymond Loewy Lokomotif İç Tasarımı"
-description="Raymond Loewy, Amerika’da ürettiği eserleriyle Amerikalı tasarımcı olarak tanınmıştır. S-1 Lokomtif tasarımıyla Loewy sonsuza kadar aerodinamik (streamline) trenle özleşecek."
-aciklama="5 Kasım 1893’de Paris’te doğan Raymond Loewy, Amerika’da ürettiği eserleri sayesinde Amerikalı tasarımcı olarak tanınmıştır. Tasarım anlayışında fonksiyon ön plandadır, form ve biçim daha sade ve geri plandadır."
-thumb="/img/loewy-lokomotif-thumbnail.jpg"
-sayi="1"
-sayfa="04"
-yazar="Zeynep Yarar"
-type="sayfa"
-tags= [
-"bir", "Sayi Bir", "Raymond Loewy"
-]
-+++
+---
+title: Rayların Üzerinde Raymond Loewy
+url: sayi-1/raymond-loewy/
+date: 2020-09-01
+yazar: Zeynep Yarar
+thumb: /img/loewy-lokomotif-thumbnail.jpg
+tags:
+  - bir
+  - Sayi Bir
+  - Raymond Loewy
+aciklama: 5 Kasım 1893’de Paris’te doğan Raymond Loewy, Amerika’da ürettiği
+  eserleri sayesinde Amerikalı tasarımcı olarak tanınmıştır. Tasarım anlayışında
+  fonksiyon ön plandadır, form ve biçim daha sade ve geri plandadır.
+seotitle: Raymond Loewy Lokomotif İç Tasarımı
+description: Raymond Loewy, Amerika’da ürettiği eserleriyle Amerikalı tasarımcı
+  olarak tanınmıştır. S-1 Lokomtif tasarımıyla Loewy sonsuza kadar aerodinamik
+  (streamline) trenle özleşecek.
+sayi: "1"
+sayfa: "04"
+type: sayfa
+---
 <a href="/sayi-1/dijitallesmenin-kullanici-deneyimi-uzerindeki-etkisi/" id="next"></a>
+
 <div class="text-center"><img class="img-fluid" src="/img/raymond-loewy-raylarin-uzerinde.jpg" alt="Rayların Üzerinde Raymond Loewy"></div>
 <div class="container">
     <h1>Rayların Üzerinde Raymond Loewy</h1>
