@@ -16,5 +16,7 @@ description: Markut derginin ilk sayısına gelen yorumlar. Endüstri tasarımı
   bağlamında genel tasarım disiplinleriyle de ilişkili olarak içerikler
   üretmektedir.
 ---
+<h3> Bizi instagramda takip edin </h3>
+
 <div class="mgen">{{< instagram CDV_kjrFEaU >}}
 </div>
