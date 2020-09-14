@@ -642,6 +642,10 @@ article a:hover {
 	background-color: transparent;
 	border: 1px solid #eee;
   }
+  [data-theme="dark"] .modal-content {
+	background-color: rgb(41, 41, 41) !important;
+  }
+  
   @media screen and (max-width: 768px){
 	.gecis .title{
 		font-size: 18px;

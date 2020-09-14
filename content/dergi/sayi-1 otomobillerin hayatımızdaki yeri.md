@@ -15,6 +15,7 @@ tags= [
 ]
 +++
 <a href="/sayi-1/yorumlar/" id="next"></a>
+
 <div class="container">
     <div class="row">
         <div class="col-md-5"><p>MARKUT bir endüstriyel tasarım dergisidir. Endüstriyel tasarım ise bir çok disiplini içerisinde barındıran bir alandır. Endüstriyel tasarım denince endüstride lokomotif görevi gören otomotiv endüstrisine yer vermemek bu dergini editörlerine yakışmazdı.</p>
@@ -33,3 +34,4 @@ tags= [
         </div>
 </div>
 </div>
+
