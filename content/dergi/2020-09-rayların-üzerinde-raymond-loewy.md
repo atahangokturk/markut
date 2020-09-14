@@ -1,7 +1,7 @@
 ---
+draft: false
 title: Rayların Üzerinde Raymond Loewy
 url: sayi-3/raymond-loewy-lokomotif-tasarimi
-draft: false
 date: 2020-09-14T16:00:52.013Z
 yazar: Zeynep Yarar
 thumb: /static/img/loewy-lokomotif-thumbnail.jpg
@@ -15,7 +15,7 @@ seotitle: Rayların Üzerinde Raymond Loewy
 description: 5 Kasım 1893’de Paris’te doğan Raymond Loewy, Amerika’da ürettiği
   eserleri sayesinde Amerikalı tasarımcı olarak tanınmıştır.
 sayi: 1
-sayfa: ""
+sayfa: 1
 type: sayfa
 ---
 5 Kasım 1893’de Paris’te doğan Raymond Loewy, Amerika’da ürettiği eserleri sayesinde Amerikalı tasarımcı olarak tanınmıştır. Tasarım anlayışında fonksiyon ön plandadır, form ve biçim daha sade ve geri plandadır. 
