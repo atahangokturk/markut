@@ -5,7 +5,7 @@ date: 2020-09-01
 yazar: Zeynep Yarar
 thumb: /img/loewy-lokomotif-thumbnail.jpg
 tags:
-    - anasayfa
+  - anasayfa
   - Raymond Loewy
 aciklama: 5 Kasım 1893’de Paris’te doğan Raymond Loewy, Amerika’da ürettiği
   eserleri sayesinde Amerikalı tasarımcı olarak tanınmıştır. Tasarım anlayışında
