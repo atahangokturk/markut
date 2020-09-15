@@ -24,7 +24,7 @@ tags= [
       <h2>Kompozisyon Nedir? Kompozisyonu Oluşturan Unsurlar Nelerdir?</h2>
     </div>
   </div>
-  <div class="row">
+  <div class="row mt-5">
     <div class="col-md-5">
       <img
         class="img-fluid"
