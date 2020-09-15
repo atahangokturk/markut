@@ -1,30 +1,29 @@
 ---
+title: "İkonik Tasarımlar: Kahve Makineleri"
+url: sayi-1/ikonik-kahve-makinesi-tasarimlari/
+date: 2020-09-01
 yazar: "Zeynep Dağ, İllustrasyon: Elif Ersöz"
-sayfa: "02"
+thumb: /img/coffee-machine-thumbnail.jpg
+tags:
+  - anasayfa
+  - ikonik
 aciklama: Kahvelerinizi hazırlayın ve okumaya başlayın… 1972'de Florian Seiffert
   tarafından (Dieter Rams'ın rehberliğinde) Almanya’ da tasarlanmıştır. Braun
   için tasarlanan KF 20 Aromaster, kaynar suyu bir kahve filtresinden geçirmek
   için yerçekimini kullanan bir elektrikli kahve makinesidir.
-date: 2020-09-01
-url: sayi-1/ikonik-kahve-makinesi-tasarimlari/
-thumb: /img/coffee-machine-thumbnail.jpg
-title: "İkonik Tasarımlar: Kahve Makineleri"
-tags:
-  - anasayfa
-  - ikonik
-type: sayfa
 seotitle: İkonik Kahve Makinesi Tasarımları
 description: Kahvelerinizi hazırlayın ve okumaya başlayın… Yeni sayımızda kahve
-  makinesi tasarımlarına değindik. BraunKF 20 Aromaster, Chambord, La Cupola,
-  Moka Bialetti...
+  makinesi tasarımlarına değindik. Braun KF 20 Aromaster, Chambord, La Cupola.
 sayi:
- - 1
+  - 1
+sayfa: "02"
+type: sayfa
 ---
 <a href="/sayi-1/surdurulebilir-ambalaj-tasarimi/" id="next"></a>
 
 <div class="text-center"><img class="img-fluid" src="/img/coffee-thumbnail.jpg" alt=""></div>
 <div class="container">
-    <div class="row">
+    <div class="row mt-5">
         <div class="col-md-4"><img class="img-fluid" src="/img/Braun-1972-KF-20.jpg" alt=""></div>
         <div class="col-md-8">
             <p>Kahvelerinizi hazırlayın ve okumaya başlayın…</p>
