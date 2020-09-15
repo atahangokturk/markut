@@ -8,10 +8,10 @@ date = "2020-08-01"
 thumb="/img/sayi-0-cover.jpg"
 kapak = "/img/sayi-0-cover.jpg"
 yazar="Markut"
-sayi = "0"
+sayi=["0"]
 sayfa="00"
 type= "kapak"
-tags=["sifir"]
+tags=[""]
 +++
 
 <a href="/sayi-0/giris/" id="next"></a>

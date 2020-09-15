@@ -6,12 +6,14 @@ seotitle = "Sürdürülebilir Tasarım Nedir? Sürdürülebilir Ambalaj Tasarım
 description="Sürdürülebilir tasarımında tasarımcının rolü, sürdürülebilir ambalaj tasarımı nedir? Hangi özellikler taşımalı? Örneklerle birlikte hepsi yeni sayımızda."
 aciklama="Dünya üzerinde varlığını sürdüren iki farklı sistemden bahsedilmektedir. Bunlardan ilki, canlı yaşamının sürmesini sağlayan toprak, hava, sudan meydana gelen ve birleşimi sonuncunda ekosistemin oluştuğu doğal sistemdir."
 thumb="/img/ekoloji-ambalaj-thumbnail.jpg"
-sayi="1"
+sayi=[
+"1"
+]
 sayfa="03"
 yazar="Ece Çelik"
 type="sayfa"
 tags= [
-"bir", "Sayi Bir", "ekoloji", "surdurulebilir tasarim", "ambalaj tasarimi"
+"anasayfa", "ekoloji", "surdurulebilir tasarim", "ambalaj tasarimi"
 ]
 +++
 <a href="/sayi-1/raymond-loewy/" id="next"></a>

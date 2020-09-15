@@ -6,11 +6,10 @@ aciklama="Markut ekibinden sevgiyle..."
 type="sayfa"
 thumb="/img/img28.jpg"
 date = "2020-08-01"
-sayi="0"
+sayi=["0"]
 sayfa="02"
 yazar="Markut Ekibi"
 tags= [
-    "sifir"
 ]
 +++
 <a href="/sayi-0/donald-norman/" id="next"></a>

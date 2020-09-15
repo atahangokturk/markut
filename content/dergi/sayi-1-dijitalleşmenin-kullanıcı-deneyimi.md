@@ -6,12 +6,14 @@ seotitle = "Dijitalleşmenin Kullanıcı Deneyimi Üzerindeki Etkisi"
 description="Fizikselden dijitale geçişle birlikte kullanıcı deneyiminin (ux) üzerindeki etkileri. Kullanıcı deneyimi sağlama unsurları nelerdir? Kullanıcı Deneyimi algıları neler?"
 aciklama="Dijital teknolojideki sürekli gelişimin hayatımızın her alanına nüfuz ettiğini her gün daha net görüyoruz. Gündelik yaşantımızı, kullandığımız tüm bu makineler, ürünler ve sistemler olmadan hayal edebilmek artık mümkün değil."
 thumb="/img/dijitale-yolculuk-thumbnail.jpg"
-sayi="1"
+sayi=[
+"1"
+]
 sayfa="05"
 yazar="Merve Çetin"
 type="sayfa"
 tags= [
-"bir", "Sayi Bir"
+"anasayfa"
 ]
 +++
 <a href="/sayi-1/tasarimda-kompozisyon-nedir/" id="next"></a>

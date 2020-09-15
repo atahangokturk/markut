@@ -6,11 +6,11 @@ aciklama="Donald A. Norman, şirketlere insan merkezli tasarım yapabilmeleri i�
 type="sayfa"
 thumb="/img/donald-norman-thumbnail.jpg"
 date = "2020-08-01"
-sayi="0"
+sayi=["0"]
 sayfa="03"
 yazar="Hilal Doruk"
 tags= [
-"sifir", "tasarim ilkeleri", "Donald Norman", "Sayi Sifir"
+"anasayfa", "tasarim ilkeleri", "Donald Norman"
 ]
 +++
 <a href="/sayi-0/tasarim-sozlugu-ikon/" id="next"></a>

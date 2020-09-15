@@ -7,11 +7,11 @@ aciklama="Kökeni, Antik Roma’da en etkili figürler tarafından kullanılan a
 type="sayfa"
 thumb="/img/barcelona-chair-thumb.jpg"
 date = "2020-08-01"
-sayi="0"
+sayi=["0"]
 sayfa="06"
 yazar="Zeynep Dağ"
 tags= [
-    "sifir", "ikonik", "Sayi Sifir"
+    "anasayfa", "ikonik"
 ]
 +++
 <a href="/sayi-0/markut-etiketle/" id="next"></a>

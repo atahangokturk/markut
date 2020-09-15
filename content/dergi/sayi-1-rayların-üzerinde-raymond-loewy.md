@@ -5,8 +5,7 @@ date: 2020-09-01
 yazar: Zeynep Yarar
 thumb: /img/loewy-lokomotif-thumbnail.jpg
 tags:
-  - bir
-  - Sayi Bir
+    - anasayfa
   - Raymond Loewy
 aciklama: 5 Kasım 1893’de Paris’te doğan Raymond Loewy, Amerika’da ürettiği
   eserleri sayesinde Amerikalı tasarımcı olarak tanınmıştır. Tasarım anlayışında
@@ -15,7 +14,8 @@ seotitle: Raymond Loewy Lokomotif İç Tasarımı
 description: Raymond Loewy, Amerika’da ürettiği eserleriyle Amerikalı tasarımcı
   olarak tanınmıştır. S-1 Lokomtif tasarımıyla Loewy sonsuza kadar aerodinamik
   (streamline) trenle özleşecek.
-sayi: "1"
+sayi: 
+  - 1
 sayfa: "04"
 type: sayfa
 ---

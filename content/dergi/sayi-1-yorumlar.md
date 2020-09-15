@@ -6,12 +6,13 @@ description="Markut derginin 1. sayısına gelen yorumlar. Endüstri tasarımı 
 aciklama="Markut ekibinden sevgiyle..."
 type="sayfa"
 date = "2020-09-01"
-sayi="1"
+sayi=[
+"1"
+]
 sayfa="08"
 yorum="var"
 yazar="Markut Ekibi"
 tags= [
-"bir"
 ]
 +++
 <div class="mgen">{{< instagram CEl8d1EFDCT >}}

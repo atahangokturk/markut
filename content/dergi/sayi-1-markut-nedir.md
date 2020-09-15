@@ -6,11 +6,13 @@ seotitle = "Markut Nedir?"
 description=""
 aciklama="Marmara Kreatif Ürün Tasarım ekibimizin baş harflerinden oluşan MARKUT aynı zamanda Türk mitolojisinde dişi yırtıcı kuş olarak da adlandırılıyor."
 thumb="/img/"
-sayi="1"
+sayi=[
+"1"
+]
 sayfa="01"
 yazar="Markut Ekibi"
 type="sayfa"
-tags=["bir"]
+tags=[]
 +++
 <a href="/sayi-1/ikonik-kahve-makinesi-tasarimlari/" id="next"></a>
 <div class="container">

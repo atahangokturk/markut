@@ -6,12 +6,13 @@ seotitle = "Otomobillerin Hayatımızdaki Yeri"
 description="Otomobil köşemiz için giriş yazısı. Her şey 1885’te Carl Benz’in ilk içten yanmalı aracın patentini alması ile başladı."
 aciklama="Günümüzde a noktasından b noktasına giderken konforlu, daha az maliyetli, eğlenceli, verimli ve karbon emisyonları gibi bir çok etken göz önünde bulunduruluyor. Ve bu da otomobilleri hayatımızın olmazsa olmazlarından biri yapıyor. Hatta bazılarımızın hayatının merkezi…"
 thumb="/img/t50-mclarenf1-thumbnail.jpg"
-sayi="1"
+sayi=[
+"1"
+]
 sayfa="07"
 yazar="Ömer Faruk Çam"
 type="sayfa"
-tags= [
-"bir", "Sayi Bir"
+tags= ["anasayfa"
 ]
 +++
 <a href="/sayi-1/yorumlar/" id="next"></a>

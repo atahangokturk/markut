@@ -27,11 +27,11 @@
                  içindekiler
                </a>
                <div class="dropdown-menu">
-                 {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
-                <a class="dropdown-item" href="{{ .RelPermalink }}">{{.Params.sayfa}} | {{ .Title | markdownify }}</a>                           
-                {{ end }}
+                {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}
+               <a class="dropdown-item" href="{{ .RelPermalink }}">{{.Params.sayfa}} | {{ .Title | markdownify }}</a>                           
+               {{ end }}
                </div>
-             </li>  
+             </li>
         </ul>
           <ul class="navbar-nav">
             <li class="nav-item">

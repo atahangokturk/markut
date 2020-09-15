@@ -10,15 +10,15 @@ url: sayi-1/ikonik-kahve-makinesi-tasarimlari/
 thumb: /img/coffee-machine-thumbnail.jpg
 title: "İkonik Tasarımlar: Kahve Makineleri"
 tags:
-  - bir
-  - Sayi Bir
+  - anasayfa
   - ikonik
 type: sayfa
 seotitle: İkonik Kahve Makinesi Tasarımları
 description: Kahvelerinizi hazırlayın ve okumaya başlayın… Yeni sayımızda kahve
   makinesi tasarımlarına değindik. BraunKF 20 Aromaster, Chambord, La Cupola,
   Moka Bialetti...
-sayi: "1"
+sayi:
+ - 1
 ---
 <a href="/sayi-1/surdurulebilir-ambalaj-tasarimi/" id="next"></a>
 

@@ -7,11 +7,11 @@ aciklama="Sürdürülebilirlik, insanlığın ve gelecek nesillerin gereksinimle
 thumb="/img/peel-saver-packaging.jpg"
 type="sayfa"
 date = "2020-08-01"
-sayi="0"
+sayi=["0"]
 sayfa="05"
 yazar="Ece Çelik"
 tags= [
-"sifir", "ekoloji", "surdurulebilir tasarim", "Sayi Sifir"
+"anasayfa", "ekoloji", "surdurulebilir tasarim"
 ]
 +++
 <a href="/sayi-0/ikonik-tasarimlar-sandalye/" id="next"></a>

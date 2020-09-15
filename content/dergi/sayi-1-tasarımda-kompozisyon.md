@@ -6,12 +6,14 @@ seotitle = "Tasarımda Komposizyon Nedir?"
 description="Kompozisyon nasıl oluşturulur? İyi bir kompozisyon hazırlarken nelere dikkat edilir? Tasarımda Kompozisyonun anlamı nedir? Kompozisyon oluştururken kullandığımız unsurlar"
 aciklama="Kompozisyon terimi com + position kelimelerinden oluşmaktadır. Com- (ile, birlikte) + Position (yerleştirme) böylece bir araya getirme, bir arada tutma gibi anlamları çıkarmak mümkün."
 thumb="/img/composition-thumbnail.jpg"
-sayi="1"
+sayi=[
+"1"
+]
 sayfa="06"
 yazar="Şahsenem Göksu Göktürk, Atahan Göktürk Güner"
 type="sayfa"
 tags= [
-"bir", "Sayi Bir", "tasarim sozlugu" 
+"anasayfa", "tasarim sozlugu" 
 ]
 +++
 <a href="/sayi-1/otomobillerin-hayatimizdaki-yeri/" id="next"></a>

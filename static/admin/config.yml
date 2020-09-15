@@ -16,15 +16,14 @@ collections:
     fields:
       - { label: 'Başlık', name: 'title', widget: 'string' }
       - { label: 'Url', name: 'url', widget: 'string',   hint: "Link yapısı sayi-no/yazi-basligi şeklindedir. Örn.: sayi-1/bu-bir-denemedir" }
-      -  {label: "Draft", name: "draft", widget: "boolean", default: true, required: false}
       - { label: 'Yayınlanma Tarihi', name: 'date', widget: 'datetime' }
       - { label: 'Yazar', name: 'yazar', widget: 'string' }
       - {label: "Thumbnail: 700x300px", name: "thumb", media_folder: "/static/img", widget: "image", required: false}
       - {label: "Tags", name: "tags", widget: "list", default: ["news"]}
       - { label: 'İçerik', name: 'body', widget: 'markdown' }
       - { label: 'Açıklama', name: 'aciklama', widget: 'text', required: false }
-      - { label: 'Seo Başlığı', name: 'seotitle', widget: 'string', required: false }
-      - { label: 'Seo Açıklaması', name: 'description', widget: 'text', required: false }
+      - { label: 'Seo Başlığı', name: 'seotitle', widget: 'string', pattern: ['^.{20,55}$', "20 ile 55 karakter arasında olmalı"], required: false }
+      - { label: 'Seo Açıklaması', name: 'description', widget: 'text', pattern: ['^.{120,155}$', "120 ile 155 karakter arasında olmalı"], required: false }
       - { label: 'Sayı Numarası', name: 'sayi', widget: 'number', required: false, hint: "Örn.: 1"}
       - { label: 'Sayfa Numarası', name: 'sayfa', widget: 'number', required: false, hint: "Örn.: 01 Başına sıfır ekliyoruz." }
       - { label: 'Sayfa/Kapak', name: 'type', widget: 'string', default: 'sayfa', hint: "Sayfa ve kapak şeklinde iki seçenek var. İçerikler için Sayfa kalmalı."}
@@ -38,14 +37,13 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Slug', name: 'slug', widget: 'string', pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$','A slug can have no spaces or special characters']}
-      - {label: "Draft", name: "draft", widget: "boolean", default: true}
       - { label: 'Yazar', name: 'yazar', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - {label: "Thumbnail: 700x300px", name: "thumb", media_folder: "/static/img", widget: "image", required: false}
       - {label: "Tags", name: "tags", widget: "list", default: ["news"]}
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Seo Başlığı', name: 'seotitle', widget: 'string' }
-      - { label: 'Seo Açıklaması', name: 'description', widget: 'text' }
+      - { label: 'Seo Başlığı', name: 'seotitle', widget: 'string', required: false }
+      - { label: 'Seo Açıklaması', name: 'description', widget: 'text', required: false }
   - name: 'page'
     label: 'Sayfalar'
     folder: 'content/'
@@ -56,7 +54,6 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Slug', name: 'slug', widget: 'string', pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$','A slug can have no spaces or special characters'], required: false}
-      - {label: "Draft", name: "draft", widget: "boolean", default: true, required: false}
       - { label: 'Publish Date', name: 'date', widget: 'datetime', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' , required: false}
       - { label: 'Seo Başlığı', name: 'seotitle', widget: 'string' , required: false}

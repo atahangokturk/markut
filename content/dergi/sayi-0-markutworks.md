@@ -7,11 +7,10 @@ aciklama="Instagram'da #MarkutWorks'ü hashtagle yeni sayıda yerini al"
 type="sayfa"
 thumb="/img/markutworks-dream.png"
 date = "2020-08-01"
-sayi="0"
+sayi=["0"]
 sayfa="07"
 yazar="Markut Ekibi"
 tags= [
-    "sifir"
 ]
 +++
 <a href="/sayi-0/son/" id="next"></a>

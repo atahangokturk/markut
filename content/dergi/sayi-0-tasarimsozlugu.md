@@ -7,11 +7,11 @@ aciklama="İKON, ya da İKONA (ing. İcon). Ortodoks kilise sanatında Hz. İsa,
 type="sayfa"
 thumb="/img/ikon-kolaj-thumb.jpg"
 date = "2020-08-01"
-sayi="0"
+sayi=["0"]
 sayfa="04"
 yazar="Şahsenem Göksu Göktürk, Kolaj: Zeynep Yarar, Elif Ersöz"
 tags= [
-    "sifir", "tasarim sozlugu", "ikonik", "Sayi Sifir"
+  "anasayfa", "tasarim sozlugu", "ikonik"
 ]
 +++
 <a href="/sayi-0/ekoloji-nedir-surdurulebilir-tasarim/" id="next"></a>

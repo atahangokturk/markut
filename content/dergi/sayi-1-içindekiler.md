@@ -8,9 +8,11 @@ date = "2020-09-01"
 thumb="/img/sayi-1-cover.gif"
 kapak = "/img/sayi-1-cover.gif"
 yazar="Markut"
-sayi = "1"
+sayi=[
+"1"
+]
 sayfa="00"
 type= "kapak"
-tags=["bir"]
+tags=[]
 +++
 <a href="/sayi-1/markut-nedir/" id="next"></a>
