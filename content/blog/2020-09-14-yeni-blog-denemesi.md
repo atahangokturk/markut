@@ -7,10 +7,10 @@ thumb: /static/img/Lissitzky_El_1924-25_Proun.jpg
 tags:
   - news
 ---
-Yeni blog Denemesi.
+# Tasarım Sözlüğü: Kompozisyon
 
-![](/img/dieter-rams-kf-20.png)
+**Ögeler** bir araya gelirken anlam bütünlüğü oluşturması ve dfgdfglerek anlamlı cümle oluşması gibi düşünebiliriz. Tasarımda da buna benzer bir yapı söz konusu. Görsel öğeler bir araya gelirken anlamlı bir bütün oluşturması gerekir. Bütünü oluştdfg dfg dfgururken bazı unsurlar vardır. Bu unsurlar kendi içlerinde belirli kurallardan oludfgdfgdfgşurlar. Kompozisyon oluştururken hem bu unsurları önce kendi içlerinde dfgdfgddoğru olarak anlamalı, sonrasında da hepsini uygun yerde kullanmalıyız. Parçadafgdfn bütüne giderken parçaların bütüne uygdfgdgfgunluğu göz ardı edilmemelidir. Kompozisyon oluştururken kullandığımız unsurlar: zıtlık, odak noktası, denge, ritim, hiyerarşi ve boşluktur.
 
-# Merhaba
+*Kompozisyon terimi com + position kelimelerinden oluşmaktadır.* Com- (ile, birlikte) + Position (yerleştirme) böylece bir araya getirme, bir arada tutma gibi anlamları çıkarmak mümkün.
 
-**bold text**
+![https://www.markut.net/img/Piet-Mondrian.jpg](https://www.markut.net/img/Piet-Mondrian.jpg)
