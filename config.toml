@@ -12,6 +12,13 @@ maxAge = "1m"
 
 [permalinks]
   blog = "/blog/:slug/"
-
+[taxonomies]
+  author = "yazar"
+  tag = "tags"
 [params]
 description ="Markut, endüstriyel tasarım dergisidir. Endüstri tasarımı bağlamında genel tasarım disiplinleriyle de ilişkili olarak içerikler üreten online dergidir."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

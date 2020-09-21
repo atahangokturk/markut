@@ -23,31 +23,17 @@
 </div>
 {{ end }}{{ end }}</div></div>
 -->
-
-<div class="container-fluid sayilar">
- {{ range ( where .Site.RegularPages "Type" "kapak" )}}
-  <div class="row markutsayi post {{ .Scratch.Get `postClass` }}">
-                <div class="col-md-6">
-                <div class="markutcvr">
-                        <a href="{{ .Permalink }}"><img class="img-fluid" src="{{.Params.kapak}}" alt="Markut Sayı: {{.Params.Sayi}} Kapak Tasarımı"></a>
-                </div>
-                </div>
-                <div class="col-md-6">
-                        <div class="icindekiler">içindekiler</div>
-                        <ul class="list-group">
-                        {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}  
-                        <li class="list-group-item contents">{{ .Title | markdownify }}</li>                        
-                        {{ end }}
-                        </ul><a href="{{ .Permalink }}" class="btn markutbtn" type="button">sayıyı oku</a>
-                </div>
-        </div>
- {{ end }}
+<div class="text-center mt-6">
+    <h2>Dergimize Eklenen En son Sayılar</h2>
+    <h3>Dergimiz her ayın 1'inde online çıkmaktadır.</h3>
+    <p>Endüstriyel tasarımı bağlamında genel tasarım disiplinleriyle ilgili içerikleri okuyucuya sunuyoruz.</p>
 </div>
-
 <div class="container sayilar">
-        {{ $paginator := .Paginate (where .Pages "Type" "kapak") }}
+        {{ $paginator := .Paginate (where .Pages ".Params.type" "kapak") (index .Site.Params "paginate" | default 10) }}
+        {{ if gt $paginator.TotalPages 0 }}
         {{ range $index, $page := $paginator.Pages }}
-      
+        {{ if and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) }}
+        {{ end }}
         <div class="row markutsayi post {{ .Scratch.Get `postClass` }}">
                 <div class="col-md-6">
                 <div class="markutcvr">
@@ -63,23 +49,9 @@
                         </ul><a href="{{ .Permalink }}" class="btn markutbtn" type="button">sayıyı oku</a>
                 </div>
         </div>
-        {{ end }}
+        {{ end }}{{ end }}
 </div>
 
-<div class="container onde">
-        <div class="icindekiler text-center">Dergiden Öne Çıkan Sayfalar</div>
-        <div class="row mt-5">
-         {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
-         <div class="col-md-6 mt-5"><article>    
-       <a href="{{ .Permalink }}"><img class="img-fluid thumb" src="{{.Params.thumb}}" alt="{{ .Title | markdownify }}">   
-        <h2 class="title">{{ .Title | markdownify }}</h2>
-        <p class="yazar">{{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Params.title }}</a>{{ end }}{{ end }} | <time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time></p>
-        <p class="desc">{{ .Params.aciklama | plainify | htmlUnescape }}</p>
-      </a>
-        </article></div>
- {{ end }}
- </div>
-</div>
 <div class="mailde mt-5">
         <div class="col-md-5 m-auto"><img class="img-fluid mt-5" src="/img/markut-mailde.svg" alt="Markut Mailde İllustrasyon"></div>
         <div class="mailde-title">Dergimize Abone Olun</div>
@@ -91,6 +63,4 @@
       </form>
 </div>
 {{.Content}}
-
-
 {{ partial "footer.html" . }}

@@ -9,7 +9,9 @@
         <div class="gecis">
           <span class="sayfa">{{ .Params.sayfa }}</span>
           <div class="titya"><a href="{{ .Permalink }}"><h1 class="title">{{ .Params.title}}</h1></a>
-          <div class="desc">{{ .Params.yazar}}</div></div>
+          <div class="desc">
+            {{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Params.title }}</a>{{ end }}{{ end }}
+          </div></div>
         </div>
         {{.Content}}
         {{$yorum:= .Params.yorum}}
@@ -18,7 +20,6 @@
         {{ end }}
      </div>
   </div>
-
 
 <!--
 {{ $zeooo := trim $totalsub " " }}

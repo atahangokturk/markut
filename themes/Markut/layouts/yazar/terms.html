@@ -1,0 +1,12 @@
+{{ partial "head.html" . }}
+    {{ partial "header.html" . }}
+    <div class="container">
+        <header class="page-header markutcontent"><h1>Yazarlar</h1></header>
+        <div class="container toc">
+            <ul>
+                {{ range .Data.Pages }}
+                  <li><a href="{{ .Permalink }}">{{ .Params.title }}</a></li>
+                {{ end }}
+                </ul>
+         </div> 
+    {{ partial "footer.html" . }}

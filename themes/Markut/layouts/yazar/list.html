@@ -1,0 +1,21 @@
+    {{ partial "head.html" . }}
+    {{ partial "header.html" . }}
+    <div class="container">
+        <header class="page-header markutcontent"><h1>{{ .Params.title }}</h1><div class="title list-inline-item"><a href="/yazar/">Tüm yazarlar</a></div></header>
+        <div class="toc">
+            <div class="row">
+                <div class="col-md-4"><img src="{{ .Params.photo }}" class="mt-5" alt="" width="200px"/>
+                 <br><a href="https://www.instagram.com/{{.Params.instagram}}" target="_blank" rel="noopener noreferrer">@{{.Params.instagram}}</a>
+           </div>
+<div class="col-md-8"><h2>Hakkında</h2>
+    {{ .Content }}
+    <h2>Yazıları</h2>
+    <ul>
+    {{ range .Data.Pages }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+    </ul></div>
+            </div>
+        </div>
+    </div> 
+    {{ partial "footer.html" . }}

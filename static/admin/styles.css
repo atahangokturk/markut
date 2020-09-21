@@ -7,7 +7,10 @@
 		scroll-padding: 66px;  
 	}
 }
-
+.frame-content{
+	max-width: 700px;
+	margin: 0 auto;
+}
 div{
 	font-family: 'Open Sans', sans-serif;
 }
@@ -46,6 +49,7 @@ h4{
 	letter-spacing: 2px;
 	margin-top: 50px;
   }
+
 html,
 body {
 	font-size: 16px !important;

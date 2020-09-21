@@ -35,10 +35,11 @@
             <li class="list-inline-item"><a href="/reklam-sponsorluk/">reklam ve sponsorluk</a></li>
             <li class="list-inline-item"><a href="/bize-gonder/">bize gönder</a></li>
             <li class="list-inline-item"><a href="/okuyucu-sozlesmesi/">okuyucu sözleşmesi</a></li>
+            <li class="list-inline-item"><a href="/yazar/">yazarlar</a></li>
             <li class="list-inline-item"><a href="/tags/">etiketler</a></li>
             <li class="list-inline-item"><a href="https://www.instagram.com/markutworks/" target="_blank">instagram</a></li>
         </ul>
-        <div class="copyright"><a href="{{.Site.BaseURL}}">Markut.net</a> | Copyright © 2020 | Markut tarafından tasarlandı.</div>
+        <div class="copyright"><a href="{{.Site.BaseURL}}">Markut.net</a>  <a href="/dergi/">/dergi</a>  <a href="/blog/">/blog</a> | Copyright © 2020 | Markut tarafından tasarlandı.</div>
     </div></footer>
     <script data-cfasync="false" src="{{.Site.BaseURL}}js/form-submission-handler.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -71,5 +72,9 @@
       nextSelector: '#next',
   });
 </script>
+<script>$('#dergi a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})</script>
 </body>
 </html>

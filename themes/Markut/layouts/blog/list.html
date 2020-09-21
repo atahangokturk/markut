@@ -2,8 +2,9 @@
     {{ partial "head.html" . }}
     {{ partial "header.html" . }}
     <div class="container">
-        <header class="page-header markutcontent"><h1>{{ .Title }}</h1><div class="title list-inline-item"><a href="/tags/">Etiketler Sayfasına Geri Dönün</a></div></header>
+        <header class="page-header markutcontent"><h1>{{ .Title }}</h1></header>
         <div class="container toc">
+            <h2>Çok Yakında.</h2>
             {{ range .Pages }}
             <article> <a href="{{ .Permalink }}">
                 <img class="img-fluid thumb" src="{{.Params.thumb}}" alt="">
