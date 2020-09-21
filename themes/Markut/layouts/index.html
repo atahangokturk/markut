@@ -21,27 +21,6 @@
  {{ end }}
 </div>
 
-<div class="container sayilar">
-        {{ $paginator := .Paginate (where .Pages "Type" "kapak") }}
-        {{ range $index, $page := $paginator.Pages }}
-      
-        <div class="row markutsayi post {{ .Scratch.Get `postClass` }}">
-                <div class="col-md-6">
-                <div class="markutcvr">
-                        <a href="{{ .Permalink }}"><img class="img-fluid" src="{{.Params.kapak}}" alt="Markut Sayı: {{.Params.Sayi}} Kapak Tasarımı"></a>
-                </div>
-                </div>
-                <div class="col-md-6">
-                        <div class="icindekiler">içindekiler</div>
-                        <ul class="list-group">
-                        {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}  
-                        <li class="list-group-item contents">{{ .Title | markdownify }}</li>                        
-                        {{ end }}
-                        </ul><a href="{{ .Permalink }}" class="btn markutbtn" type="button">sayıyı oku</a>
-                </div>
-        </div>
-        {{ end }}
-</div>
 
 <div class="container onde">
         <div class="icindekiler text-center">Dergiden Öne Çıkan Sayfalar</div>
