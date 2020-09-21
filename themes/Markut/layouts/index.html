@@ -1,29 +1,6 @@
 {{ partial "head.html" . }}
 {{ partial "header.html" . }}
 
-<!--
-<div class="container">
-<div style=" text-align: center; font-family: playfair display; font-size: 24px;">
-<div style="margin-bottom: 10px;"></div>
-        <div class="row d-flex justify-content-center">
-{{ $paginator := .Paginate (where .Pages ".Params.type" "kapak") (index .Site.Params "paginate" | default 10) }}
-{{ if gt $paginator.TotalPages 0 }}
-{{ range $index, $page := $paginator.Pages }}
-{{ if and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) }}
-{{ end }}
-<div class="post {{ .Scratch.Get `postClass` }} col-lg-4 col-md-6 col-sm-12">
-        <a href="{{ .Permalink }}"><div class="shadow-lg "> <h1 class="logokapak" style="color: {{ .Params.renk }};">MARKUT</h1>
-            <h2 class="postyazi" style="color: {{ .Params.renk }};">{{.Title}}</h2>
-    <div class="bg postkapak" style="background-image: url({{ .Params.kapakphone }});"></div>
-    <div class="postdate"> 
-            <p class="float-left posttarih" style="color: {{ .Params.renk }};">{{.Params.Tarih}}</p>
-            <h2  class="postsayi" style="color: {{ .Params.renk }};">Sayı {{ .Params.sayi }}</h2>    
-        </div>
-    </div></a>
-</div>
-{{ end }}{{ end }}</div></div>
--->
-
 <div class="container-fluid sayilar">
  {{ range ( where .Site.RegularPages "Type" "kapak" )}}
   <div class="row markutsayi post {{ .Scratch.Get `postClass` }}">
