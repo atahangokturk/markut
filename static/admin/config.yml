@@ -8,6 +8,7 @@ logo_url: https://www.markut.net/img/logo-color.svg
 collections:
   - name: 'dergi'
     label: 'Dergi'
+    extension: html
     folder: 'content/dergi/'
     create: true
     slug: '{{year}}-{{month}}-{{slug}}'
