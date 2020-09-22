@@ -12,7 +12,7 @@ tags:
 
 1800’lü yılların sonundan itibaren Endüstri Devrimi ve savaşların da etkisiyle büyük bir hızla değişen dünyada, tasarım anlayışı da aynı hızda kabuk değiştirmekteydi. Modernist akımların filizlenmeye başladığı bu yıllarda yaşam alanları daralırken, geçmiş yıllardaki gösterişin yerini işlevsellik ve yalınlık almaya başlıyordu. Seri üretim eşyalar evlere girmeye başlamıştı. 20. yüzyılın ilk çeyreğine gelindiğinde ise artık “Art Nouveau” akımı sahnedeydi! “Yeni çağın tasarım anlayışı” olarak lanse edilen bu sanat akımı; akıcı biçimleri, simetri ve asimetriyi odağına alan çizgisiyle tüm Avrupa’yı etkisi altına almıştı. Fakat tüm dünyada bir kez daha dengeleri değiştiren 2. Dünya Savaşı’nın da etkisiyle Art Nouveau’nun akıcı biçimleri, Alman Bauhaus ekolünün fonksiyonel ve net çizgilerine yenik düştü. Ve 1950’lerin ortasından itibaren Alman Bauhaus ekolünün işlevselliğini; yıllarca Avrupa’ya estetik katan Art Nouveau’nun zarafetini ve Nordik felsefelerin alçak gönüllülüğünü tek potada eriten İskandinav stili de böylece doğmuş oldu.
 
-![](/img/9efa68942f83b52426ac0787121481d4.jpg)
+![](/img/9efa68942f83b52426ac0787121481d4.jpg "Ne az, ne çok, tam kararında.")
 
 ### Dekorasyonda Her Şeyin Başladığı Yer: Lagom
 
