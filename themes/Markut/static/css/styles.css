@@ -251,7 +251,9 @@ img{
 	padding-left: 0px;
 	padding-top: 2px;
 }
-
+.blog .markut-img{
+	text-align: center;
+}
 .markutbtn {
 	border-radius: 30px;
 	border-style: solid;
