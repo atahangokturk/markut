@@ -1,0 +1,10 @@
+{{ if .Title }}
+  <figure>
+    <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}">
+    <figcaption>{{ .Title }}</figcaption>
+  </figure>
+{{ else }}
+<div class="markut-img">
+  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}">
+</div>
+{{ end }}
