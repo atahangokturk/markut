@@ -4,19 +4,13 @@ slug: iskandinav-tasarimi
 yazar:
   - Elif Ersoz
 date: 2020-09-22T13:10:29.626Z
-thumb: ""
+thumb: /static/img/0.jpg
 tags:
   - iskandinav
 ---
-
-
 ```
 
 ```
-
-![](/img/0.jpg)
-
-
 
 İsveç, Norveç ve Danimarka’dan oluşan üç kuzey ülkesinde başlayıp dünyaya yayılan İskandinav stili; dekorasyon, beyaz duvarlar, ahşap zeminler ve geometrik desenlerden ibaret, 20. yüzyılda ortaya çıkan yeni bir akım gibi görülse de bu tarzın geçmişi aslında daha eskilere, 19. yüzyılın sonlarına kadar uzanıyor. 
 
