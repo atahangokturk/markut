@@ -4,7 +4,7 @@ slug: iskandinav-tasarimi
 yazar:
   - Elif Ersoz
 date: 2020-09-22T13:10:29.626Z
-thumb: /static/img/0.jpg
+thumb: /img/0.jpg
 tags:
   - iskandinav
 ---
