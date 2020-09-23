@@ -1,63 +1,38 @@
 ---
-title: "Kompoziyon Nedir?"
-slug: komposiyon-nedir
-date: 2020-09-18
-yazar:
-  - Goksu Gokturk
-  - Atahan Gokturk
-thumb: /img/dieter-rams-kf-20.jpg
-tags:
-  - ikonik
 draft: true
+title: Lorem Ipsum
+slug: lorem-ipsum
+yazar:
+  - Atahan Gokturk
+date: 2020-09-23T11:59:06.115Z
+thumb: /img/PRR-S1-Loewy.jpg
+tags:
+  - lorem ipsum
+  - Dolor
+seotitle: Lorem Ipsum Dolor Sit Amet
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non
+  tincidunt elit. Proin viverra eget lectus non suscipit. Proin viverra eget.
 ---
+**Lorem ipsum dolor** sit amet, consectetur adipiscing elit. In non tincidunt elit. Proin viverra eget lectus non suscipit. Pellentesque nec tempus ipsum. *Praesent pellentesque est nec ultrices hendrerit.* In placerat lectus a orci ornare porttitor. Nam congue ipsum eget tempus gravida. Quisque mattis erat vel ultricies tincidunt. Aliquam aliquam justo nec dolor sagittis, [id pulvinar](https://ww.google.com/) lacus consequat. Integer mattis leo mi, vel posuere velit finibus quis. Phasellus vitae cursus orci.
 
-Kompozisyon terimi com + position kelimelerinden oluşmaktadır. Com- (ile, birlikte) + Position (yerleştirme) böylece bir araya getirme, bir arada tutma gibi anlamları çıkarmak mümkün.
+![Lagom; not to little, not to much, just rigth.](/img/9efa68942f83b52426ac0787121481d4.jpg "Ne az, ne çok, tam kararında.")
 
-Ögeler bir araya gelirken anlam bütünlüğü oluşturması ve ögelerin aralarındaki uyum önemlidir. Yapboz parçalarının bir araya geldiğinde anlamlı bir bütün oluşturması veya kelimelerin bir araya gelerek anlamlı cümle oluşması gibi düşünebiliriz. Tasarımda da buna benzer bir yapı söz konusu. Görsel öğeler bir araya gelirken anlamlı bir bütün oluşturması gerekir. Bütünü oluştururken bazı unsurlar vardır. Bu unsurlar kendi içlerinde belirli kurallardan oluşurlar. Kompozisyon oluştururken hem bu unsurları önce kendi içlerinde doğru olarak anlamalı, sonrasında da hepsini uygun yerde kullanmalıyız. Parçadan bütüne giderken parçaların bütüne uygunluğu göz ardı edilmemelidir. Kompozisyon oluştururken kullandığımız unsurlar: zıtlık, odak noktası, denge, ritim, hiyerarşi ve boşluktur.
+## Pellentesque commodo
 
-### Zıtlık
+rutrum libero, a fringilla sapien. Etiam fringilla rhoncus convallis. Nulla molestie, tortor eget elementum aliquet, justo ante sollicitudin ligula, eu tristique lorem mi nec sapien. Fusce tristique elit egestas iaculis luctus. In nec urna in velit interdum rhoncus. Pellentesque cursus nec lacus at tempor. Fusce consequat lectus vitae sem vestibulum gravida. Fusce euismod laoreet orci, id pretium metus pulvinar at. Curabitur luctus nisi vestibulum lacinia pellentesque. Donec accumsan scelerisque lectus vel consectetur. Maecenas sed cursus arcu.
 
-**Zıtlık,** kelime anlamı olarak karşıt olma durumu ya da çelişki yaratma olarak tanımlanabilir. Negatif bir anlam olarak görülse de aslında görsel anlamda doğru bir denge yakalanması ve bu dengenin yarattığı uyum izleyici için önemlidir. Etrafımızdaki her şeyin zıtlıklardan oluştuğunu düşünürsek (koyu-açık, kısa-uzun, ince-kalın vs.) ve bu zıtlıkların aslında varoluşunun bir bir düzen içerisinde denge yarattığını ve bu dengenin de uyumu oluşturduğunu fark edebiliriz.
+## Donec vitae
 
+pharetra neque. Sed scelerisque, ipsum non venenatis blandit, augue libero fermentum nisl, vel efficitur erat ligula eget nisi. Sed semper leo nibh, id pulvinar urna commodo id. Maecenas nec sodales orci, eu eleifend nisi. Praesent pellentesque hendrerit metus, ac dignissim diam maximus sit amet. Fusce eget sodales turpis, a aliquet nisl. Ut malesuada lacinia nisl, at dignissim velit interdum eget. Praesent iaculis facilisis iaculis. Duis volutpat dapibus sem, in eleifend nibh. Sed aliquam ullamcorper magna eget sollicitudin. Ut pharetra nulla quis mauris lacinia, in commodo libero tincidunt.
 
+1. Cras vitae sapien lacus. Curabitur libero mauris, dignissim eget scelerisque commodo
+2. aliquam non ante. Curabitur quis dictum dui. Nam a iaculis neque.
+3. Nullam molestie vehicula elit, sit amet finibus felis.
+4. nulla quam, mattis ac varius pellentesque, consequat non purus.
+5. Nulla at urna at libero fringilla facilisis. Suspendisse tincidunt scelerisque bibendum.
 
-![](/img/HerbertBayer_PostcardBauhausAusstellungWeimar_1923_mudac.jpg "Herbert Bayer, Weimar Sergisi, 1923")
+> Fusce nec urna maximus mi pharetra blandit id in odio. Sed orci sapien, efficitur ut dui at, posuere lobortis metus.
 
+Fusce rutrum, ex eget luctus auctor, turpis lectus hendrerit metus, nec congue dui nisl nec magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec pulvinar diam efficitur, tristique dui id, porta diam. Nunc vitae vulputate mi.
 
-
-
-
-### Odak noktası
-
-**Odak Noktası** oluşturmak kompozisyonda bulunan diğer öğeleri, odaktaki öğeye göre geride bırakarak öne çıkarmayı sağlar. Aslında bunu da zıtlıklar oluşturularak yapmak dikkat çekmeyi hem kolaylaştırır hem de izleyiciye görsel bir haz da katar. Odak noktası oluştururken birçok farklı yöntem kullanılabilir. Renk, şekil, doku, ölçek gibi unsurlarda oluşturulacak farklılık odak noktasına katkı sağlar. Örneğin kompozisyonda renk dağılımı mavi ve tonları ise sarı rengin konması odağı o kısma çeker diyebiliriz.
-
-![El Lissitzky, Proun, 1924-25](/img/Lissitzky_El_1924-25_Proun.jpg "El Lissitzky, Proun, 1924-25")
-
-
-### Denge
-
-**Denge,** kompozisyondaki görsel ağırlığın oluşturduğu bir terazide eşitliği sağlayan bir tasarım ilkesidir. Dengeyi sağlamak için **simetrik**, **asimetrik** ve **radyal** dediğimiz metodlar kullanılır. Simetrik denge yatay ya da dikey eksende aynalanmış görüntü ile oluşur. Simetrik öğeler göze kusursuz görünüp estetik gelir. Asimetrik denge ise tam tersi şekilde ağırlığın bir tarafa verildiği diğer tarafın daha boş bırakıldığı ya da eğer bu bir grafik kompozisyon ise bir tarafta yazı diğer tarafta ise grafik öğenin yer alacağı şekilde konumlanır. Simetrik denge ne kadar kusursuz görünse de genelde doğru şekilde kurulmuş asimetrik dengenin yarattığı dinamizm izleyiciyi estetik olarak daha çok etkiler. Radyal denge ise bir noktanın etrafında dönen ve daha çok dairesel bir görünüm oluşturan bir denge çeşididir.
-
-![El Lissitzky, Proun 10, 1919](/img/Lissitzky_El_1919_Proun_10.jpg "El Lissitzky, Proun 10, 1919")
-
-
-### Ritim
-
-**Ritim** bir öğenin düzenli ve akıcı şekilde tekrarlandığı düzendir. Bu aynı zamanda ritimin komposizyonda bir enerji oluşturmasını ve bu enerjinin de komposizyona hareket katmasını sağlar. Hareketsiz duran yapı içinde yaratılan hareket, olayı ilgi çekici hale getirir.
-
-![Henri Matisse - Dance 3 - 1910](/img/henri-matisse-dance-3.jpg "Henri Matisse, Dance 3, 1910")
-
-
-### Hiyerarşi
-
-**Hiyerarşi;** önem, aşama belirtilerek yapılan bir sınıflamadır. Vurgulanmak istenen öğe; boyut, renk, doku, yerleşim olarak ön plana çıkartır. Örneğin gazeteler veya dergilerde gördüğümüz gibi başlık; büyük harflerle, büyük puntoyla, koyu ve dikkat çeken renkler ile kullanılırken metin gövdesi, içeriği anlattığı için daha küçük okunaklı bir ton ile verilir. Başlık ile metin gövdesi arasında kalan öğeler -eğer varsa- bu iki öğeye uygun şekilde orta ayarda konumlandırılır.
-
-![Combining graphic elements within a composition](/img/elements-of-visual-communication-graphic_4.png) "Kompozisyon içinde grafik ögeleri, [Melissa Clarkson](http://melissaclarkson.com/)"
-
-![](/img/kandinsky-vassilly.jpg) Wassily Kandinsky, [Poster](https://www.mutualart.com/Artwork/Poster/D5191B441C7FBFE2)
-
-### Boşluk
-
-**Boşluk,** daha çok beyaz boşluk ya da negatif boşluk olarak adlandırılsa da biz hepsini kapsayacak şekilde ele almayı seçtik. Kompozisyonda öğeler arasında bırakılan boşluk; nefes verir, alan açar, aynı zamanda yol gösterici de olabilir. Bazı kompozisyonlarda vurgulanmak istenen öğeye yardımcı olması için kullanılırken bazı kompozisyonlarda ise sadece nefes vermek amacıyla kullanılabilir. Sadece görsel kompozisyonda değil, yazılı kompozisyonda da boşluklar okuyucu için önemlidir. Paragraf açılmadan, ara verilmeden yazılan yazılar daha okumadan bizim için boğucu ve yorucu bir görüntü oluşturur.
-
-![](/img/Composition-No.I-with-Red-and-Blue.png "Piet Mondrian - Composition in Colours / Composition No. I with Red and Blue - 1931")
+Nullam sodales in mauris id vulputate. Morbi rutrum arcu sit amet metus malesuada sagittis quis ac mauris. Aenean consectetur magna sed felis imperdiet, ut tempor metus vulputate. Cras auctor aliquet dignissim. Suspendisse auctor leo tellus, quis sollicitudin turpis ornare quis. Suspendisse mollis ex urna, eget vulputate leo egestas eu. In in condimentum nunc. Aenean at ante sit amet dolor maximus dignissim. In facilisis odio lectus, ac tristique diam condimentum nec. Cras erat libero, blandit at fermentum quis, laoreet eget lacus. In mollis, tellus sed sodales aliquet, arcu nisi faucibus nunc, quis gravida felis ipsum non turpis. Nam porttitor interdum eros, a commodo sem ultrices in. Duis tincidunt, ante et varius malesuada, orci lorem viverra metus, ut rhoncus metus nunc id lacus. In blandit vulputate eros in laoreet. Nam at odio libero.
