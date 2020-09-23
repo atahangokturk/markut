@@ -251,9 +251,7 @@ img{
 	padding-left: 0px;
 	padding-top: 2px;
 }
-.blog .markut-img{
-	text-align: center;
-}
+
 .markutbtn {
 	border-radius: 30px;
 	border-style: solid;
@@ -587,8 +585,15 @@ article a:hover {
 	margin-top: -5px;
 	margin-bottom: 20px;
 }
-
-
+.blog .markut-img{
+	text-align: center;
+}
+.blog figure{
+	text-align: center;
+}
+.blog img{
+	max-height: 600px;
+}
 
 
 .mailde{

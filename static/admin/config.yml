@@ -19,9 +19,9 @@ collections:
       - { label: 'Url', name: 'url', widget: 'string',   hint: "Link yapısı sayi-no/yazi-basligi şeklindedir. Örn.: sayi-1/bu-bir-denemedir" }
       - { label: 'Yayınlanma Tarihi', name: 'date', widget: 'datetime' }
       - { label: 'Yazar', name: 'yazar', widget: "list" }
-      - {label: "Thumbnail: 700x300px", name: "thumb", media_folder: "/static/img", public_folder: "/img", widget: "image", required: false}
       - { label: 'İçerik', name: 'body', widget: 'markdown' }
-      - {label: "Tags", name: "tags", widget: "list"}
+      - { label: "Thumbnail: 700x300px", name: "thumb", media_folder: "/static/img", public_folder: "/img", widget: "image", required: false}
+      - { label: "Tags", name: "tags", widget: "list"}
       - { label: 'Açıklama', name: 'aciklama', widget: 'text', required: false }
       - { label: 'Seo Başlığı', name: 'seotitle', widget: 'string', pattern: ['^.{20,55}$', "20 ile 55 karakter arasında olmalı"], required: false }
       - { label: 'Seo Açıklaması', name: 'description', widget: 'text', pattern: ['^.{120,155}$', "120 ile 155 karakter arasında olmalı"], required: false }
@@ -36,15 +36,15 @@ collections:
     editor:
       preview: true
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Slug', name: 'slug', widget: 'string', pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$','A slug can have no spaces or special characters']}
+      - { label: 'Başlık', name: 'title', widget: 'string' }
+      - { label: 'Url', name: 'slug', widget: 'string', pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$','Url boşluk ve Türkçe karakter içeremez.'], hint: "Url'yi yazi-basligi şeklinde giriyoruz. Sitede markut.net/blog/yazi-basligi şeklinde gözükecek"}
       - { label: 'Yazar', name: 'yazar', widget: "list" }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - {label: "Thumbnail: 700x300px", name: "thumb", media_folder: "/static/img", public_folder: "/img", widget: "image", required: false}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - { label: 'Yayınlanma Tarihi', name: 'date', widget: 'datetime' }
+      - { label: "Thumbnail: Yatay görsel 1400px 600px", name: "thumb", media_folder: "/static/img", public_folder: "/img", widget: "image", required: false}
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Seo Başlığı', name: 'seotitle', widget: 'string', required: false }
-      - { label: 'Seo Açıklaması', name: 'description', widget: 'text', required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false}
+      - { label: 'Seo Başlığı', name: 'seotitle', widget: 'string', pattern: ['^.{20,55}$', "Seo Başlığı, 20 ile 55 karakter arasında olmalı"], required: false }
+      - { label: 'Seo Açıklaması', name: 'description', widget: 'text', pattern: ['^.{120,155}$', "Seo Açıklaması, 120 ile 155 karakter arasında olmalı"], required: false }
   - name: 'page'
     label: 'Sayfalar'
     folder: 'content/'
