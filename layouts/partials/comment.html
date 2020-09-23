@@ -1,11 +1,3 @@
 <h3 class="text-center">Markut Ekibinden Sevgiyle...</h3>
-<div class="mailde mb-5">
-        <div class="col-md-5 m-auto"><img class="img-fluid" src="/img/markut-mailde.svg" alt="Markut Mailde İllustrasyon"></div>
-        <div class="mailde-title">Dergimize Abone Olun</div>
-        <div class="mailde-desc">Yeni Sayıları Mailinize Gönderelim</div>
-        <form name="abonelik" method="POST" data-netlify="true" action="/basarili/">   
-          <label><input type="email" name="email" class="form-control form-email" id="email" placeholder="Mail Adresiniz" required></label>
-          <button type="submit" class="btn markutbtn">Abone Ol</button><br>
-          <small>ücretsizdir.</small>
-      </form>
-</div><br><br><br>
+{{ partial "abonelik.html" . }}
+<br><br><br>
