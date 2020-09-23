@@ -36,16 +36,13 @@
  {{ end }}
  </div>
 </div>
-<div class="mailde mt-5">
-        <div class="col-md-5 m-auto"><img class="img-fluid mt-5" src="/img/markut-mailde.svg" alt="Markut Mailde İllustrasyon"></div>
-        <div class="mailde-title">Dergimize Abone Olun</div>
-        <div class="mailde-desc">Yeni Sayıları Mailinize Gönderelim</div>
-        <form name="abonelik" method="POST" data-netlify="true" action="/basarili/">   
-          <label><input type="email" name="email" class="form-control form-email" id="email" placeholder="Mail Adresiniz" required></label>
-          <button type="submit" class="btn markutbtn">Abone Ol</button><br>
-          <small>ücretsizdir.</small>
-      </form>
-</div>
+<center>
+        <b>Yeni sayıları kaçırmayın. Dergimize abone olun.</b> <br>
+        <form name="abonelik" method="POST" data-netlify="true" action="/basarili">     
+                  <label><input style="max-width: 300px; margin-top: 10px;" type="text" name="email" class="form-control" placeholder="Mail Adresiniz" required></label>
+                  <button type="submit" style="margin-top: -4px;" class=" btn btn-dark">Abone Ol</button>
+        </form>
+    </center>
 {{.Content}}
 
 
