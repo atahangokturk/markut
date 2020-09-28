@@ -14,5 +14,5 @@ sayi=[
 sayfa="00"
 type= "kapak"
 tags=[]
-draft= false
+draft= true
 +++
