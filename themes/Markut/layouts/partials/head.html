@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>{{$seotitle := .Params.seotitle}}{{ if isset .Params "seotitle" }}{{$seotitle}}{{else}}{{.Title}}{{ end }}{{ if .IsHome }} | Endüstriyel Tasarım Dergisi {{ .Site.Params.Tagline }}{{ else }} - {{ .Site.Title }}{{ end }}</title>
-    <link rel="stylesheet" href="{{.Site.BaseURL}}bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="{{.Site.BaseURL}}/bootstrap/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{.Site.BaseURL}}css/styles.css">
+    <link rel="stylesheet" href="{{.Site.BaseURL}}/css/styles.css">
     {{ with .Params.robotsdisallow }}<meta name="robots" content="noindex, nofollow">{{ else }}<meta name="robots" content="index, follow">{{ end }}
     <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png">
