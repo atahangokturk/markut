@@ -9,6 +9,7 @@ collections:
   - name: 'dergi'
     label: 'Dergi'
     extension: html
+    preview_path: {{url}}
     folder: 'content/dergi/'
     create: true
     slug: '{{year}}-{{month}}-{{slug}}'
@@ -21,16 +22,17 @@ collections:
       - { label: 'Yazar', name: 'yazar', widget: "list" }
       - { label: 'İçerik', name: 'body', widget: 'markdown' }
       - { label: "Thumbnail: 700x300px", name: "thumb", media_folder: "/static/img", public_folder: "/img", widget: "image", required: false}
-      - { label: "Tags", name: "tags", widget: "list"}
+      - { label: "Tags", name: "tags", widget: "list", required: false}
       - { label: 'Açıklama', name: 'aciklama', widget: 'text', required: false }
       - { label: 'Seo Başlığı', name: 'seotitle', widget: 'string', pattern: ['^.{20,55}$', "20 ile 55 karakter arasında olmalı"], required: false }
       - { label: 'Seo Açıklaması', name: 'description', widget: 'text', pattern: ['^.{120,155}$', "120 ile 155 karakter arasında olmalı"], required: false }
       - { label: 'Sayı Numarası', name: 'sayi', widget: "list", required: false, hint: "Örn.: 1"}
-      - { label: 'Sayfa Numarası', name: 'sayfa', widget: 'number', required: false, hint: "Örn.: 01 Başına sıfır ekliyoruz.", default: ["00"] }
+      - { label: 'Sayfa Numarası', name: 'sayfa', widget: 'string', required: false, hint: "Örn.: 01 Başına sıfır ekliyoruz.", default: ["00"] }
       - { label: 'Sayfa/Kapak', name: 'type', widget: 'string', default: 'sayfa', hint: "Sayfa ve kapak şeklinde iki seçenek var. İçerikler için Sayfa kalmalı."}
   - name: 'blog'
     label: 'Blog'
     folder: 'content/blog/'
+    preview_path: blog/{{slug}}
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:

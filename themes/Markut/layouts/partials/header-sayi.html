@@ -14,7 +14,7 @@
             <!-- Dropdown -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle kirmizi" href="#" data-toggle="dropdown">
-               sayı {{.Params.sayi}}
+               sayı {{ range .Params.sayi }}{{ . }}{{ end }}
               </a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="/sayi-1/">Sayı 01</a>

@@ -7,13 +7,13 @@
               <div class="col-md-6">
                 <div class="kapaklogo">MARKUT</div>
               <div class="kapaksur">Endüstriyel Tasarım Dergisi</div>
-              <div class="markutzaman"><time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time> | sayı {{.Params.sayi}}</div>
+              <div class="markutzaman"><time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time> | sayı {{ range .Params.sayi }}{{ . }}{{ end }}</div>
               <p class="kapakdesc">{{.Params.aciklama}}</p>
               <div class="kapakoku">okumaya başla</div>
               <div class="kapakok">↓</div>
             </div>
               <div class="col-md-6">
-                <div class="markutcover"><img class="img-fluid" src="{{.Params.kapak}}" alt="Markut Sayı: {{.Params.Sayi}} Kapak Tasarımı"></div>
+                <div class="markutcover"><img class="img-fluid" src="{{.Params.thumb}}" alt="Markut Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} Kapak Tasarımı"></div>
               </div>
             </div>
 </div>
