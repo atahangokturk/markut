@@ -9,7 +9,7 @@ collections:
   - name: 'dergi'
     label: 'Dergi'
     extension: html
-    preview_path: {{url}}
+    preview_path: '{{url}}'
     folder: 'content/dergi/'
     create: true
     slug: '{{year}}-{{month}}-{{slug}}'
