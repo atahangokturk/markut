@@ -1,22 +1,22 @@
 +++
 title = "Uzaktan Tasarım Eğitimi Hakkında Röportaj"
-url = "sayi-2/roportaj/"
-date = "2020-09-15"
-seotitle = "Dijitalleşmenin Kullanıcı Deneyimi Üzerindeki Etkisi"
-description="Fizikselden dijitale geçişle birlikte kullanıcı deneyiminin (ux) üzerindeki etkileri. Kullanıcı deneyimi sağlama unsurları nelerdir? Kullanıcı Deneyimi algıları neler?"
-aciklama="Dijital teknolojideki sürekli gelişimin hayatımızın her alanına nüfuz ettiğini her gün daha net görüyoruz. Gündelik yaşantımızı, kullandığımız tüm bu makineler, ürünler ve sistemler olmadan hayal edebilmek artık mümkün değil."
+url = "sayi-2/uzaktan-tasarim-egitimi-roportaj/"
+date = "2020-10-01"
+seotitle = "Uzaktan Tasarım Eğitimi Hakkında Röportaj"
+description="Uzaktan tasarım eğitimi hakkında hocalarımıza soruları yönelttik. Cevaplar bizim için çok değerli, sizler için de öyle olacağını umuyoruz."
+aciklama="Uzaktan tasarım eğitimi hakkında hocalarımıza soruları yönelttik. Cevaplar bizim için çok değerli, sizler için de öyle olacağını umuyoruz."
 thumb="/img/dijitale-yolculuk-thumbnail.jpg"
 sayi=[
 "2"
 ]
-sayfa="05"
+sayfa="02"
 yazar=["Markut"]
 type="sayfa"
 tags= [
-"anasayfa"
+"anasayfa", "roportaj"
 ]
-draft= true
 +++
+<a href="/sayi-2/endustiryel-tasarim-mutfaga-giriyor/" id="next"></a>
 <div class="container">
     <p class="mt-5">Uzaktan tasarım eğitimi hakkında hocalarımıza soruları yönelttik. Cevaplar bizim için çok değerli, sizler için de öyle olacağını umuyoruz. Hocalarımızın geleneksel tasarım yöntemleriyle çalıştıklarını ve bu alanda uzmanlaştıklarını bilmeniz de faydalı olacaktır.</p>
     <div class="row">
@@ -31,7 +31,7 @@ draft= true
              <p>Marmara Üniversitesi</p>
         </div>
         <div class="col-md-4 bg-yellow">
-            <h3>Sevim Zeynep Bingel</h3>
+            <h3>Zeynep k. Bingel</h3>
             <p>Dr. Öğr. Üyesi</p>
             <p>Marmara Üniversitesi</p>  
         </div>
@@ -117,7 +117,7 @@ draft= true
             <p>Dürüst olmam gerekirse bölüme yeni başlayacak öğrencilere kayıt dondurmalarını tavsiye ederdim. Bunun çok gerçekçi olmadığının da farkındayım ama en azından sadece teorik dersleri takip edebilirler, önümüzdeki dönemde hayatın normale dönmesini umarak bazı dersleri sonraya bırakabilirler mesela. Tüm öğrencilerimiz bu dönemi bireysel olarak becerilerini geliştirmek için kullanabilirler. Alanla ilgili okumalar yapılabileceği gibi, kağıt ve kalemle daha fazla çalışmak, eskiz becerilerini geliştirmek, desen çalışmak, malzeme tanımak vs. gibi sanal olmayan deneyimleri geliştirmek ilerisi için mutlaka fark yaratacaktır.</p>
         </div>
         <div class="col-md-4 bg-yellow">
-            <p>Salgının yarattığı eğitim koşulları sebebi ile verimliliğin yüksek olamayacağı gerçeğini de düşünerek başka kararlar düşünülebilir. Kişilere aittir. Diğer önerilerim, üstteki sorularda bulunuyor.</p>
+            <p>Salgının yarattığı eğitim koşulları sebebi ile verimliliğin yüksek olamayacağı gerçeğini de düşünerek başka kararlar düşünülebilir. Kişilere aittir. Diğer önerilerim, üstteki sorularda bulunuyor. </p>
         </div>
     </div>
 </div>

@@ -1,12 +1,11 @@
 +++
 title = "Sayı 2 İçindekiler"
 url = "sayi-2/"
-seotitle = "Endüstriyel Tasarım Dergisinin 1. Sayısı Markut Sayı: 1"
-description="Markut derginin yeni sayısı 1. sayı çıktı. Endüstriyel tasarım dergimizden 1. sayımızı online ücretsiz okuyabilirsiniz."
-aciklama="Markut derginin yeni sayısı."
-date = "2020-09-27"
-thumb="/img/sayi-2-cover.jpg"
-kapak = "/img/sayi-2-cover.jpg"
+seotitle = "Endüstriyel Tasarım Dergisinin 2. Sayısı Markut Sayı: 2"
+description="Markut derginin yeni sayısı 2. sayı çıktı. Endüstriyel tasarım dergimizden 2. sayımızı online ücretsiz okuyabilirsiniz."
+aciklama="\"Bir felsefem yok, en sevdiğim şey stüdyoda oturmak.\""
+date = "2020-10-01"
+thumb="/img/markut-ekim-sayi-2.jpg"
 yazar=["Markut"]
 sayi=[
 "2"
@@ -14,5 +13,5 @@ sayi=[
 sayfa="00"
 type= "kapak"
 tags=[]
-draft= true
 +++
+<a href="/sayi-2/iskandinav-tasarimi/" id="next"></a>
