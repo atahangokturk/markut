@@ -701,6 +701,15 @@ article a:hover {
 [data-theme='dark'] .modalback {
   background-color: rgb(27, 27, 27) !important;
 }
+[data-theme="dark"] .bg-grey {
+	color: rgb(15, 15, 15);
+  }
+  [data-theme="dark"] .bg-yellow {
+	color: rgb(15, 15, 15);
+  }
+  [data-theme="dark"] .bg-green {
+	color: rgb(15, 15, 15);
+  }
 
 @media screen and (max-width: 768px) {
   .gecis .title {

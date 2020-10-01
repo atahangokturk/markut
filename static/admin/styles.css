@@ -666,6 +666,15 @@ article a:hover {
 	background-color: transparent;
 	border: 1px solid #eee;
   }
+  [data-theme="dark"] .bg-grey {
+	color: rgb(15, 15, 15);
+  }
+  [data-theme="dark"] .bg-yellow {
+	color: rgb(15, 15, 15);
+  }
+  [data-theme="dark"] .bg-green {
+	color: rgb(15, 15, 15);
+  }
   [data-theme="dark"] .modalback{
 	background-color: rgb(27, 27, 27) !important;
   }
