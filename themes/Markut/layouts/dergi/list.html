@@ -28,16 +28,12 @@
     <h3>Dergimiz her ayın 1'inde online çıkmaktadır.</h3>
     <p>Endüstriyel tasarımı bağlamında genel tasarım disiplinleriyle ilgili içerikleri okuyucuya sunuyoruz.</p>
 </div>
-<div class="container sayilar">
-        {{ $paginator := .Paginate (where .Pages ".Params.type" "kapak") (index .Site.Params "paginate" | default 10) }}
-        {{ if gt $paginator.TotalPages 0 }}
-        {{ range $index, $page := $paginator.Pages }}
-        {{ if and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) }}
-        {{ end }}
-        <div class="row markutsayi post {{ .Scratch.Get `postClass` }}">
+<div class="container-fluid sayilar">
+ {{ range ( where .Site.RegularPages "Type" "kapak" )}}
+  <div class="row markutsayi post {{ .Scratch.Get `postClass` }}">
                 <div class="col-md-6">
                 <div class="markutcvr">
-                        <a href="{{ .Permalink }}"><img class="img-fluid" src="{{.Params.kapak}}" alt="Markut Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} Kapak Tasarımı"></a>
+                        <a href="{{ .Permalink }}"><img class="img-fluid" src="{{.Params.thumb}}" alt="Markut Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} Kapak Tasarımı"></a>
                 </div>
                 </div>
                 <div class="col-md-6">
@@ -49,7 +45,7 @@
                         </ul><a href="{{ .Permalink }}" class="btn markutbtn" type="button">sayıyı oku</a>
                 </div>
         </div>
-        {{ end }}{{ end }}
+ {{ end }}
 </div>
 
 {{ partial "abonelik.html" . }}
