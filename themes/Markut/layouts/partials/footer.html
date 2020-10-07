@@ -41,18 +41,9 @@
         </ul>
         <div class="copyright"><a href="{{.Site.BaseURL}}">Markut.net</a>  <a href="/dergi/">/dergi</a>  <a href="/blog/">/blog</a> | Copyright © 2020 | Markut tarafından tasarlandı.</div>
     </div></footer>
-    <script data-cfasync="false" src="{{.Site.BaseURL}}/js/form-submission-handler.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="{{.Site.BaseURL}}/bootstrap/bootstrap.min.js"></script>
-<script> $(function()
-    {
-      $('#theform').submit(function(){
-        $("input[type='submit']", this)
-          .val("Lütfen Bekleyin...")
-          .attr('disabled', 'disabled');
-        return true;
-      });
-    });</script>
+    
     {{ if not (in (.Site.BaseURL | string) "localhost") }}
       <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122967892-3"></script>
