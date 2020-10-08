@@ -3,13 +3,11 @@
     {{ partial "header.html" . }}
     <div class="container">
         <header class="page-header markutcontent"><h1>{{ if .IsHome }}{{else}}{{ .Title }}{{ end }}</h1></header>
-        <div class="container toc">
             <ul class="list-inline">
     {{ range .Pages }}
-   <li class="list-inline-item title"> <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></li>  
+   <li class="list-inline-item title m-2"> <a href="{{ .Permalink }}"><button class="btn markutbtn" type="button">#{{ .Title | markdownify }}</button></a></li>  
     {{ end }} </ul></div>
         <div class="markutpage">
             {{.Content}}
-        </div>
     </div> 
     {{ partial "footer.html" . }}

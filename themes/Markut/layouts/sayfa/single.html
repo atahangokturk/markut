@@ -10,7 +10,7 @@
           <span class="sayfa">{{ .Params.sayfa }}</span>
           <div class="titya"><a href="{{ .Permalink }}"><h1 class="title">{{ .Params.title}}</h1></a>
           <div class="desc">
-            {{ range $index, $element := .Params.yazar }}{{ with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}"> {{ .Title }}</a>{{ end }}{{ end }}
+            {{ range $index, $element := .Params.yazar }}{{ with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }}{{ end }}
           </div></div>
         </div>
         {{.Content}}
@@ -19,6 +19,26 @@
           {{partial "comment.html" . }}
         {{ end }}
      </div>
+     <section class="bg-light mt-5">
+     {{- if .Params.tags }}
+        <ul class="list-inline text-center pt-5">
+         {{- range .Params.tags }}
+         {{- $href := print (absURL "tags/") (urlize .) }}
+         <li class="list-inline-item"><a href="{{ $href }}"><button class="btn markutbtn" type="button">#{{.}}</button></a></li>
+         {{- end }} 
+       </ul>
+     {{- end }}
+     {{ $related := .Site.RegularPages.RelatedIndices . "tags" "date" | first 3 }}
+      {{ with $related }}
+      <div class="text-center pb-5">
+      <h3>İlginizi Çekebilir</h3>
+      <ul class="list-unstyled">
+        {{ range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul></div>
+      {{ end }}
+    </section>
   </div>
 
 <!--

@@ -411,11 +411,11 @@ footer a:hover {
   line-height: 35px;
   margin-bottom: -10px;
   color: #000;
-  text-decoration-color: #afafaf;
+  text-decoration-color: #f3c420;
 }
 .toc .title:hover {
   text-decoration: underline;
-  text-decoration-color: #afafaf;
+  text-decoration-color: #f3c420;
 }
 
 .toc .yazar {
@@ -441,7 +441,7 @@ footer a:hover {
   line-height: 35px;
   margin-bottom: -10px;
   color: #000;
-  text-decoration-color: #afafaf;
+  text-decoration-color: #f3c420;
 }
 .onde .title:hover {
   text-decoration: underline;
