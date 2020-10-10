@@ -1,6 +1,5 @@
 {{ partial "head.html" . }}
 {{ partial "header.html" . }}
-
 <div class="container-fluid sayilar">
  {{ range ( where .Site.RegularPages "Type" "kapak" )}}
   <div class="row markutsayi post {{ .Scratch.Get `postClass` }}">
@@ -20,8 +19,6 @@
         </div>
  {{ end }}
 </div>
-
-
 <div class="container onde mb-5">
         <div class="icindekiler text-center">Dergiden Öne Çıkan Sayfalar</div>
         <div class="row mt-5">
@@ -38,5 +35,4 @@
 </div>
 {{.Content}}
 {{ partial "abonelik.html" . }}
-
 {{ partial "footer.html" . }}

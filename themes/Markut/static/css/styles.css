@@ -566,6 +566,66 @@ article a:hover {
   text-decoration: none;
 }
 
+/* Svg Denemesi */
+ #markut{
+   animation: markutlogo 6s ease infinite;
+ }
+ @keyframes markutlogo{
+  0%{transform: rotateZ(0deg) translateY(0px);}
+  50%{transform: rotateZ(-3deg) translateY(21px);}
+  100%{transform: rotateZ(0deg) translateY(0px);}
+}
+
+ #kumpas{
+  animation: kumpas 8s ease infinite;
+}
+@keyframes kumpas{
+  0%{transform: rotateZ(0deg);}
+  50%{transform: rotateZ(-1deg);}
+  100%{transform: rotateZ(0deg);}
+}
+#t-cetvel{
+  animation: t-cetvel 10s ease infinite;
+}
+@keyframes t-cetvel{
+  0%{transform: rotateZ(0deg);}
+  50%{transform: rotateZ(1deg);}
+  100%{transform: rotateZ(0deg);}
+}
+#gonye{
+  animation: gonye 8s ease-in-out infinite;
+}
+@keyframes gonye{
+  0%{transform: rotateZ(0deg);}
+  50%{transform: rotateZ(-1deg);}
+  100%{transform: rotateZ(0deg);}
+}
+#pergel{
+  animation: pergel 7s ease-in infinite;
+}
+@keyframes pergel{
+  0%{transform: rotateZ(0deg);}
+  50%{transform: rotateZ(-1deg);}
+  100%{transform: rotateZ(0deg);}
+}
+#aci-olcer{
+  animation: aci-olcer 7s ease-in infinite;
+}
+@keyframes aci-olcer{
+  0%{transform: rotateZ(0deg);}
+  50%{transform: rotateZ(-1deg);}
+  100%{transform: rotateZ(0deg);}
+}
+#background{
+  animation: backk 3s ease-in infinite;
+  transform-origin: center;
+}
+@keyframes backk{
+  0%{ transform:skew(179deg,179deg) rotate(1deg); }
+  50%{ transform:skew(180deg,179deg) rotate(1deg);}
+  100%{ transform:skew(179deg,179deg) rotate(1deg);}
+}
+
 /* Blog başlangıç */
 .blog .title {
   margin-top: 10px;
