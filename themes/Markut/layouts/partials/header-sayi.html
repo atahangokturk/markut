@@ -29,7 +29,7 @@
                </a>
                <div class="dropdown-menu">
                 {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}
-               <a class="dropdown-item" href="{{ .RelPermalink }}">{{.Params.sayfa}} | {{ .Title | markdownify }}</a>                           
+             <div class="mrkt-menu"><a class="" href="{{ .RelPermalink }}">{{.Params.sayfa}} | {{ .Title | markdownify }}</a></div>                  
                {{ end }}
                </div>
              </li>
@@ -52,9 +52,3 @@
         </div>
       </nav>
     </header>
-
-     <!--   <div class="d-flex justify-content-between flex-wrap " style="margin-top: -50px; margin-left: 10px; margin-right: 10px;">
-     <h2 style="font-weight: bold; color: {{.Params.renk}}; ">Sayı {{.Params.sayi}}</h2>
-    <h1  style="font-size: 34px; color: {{.Params.renk}};">{{.Title}}</h1>
-     <h3 style="font-weight: normal; color: {{.Params.renk}};">{{.Params.tarih}}</h3>   
-    </div>-->

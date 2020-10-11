@@ -6,7 +6,6 @@
     scroll-padding: 58px;
   }
 }
-
 div {
   font-family: 'Open Sans', sans-serif;
 }
@@ -182,10 +181,9 @@ img {
 
 .nav-item {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 1px;
   color: #000;
-  padding-left: 5px;
   margin: 0 auto;
 }
 .custom-control-label {
@@ -195,16 +193,27 @@ img {
 }
 a.nav-link {
   color: #000;
+  padding-bottom: 0px;
 }
 .mt-6 {
   margin-top: 6em;
 }
 .navbar-toggler {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 14px;
+  font-size: 17px;
   color: #000;
-  border: 1px solid #000;
+  border: 2px solid #000;
+  border-radius: 15px;
+  outline: none;
 }
+.navbar-toggler:focus{
+  outline: 0;
+}
+.navbar-toggler:hover {
+background-color: #000;
+color: white;
+}
+
 .navbar {
   z-index: 1;
   background-color: #ffffff;
@@ -214,6 +223,7 @@ a.nav-link {
 }
 .icindekiler {
   font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
   font-size: 36px;
   color: #afafaf;
   letter-spacing: 7px;
@@ -399,9 +409,11 @@ footer a:hover {
   margin: 0 auto;
   margin-top: 50px;
 }
-.toc .icindekiler {
+.toc .icindekiler{
   text-decoration: underline;
+  text-decoration-color: #f7c421;
 }
+
 .toc .title {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 32px;
@@ -538,21 +550,52 @@ footer a:hover {
   font-size: 12px;
 }
 .dropdown-menu {
-  border: none;
+  border-top: 1px #000 solid;
+  border-left: 1px #000 solid;
+  border-right: 1px #000 solid;
+  border-radius: 0px;
+  padding: 0px;
 }
 .dropdown-item {
-  padding: 0.25rem 0rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px #000 solid;
+  font-size: 17px;
+  color: #000000;
+}
+.mrkt-menu{
+  padding: 5px 5px 10px;
+  font-size: 17px;
+  border-bottom: 1px #000 solid;
+  width: 400px;
+}
+.mrkt-menu a{
+  padding: 5px 5px 10px;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(255, 255, 255); /* Set a background color */
+  color: rgb(0, 0, 0); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 5px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 28px; /* Increase font size */
 }
 
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
 .mgen {
   max-width: 700px;
   margin: 0 auto;
 }
 .mauto {
   margin: 0 auto;
-}
-.dropdown-item {
-  font-size: 14px;
 }
 
 .thumb {
@@ -571,9 +614,9 @@ article a:hover {
    animation: markutlogo 6s ease infinite;
  }
  @keyframes markutlogo{
-  0%{transform: rotateZ(0deg) translateY(0px);}
-  50%{transform: rotateZ(-3deg) translateY(21px);}
-  100%{transform: rotateZ(0deg) translateY(0px);}
+  0%{transform: rotateZ(0deg) translateY(0px) translateX(2px); }
+  50%{transform: rotateZ(5deg) translateY(15px) translateX(12px);}
+  100%{transform: rotateZ(0deg) translateY(0px) translateX(2px);}
 }
 
  #kumpas{
@@ -770,6 +813,14 @@ article a:hover {
   [data-theme="dark"] .bg-green {
 	color: rgb(15, 15, 15);
   }
+  [data-theme="dark"] #side-menu {
+    background-color: rgb(15, 15, 15);
+    color: rgb(15, 15, 15);
+    }
+  [data-theme="dark"] #side-menu .nav-link {
+      color: #eee;
+  }
+    
 
 @media screen and (max-width: 768px) {
   .gecis .title {
@@ -800,6 +851,7 @@ article a:hover {
   .nav-item {
     padding-top: 25px;
     font-size: 20px;
+    border-bottom: 2px #f7c421 solid;
   }
   h1 {
     letter-spacing: 3px;
@@ -851,6 +903,10 @@ article a:hover {
   .mailde-desc {
     letter-spacing: 2px;
   }
+  .mrkt-menu{
+    width: 300px;
+    padding: 3px;
+  }
 }
 .bg-yellow {
   background-color: #fff1c5;
@@ -861,3 +917,9 @@ article a:hover {
 .bg-grey {
   background-color: rgb(241, 241, 241);
 }
+@media screen and (max-width: 375px){
+  .navbar-toggler{
+    font-size: 15px;
+  }
+}
+
