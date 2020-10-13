@@ -585,10 +585,11 @@ footer a:hover {
   padding: 5px 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 28px; /* Increase font size */
+  font-weight: bold;
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #f7c421; /* Add a dark-grey background on hover */
 }
 .mgen {
   max-width: 700px;
@@ -779,7 +780,7 @@ article a:hover {
   color: #eee;
 }
 [data-theme='dark'] .dropdown-menu {
-  background-color: #000000;
+  background-color: #333;
 }
 [data-theme='dark'] .icsay {
   color: #000000;
