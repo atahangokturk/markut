@@ -834,6 +834,9 @@ article a:hover {
   [data-theme="dark"] #side-menu .nav-link {
       color: #eee;
   }
+  [data-theme="dark"] .bg-mrkt {
+    color: #000;
+}
     
 
 @media screen and (max-width: 768px) {
