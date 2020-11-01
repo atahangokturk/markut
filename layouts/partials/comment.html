@@ -4,12 +4,7 @@
   <div class="row">
         {{ range ( where .Site.RegularPages "Type" "kapak" )}}
         <div class="col-md-3">
-          <a href="{{ .Permalink }}"
-            ><img
-              class="img-fluid"
-              src="{{.Params.thumb}}"
-              alt="Markut Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} Kapak Tasarımı"
-          /></a>
+          <a href="{{ .Permalink }}"><imgclass="img-fluid"src="{{.Params.thumb}}"alt="Markut Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} Kapak Tasarımı"/></a>
         </div>
         {{ end }}
     </div>
