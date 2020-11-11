@@ -17,10 +17,9 @@
                sayı {{ range .Params.sayi }}{{ . }}{{ end }}
               </a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="/sayi-3/">Sayı 03</a>
-                <a class="dropdown-item" href="/sayi-2/">Sayı 02</a>
-                <a class="dropdown-item" href="/sayi-1/">Sayı 01</a>
-                <a class="dropdown-item" href="/sayi-0/">Sayı 00</a>
+                {{ range ( where .Site.RegularPages "Type" "kapak" )}}
+                <a class="dropdown-item" href="{{.Permalink}}">Sayı {{ range .Params.sayi }}{{ . }}{{ end }}</a>
+                {{ end }}
               </div>
             </li>   
              <!-- Dropdown İçindekiler -->
