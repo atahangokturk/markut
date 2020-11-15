@@ -28,7 +28,21 @@
   <div class="kapakoku">devam et</div>
   <div class="kapakok">↓</div>
 </div>
-
+{{ $number := (float .Params.sayfa) }}
+{{ $anothernumber := 1 }}
+{{ $total := (add $number $anothernumber) }}
+{{ $totalsub := (sub $number $anothernumber) }} 
+{{ $zeooo := trim $total " " }}   
+{{$partarih := .Params.date}}
+{{$zero := "0"}}
+{{ $zeo := trim $total " " }}
+{{ $full := printf "%s%s" "0" $zeo }}
+{{ $v1 := where .Site.Pages "Params.sayfa" $full }}
+{{ $v2 := where .Site.Pages "Params.date" $partarih }}
+{{ $filtered := $v1 | intersect $v2 }}
+{{ range $filtered }}
+<a href="{{.Permalink}}" id="next"></a>
+{{ end }}
 <div id="contentsWrapper">
     <div class="content"> 
        

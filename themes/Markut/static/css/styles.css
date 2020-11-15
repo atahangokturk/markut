@@ -521,7 +521,7 @@ footer a:hover {
 .gecis .desc {
   font-size: 14px;
   letter-spacing: 1px;
-  margin-top: -6px;
+  margin-top: 0px;
   color: #afafaf;
 }
 .gecis .titya {
@@ -902,6 +902,7 @@ article a:hover {
   }
   .gecis .desc {
     font-size: 12px;
+    margin-top: 3px;
   }
   .form-email {
     width: 300px;
