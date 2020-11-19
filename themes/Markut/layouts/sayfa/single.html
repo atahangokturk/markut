@@ -16,6 +16,7 @@
         {{.Content}}
         {{$yorum:= .Params.yorum}}
         {{ if eq $yorum "var" }}
+        <h3 class="text-center">Markut Ekibinden Sevgiyle...</h3>
           {{partial "comment.html" . }}
         {{ end }}
      </div>
