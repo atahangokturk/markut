@@ -13,6 +13,30 @@
             {{ range $index, $element := .Params.yazar }}{{ with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }}{{ end }}
           </div></div>
         </div>
+        {{ $number := (float .Params.sayfa) }}
+        {{ $anothernumber := 1 }}
+        {{ $total := (add $number $anothernumber) }}
+        {{ $totalsub := (sub $number $anothernumber) }} 
+        {{ $zeooo := trim $total " " }} 
+    {{$pardate := .Params.date}}
+    {{$zero := "0"}}
+     {{ $zeo := trim $total " " }}
+     {{ $full := printf "%s%s" "0" $zeo }}
+     {{if gt 10 $total}}
+         {{ $v1 := where .Site.Pages "Params.sayfa" $full }}
+         {{ $v2 := where .Site.Pages "Params.date" $pardate }}
+         {{ $filtered := $v1 | intersect $v2 }}
+        {{ range $filtered }}
+        <a href="{{.Permalink}}" id="next"></a>
+          {{ end }}
+          {{else}}
+          {{ $z1 := where .Site.Pages "Params.sayfa" $zeo }}
+          {{ $z2 := where .Site.Pages "Params.date" $pardate }}
+          {{ $filter := $z1 | intersect $z2 }}
+         {{ range $filter }}
+         <a href="{{.Permalink}}" id="next"></a>
+           {{ end }}
+      {{end}}
         {{.Content}}
         {{$yorum:= .Params.yorum}}
         {{ if eq $yorum "var" }}
@@ -20,30 +44,6 @@
           {{partial "comment.html" . }}
         {{ end }}
      </div>
-     {{ $number := (float .Params.sayfa) }}
-     {{ $anothernumber := 1 }}
-     {{ $total := (add $number $anothernumber) }}
-     {{ $totalsub := (sub $number $anothernumber) }} 
-     {{ $zeooo := trim $total " " }} 
- {{$pardate := .Params.date}}
- {{$zero := "0"}}
-  {{ $zeo := trim $total " " }}
-  {{ $full := printf "%s%s" "0" $zeo }}
-  {{if gt 10 $total}}
-      {{ $v1 := where .Site.Pages "Params.sayfa" $full }}
-      {{ $v2 := where .Site.Pages "Params.date" $pardate }}
-      {{ $filtered := $v1 | intersect $v2 }}
-     {{ range $filtered }}
-     <a href="{{.Permalink}}" id="next"></a>
-       {{ end }}
-       {{else}}
-       {{ $z1 := where .Site.Pages "Params.sayfa" $zeo }}
-       {{ $z2 := where .Site.Pages "Params.date" $pardate }}
-       {{ $filter := $z1 | intersect $z2 }}
-      {{ range $filter }}
-      <a href="{{.Permalink}}" id="next"></a>
-        {{ end }}
-   {{end}}
      <section class="bg-light mt-5">
      {{- if .Params.tags }}
         <ul class="list-inline text-center pt-5">
