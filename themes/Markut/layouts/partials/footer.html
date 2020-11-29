@@ -31,14 +31,14 @@
                      data-sitekey="6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6"
                   >
                    <label for="field_0">
-                  
+                    /label>
                    <input id="field_0"
                           name="field_0"
                           type="email"
                           placeholder="Mail Adresiniz"
                           required="required"
                           class="form-control form-email"
-                   > </label>
+                   > <
                   <div aria-hidden="true"
                       class="emailoctopus-form-row-hp"
                   >
@@ -116,6 +116,7 @@
 
     <small>ücretsizdir.</small>
 </div>
+
         <div class="footericon"><img src="/img/logo-color.svg" alt="Markut Logo"></div>
         <div class="footerlogo">MARKUT</div>
         <div class="footersur">Marmara Kreatif Ürün Tasarım Ekibi</div>
@@ -139,7 +140,8 @@
     <script src="{{.Site.BaseURL}}/bootstrap/bootstrap.min.js"></script>
     <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-embed.js">
     </script>
-    
+        <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-recaptcha.js">
+        </script>
     
     {{ if not (in (.Site.BaseURL | string) "localhost") }}
       <!-- Global site tag (gtag.js) - Google Analytics -->
