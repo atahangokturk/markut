@@ -4,14 +4,14 @@
  {{ range ( where .Site.RegularPages "Type" "kapak" )}}
   <div class="row markutsayi post {{ .Scratch.Get `postClass` }}">
                 <div class="col-md-6">
-                <div class="markutcvr">
+                <div class="markutcvr text-right">
                         <a href="{{ .Permalink }}"><img class="img-fluid" src="{{.Params.thumb}}" alt="Markut Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} Kapak Tasarımı"></a>
                 </div>
                 </div>
                 <div class="col-md-6">
                         <div class="icindekiler">içindekiler</div>
                         <ul class="list-group">
-                        {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}  
+                        {{ range first 30 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}  
                         <li class="list-group-item contents">{{ .Title | markdownify }}</li>                        
                         {{ end }}
                         </ul><a href="{{ .Permalink }}" class="btn markutbtn" type="button">sayıyı oku</a>

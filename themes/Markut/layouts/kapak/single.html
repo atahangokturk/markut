@@ -7,8 +7,8 @@
               <div class="col-md-6">
                 <div class="kapaklogo">MARKUT</div>
               <div class="kapaksur">Endüstriyel Tasarım Dergisi</div>
-              <div class="markutzaman"><time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time> | sayı {{ range .Params.sayi }}{{ . }}{{ end }}</div>
-              <p class="text-center kapakdesc">{{.Params.aciklama}}</p>
+              <div class="markutzaman"><time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time> | Sayı {{ range .Params.sayi }}{{ . }}{{ end }}</div>
+              <p class="text-center kapakdesc"><div class="text-center">{{.Params.aciklama | markdownify}}</div></p>
               <div class="kapakoku">okumaya başla</div>
               <div class="kapakok">↓</div>
             </div>

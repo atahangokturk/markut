@@ -1,0 +1,275 @@
++++
+title = "3 Boyutlu Yazıcılar ve Endüstriyel Tasarım"
+url = "sayi-4/3-boyutlu-yazicilar-endustriyel-tasarım/"
+date = "2020-12-01"
+seotitle = "3 Boyutlu Yazıcılar ve Endüstriyel Tasarım"
+description=""
+aciklama="Bir önceki sayıda 3B yazıcılara tarihi, çeşitleri, malzemeleri ve uygulamalarna bir giriş yapmıştık. Bu sayıda ise 3B baskı sürecini, 3B yazıcı çeşitlerini, malzemelerini detaylandırıp, 3B baskı için tasarım yapılırken dikkat edilmesi gereken yerlere değineceğim."
+thumb="/img/3-boyutlu-yazicilar-endustriyel-tasarim-thumb.jpg"
+sayi=[
+"04"
+]
+sayfa="07"
+yazar=["hilal doruk"]
+type="sayfa"
+tags= [
+"anasayfa", "dergi"
+]
++++
+<div class="text-center">
+    <img style="max-height:700px;" src="/img/3-boyutlu-yaziliar-ve-endustriyel-tasarim.jpg" alt="" ></div>
+<div class="container">
+<p>Bir önceki sayıda 3B yazıcılara tarihi, çeşitleri, malzemeleri ve uygulamalarna bir giriş yapmıştık. Bu sayıda ise 3B baskı sürecini, 3B yazıcı çeşitlerini, malzemelerini detaylandırıp, 3B baskı için tasarım yapılırken dikkat edilmesi gereken yerlere değineceğim. </p>
+<br><br>
+<p>Katmanlı/eklemeli üretim (hızlı prototipleme/3B baskı), katı bir nesne oluşturmak için bir malzemenin katmanlarının oluşturulduğu bir üretim yöntemidir. İlk CAD tasarımından 3B basılı parçaya kadar, eklemeli imalat genel bir dizi adım izler.</p>
+
+<h2>Katmanlı Üretim Süreci</h2>
+<img src="/img/3D-printing-process-chain_W640.jpg" alt="">
+<h3>1. CAD</h3>
+<p>Dijital bir model üretmek, eklemeli üretim sürecinin ilk adımıdır. Dijital bir model üretmenin en yaygın yöntemi bilgisayar destekli tasarımdır (CAD). </p>
+<p>Katmanlı imalat için tasarım yapılırken değerlendirilmesi gereken birkaç tasarım hususu vardır. Bunlar genellikle özellik geometrisi sınırlamalarına ve/veya kaçış deliği gereksinimlerine odaklanır ve teknolojiye göre değişir. </p>
+<h3>2. STL dönüştürme ve dosya işleme</h3>
+<p>Katmanlı üretim sürecindeki geleneksel üretim metodolojisinden farklı olan kritik bir aşama, bir CAD modelini bir STL (stereolitografi) dosyasına dönüştürme gereksinimidir. STL, bir nesnenin yüzeylerini tanımlamak için üçgenler, çokgenler kullanır.</p>
+<p>Bir STL dosyası oluşturulduktan sonra, dosya bir dilimleme programına aktarılır. Bu program STL dosyasını alır ve G koduna dönüştürür. G kodu, sayısal kontrol (NC) programlama dilidir. Otomatik takım tezgahlarını [CNC (Computer Numerical Control) makineleri ve 3B yazıcılar dahil] kontrol etmek için bilgisayar destekli imalatta [CAM (Computer Aided Manufacturing)] kullanılır.</p>
+<h3>3. Baskı</h3>
+<p>3D baskı makineleri genellikle birçok küçük ve karmaşık parçadan oluşur, bu nedenle doğru bakım ve kalibrasyon, doğru baskılar üretmek için kritik önem taşır. Bu aşamada baskı malzemesi de yazıcıya yüklenir. Katmanlı imalatta kullanılan ham maddeler genellikle sınırlı bir raf ömrüne sahiptir ve dikkatli kullanım gerektirir. Bazı süreçler fazla yapı malzemesini geri dönüştürme yeteneği sunarken, tekrarlanan yeniden kullanım, düzenli olarak değiştirilmezse malzeme özelliklerinde bir azalmaya neden olabilir.</p>
+<p>Çoğu katmanlı üretim makinesinin, baskı başladıktan sonra izlenmesi gerekmez. Makine otomatik bir süreci takip eder ve sorunlar genellikle yalnızca makinede malzeme kalmadığında veya yazılımda bir hata olduğunda ortaya çıkar.</p>
+<h3>4. Baskıların çıkarılması</h3>
+<p>Bazı eklemeli üretim teknolojileri için baskının kaldırılması, basılı parçayı yapım platformundan ayırmak kadar kolaydır. Diğer daha endüstriyel 3B baskı yöntemleri için bir baskının çıkarılması, baskı malzemesinin içinde veya baskı tablasına takılıyken baskının hassas bir şekilde çıkarılmasını içeren oldukça teknik bir işlemdir. Bu yöntemler, karmaşık kaldırma prosedürleri ve yüksek vasıflı makine operatörlerinin yanı sıra güvenlik ekipmanı ve kontrollü ortamlar gerektirir.</p>
+<h3>5. Rötuş</h3>
+<p>İşlem sonrası prosedürler yine yazıcı teknolojisine göre değişir. SLA, işlemden önce UV altında kürlenmesi gereken bir bileşene ihtiyaç duyar, metal parçaların genellikle bir fırında gerilmesinin giderilmesi gerekirken, FDM parçaları hemen işlenebilir. Desteği kullanan teknolojiler için bu, işlem sonrası aşamada da kaldırılır. Çoğu 3B baskı malzemesi zımparalanabilir ve son kullanım için bir baskı hazırlamak için yuvarlanma, yüksek basınçlı hava temizleme, cilalama ve renklendirme gibi diğer işlem sonrası teknikler uygulanır.</p>
+
+<p></p>
+<div class="row">
+    <div class="col-md-3"><img src="/img/3d-printing.jpg" alt=""></div>
+    <div class="col-md-3"><img src="/img/3d-yazici-baski.jpg" alt=""></div>
+    <div class="col-md-3"><img src="/img/3-boyutlu-yazici-capak-temizleme.jpg" alt=""></div>
+    <div class="col-md-3"><img src="/img/3-boyutlu-yazici-baski.jpg" alt=""></div>
+</div>
+
+<p>Belirli bir uygulama için en uygun Katmanlı Üretim (Additive Manufacturing-AM) sürecini seçmek zor olabilir. Mevcut 3B Baskı teknolojilerinin ve materyallerinin çok geniş yelpazesi, çoğu zaman bunların birkaçının uygulanabilir olabileceği anlamına gelir, ancak her biri boyutsal doğruluk, yüzey kalitesi ve işlem sonrası gereksinimlerinde farklılıklar sunar.</p>
+<hr>
+<h2><strong>Farklı 3B Baskı Türleri</strong> </h2>
+<p>ISO / ASTM 52900 standardı, tüm farklı <strong>eklemeli üretim</strong> (3B baskı) türlerini bu yedi gruptan biri altında kategorize etti:</p>
+<div class="row">
+    <div class="col-md-3"><p><strong>Malzeme Ekstrüzyonu (</strong><strong><em>FDM</em></strong><strong>-Fused Deposition Modeling):</strong> Malzeme, bir nozül veya delikten seçici olarak dağıtılır.</p>
+        <img src="/img/3-boyutlu-baski-sureci.jpg" alt="">
+    </div>
+    <div class="col-md-3"><img src="/img/Principle-of-FDM-printing-process.jpg" alt=""></div>
+    <div class="col-md-3"><p><strong>Kazan Polimerizasyonu (</strong><strong><em>SLA</em></strong><strong> & </strong><strong><em>DLP</em></strong><strong>):</strong> Bir teknedeki sıvı fotopolimer, UV ışığı ile seçici olarak kürlenir.</p>
+        <img src="/img/3-boyutlu-yazicilar-baski-alma.jpg" alt="">
+        <small>SLA</small>
+    </div>
+    <div class="col-md-3"><img src="/img/stereolith1.gif" alt=""></div>
+</div>
+<br><br><br><br>
+<div class="row">
+    <div class="col-md-4"><p><strong>Toz Yatak Füzyonu (</strong><strong><em>SLS, DMLS</em></strong><strong> ve </strong><strong><em>SLM</em></strong><strong>):</strong> Yüksek enerjili bir kaynak, toz parçacıklarını seçici olarak birleştirir.</p>
+       <img src="/img/3-boytlu-yazici-uygulamalari.jpg" alt=""> <small>SLS</small></div>
+    <div class="col-md-4"><img src="/img/Schematic_representation_of_granular_binding_fabrication.jpg" alt=""></div>
+    <div class="col-md-4"><img src="/img/3b-yazicilar-markut.jpg" alt=""><p><strong>Malzeme Püskürtme (</strong><strong><em>MJ</em></strong><strong>-Material Jetting)</strong>: Malzeme damlacıkları seçici olarak biriktirilir ve kürlenir.</p>
+        <details close="">
+            <summary>Çalışma Prensibi</summary>
+            <img src="/img/F_ProcessAdditive_MaterialJetting.jpg" alt="">
+            </details>
+    </div>
+</div>
+<br><br><br><br>
+<div class="row">
+    <div class="col-md-4"><p><strong>Bağlayıcı Püskürtme (</strong><strong><em>BJ</em></strong><strong>-Binder Jetting):</strong> Sıvı bağlama maddesi, bir toz yatağının bölgelerini seçici olarak bağlar.</p>
+        <img src="/img/3-boyutlu-baski-sureci-endustriyel-tasarim.jpg" alt="">
+        <details close="">
+            <summary>Çalışma Prensibi</summary>
+            <img src="/img/F_ProcessAdditive_MaterialJetting.jpg" alt="">
+            </details>
+    </div>
+    <div class="col-md-4">
+        <p><strong>Doğrudan Enerji Biriktirme (</strong><strong><em>LENS, LBMD</em></strong><strong>):</strong> Yüksek enerji kaynağı, biriktirilirken malzemeyi birleştirir.</p>
+        <img src="/img/dogrudan-enerji-biriksitme-LENS-3d-print.jpg" alt="">
+<details close="">
+<summary>Çalışma Prensibi</summary>
+<img src="/img/F_ProcessAdditive_DirectedEnergyDeposition2x.jpg" alt="">
+    
+</details></div>
+    <div class="col-md-4">
+        <p><strong>Levha Laminasyon (</strong><strong><em>LOM, UAM</em></strong><strong>):</strong> Malzeme tabakaları yapıştırılır ve katman katman oluşturulur.</p>
+        <img src="/img/Sheet_Lamination.jpg" alt="">
+        <details close="">
+            <summary>Çalışma Prensibi</summary>
+            <img src="/img/Sheet_Layer.jpg" alt="">
+                
+            </details></div>
+</div>
+
+
+<hr>
+
+
+<h2><strong>Kullanılabilen Malzemeler</strong></h2>
+<div class="row">
+    <div class="col-md-6"><p>Termoplastikler, 3B baskıda kullanılan en yaygın malzemelerdir. Plastik enjeksiyon kalıplama ile yapılanlarla karşılaştırılabilir kalite, hız ve maliyette parçalarla çalışmak ve üretmek kolaydır. Plastik, prototip oluşturmanın yanı sıra çok sayıda endüstriyel ve tüketim malları oluştururken genellikle iyi bir seçimdir. Metaller, seramikler ve biyo-uyumlu malzemeler de birçok uygulama ve endüstriyi kapsadıkları için büyük ilgi görmektedir. Her malzemenin fiziksel teknoloji engelleri, yasal onay ve ikna edici ekonomi sağlama gibi kendine özgü zorlukları vardır.</p>
+        <p>Bununla birlikte, 3B yazıcılar tek bir baskı işinde farklı hammadde türleri ile baskı yapma kapasitesi kazanmaya devam ettikçe, yeni bir malzeme sınıfı ortaya çıkacaktır. Çok malzemeli 3B yazıcılar, tasarımcılara esnekliği, sertliği ve iletkenliği kontrol etme ve nihai bir üründe neredeyse sonsuz malzeme özellikleri kombinasyonuna olanak tanıyan hassas karışımlar oluşturabilir. Dijital olarak tasarlanmış ve hassas şekilde basılmış malzeme karışımları, özel fiziksel özelliklere sahip çeşitli ve daha önce görülmemiş çözümler sunacaktır.</p> 
+    </div>
+    <div class="col-md-6">
+        <img src="/img/3boyutlu-yazicilar-entas.jpg" alt=""><br>
+        <img src="/img/4-brackets.jpg" alt=""></div>
+</div>
+<details close="">
+    <summary><strong>Plastikler</strong></summary>
+    <p>3B baskı plastikleri, hem prototip oluşturma amaçları hem de bazı fonksiyonel uygulamalar için uygun, çok çeşitli fiziksel özelliklere sahip hafif malzemelerdir.</p>
+    <p>Plastikler, genellikle fonksiyonel uygulamalar için daha uygun olan termoplastikler (FDM veya SLS ile) veya genellikle iyi görsel görünüm gerektiren uygulamalar için daha uygun olan termosetlerdir (SLA / DLP veya Malzeme Püskürtme ile).</p>
+    <p><strong>PLA</strong>: En yaygın ve düşük maliyetli 3B baskı plastiği. Keskin ayrıntılarla işlevsel olmayan prototipleme için idealler. Yüksek sıcaklıklar için uygun değildir.</p>
+    <p><strong>ABS</strong>: PLA'ya kıyasla daha iyi mekanik ve termal özelliklere ve mükemmel darbe dayanımına sahip ticari plastik.</p>
+    <p><strong>Reçine</strong>: Pürüzsüz, enjeksiyon kalıbı benzeri yüzeyli yüksek detaylı parçalar üreten termoset polimerler. Prototipleme için ideal.</p>
+    <p><strong>Naylon</strong>: Naylon veya poliamid (PA), mükemmel mekanik özelliklere ve yüksek kimyasal ve aşınma direncine sahip bir plastiktir. Fonksiyonel uygulamalar için mükemmel.</p>
+    <p><strong>PETG</strong>: Yüksek darbe dayanımına ve mükemmel kimyasal ve nem direncine sahip, baskısı kolay bir plastiktir.</p>
+    <p><strong>TPU</strong>: Düşük sertliğe ve kolayca esneyip sıkıştırılabilen kauçuğa benzer bir his veren termoplastik bir elastomerdir.</p>
+    <p><strong>ASA</strong>: Gelişmiş basılabilirlik, UV kararlılığı ve yüksek kimyasal dirence sahip ABS'ye benzer mekanik özelliklere sahiptir. Genellikle dış mekan uygulamaları için kullanılır.</p>
+    <p><strong>PEI</strong> <strong>(ULTEM)</strong>: PEI, iyi mekanik özelliklere ve olağanüstü ısı, kimyasal ve alev direncine sahip bir mühendislik termoplastikidir. </p>
+    </details>
+<details close="">
+<summary><strong>Metaller</strong></summary>
+<p>3B baskı metalleri genellikle yüksek mukavemet, yüksek sertlik veya yüksek termal direnç gerektiren uygulamalarda kullanılır. Metalde 3B baskı yaparken, topoloji optimizasyonu, parça performansını en üst düzeye çıkarmak ve teknolojinin yüksek maliyetini azaltmak için kritiktir.</p>
+<p>DMLS / SLM, en geniş metal yelpazesiyle uyumludur ve üst düzey mühendislik uygulamaları için parçalar üretir. Daha az talepkar kullanım durumları için, Binder Jetting, düşük maliyeti nedeniyle popülerlik kazanıyor ve Paslanmaz çelik açık ara en çok kullanılan malzeme.</p>
+<p>Prototip oluşturma amacıyla metal 3B baskının maliyetlerini düşürmesi beklenen ekstrüzyon tabanlı metal 3B baskı sistemleri (FDM'ye benzer) 2018'de piyasaya sürülüyor.</p>
+<p>Paslanmaz çelikler, takım çelikler, titanyum alaşımları, alüminyum alaşımları, nikel bazlı süper alaşımlar, kobalt-krom alaşımları, bakır bazlı alaşımlar, değerli metaller (altın, gümüş, platin ...) egzotik metaller (paladyum, tantal ...)</p>
+<p><strong>Paslanmaz çelik</strong>: Kolayca kaynaklanabilen, işlenebilen ve cilalanabilen yüksek süneklik, aşınma ve korozyon direncine sahip bir metal alaşımdır.</p>
+<p><strong>Alüminyum</strong>: Mukavemet-ağırlık oranı, yüksek ısı ve elektrik iletkenliği, düşük yoğunluk ve doğal hava direncine sahip bir metaldir.</p>
+</details>
+<p></p>
+<p></p>
+</div>
+<div class="container-fluid">
+<img src="/img/Additive-Manufacturing-Infographic-3DHubs.original.jpg" alt="">
+</div>
+<div class="container">
+<p style="color: #9B9A97; ">Bu tablolarda tüm makine türlerine ve tek tek tüm makinelerdeki tasarım kısıtlarına ve sağlarlıklarına yer verilmiştir. <a href="https://www.3dhubs.com/guides/3d-printing/#design-for-3d-printing" target="_blank">İnternet sitelerinde</a> daha detaylı bilgi bulunmaktadır.</p>
+
+<hr>
+<h2>3B Baskı İçin Tasarlamak</h2>
+<p>Farklı 3B baskı süreçlerinin farklı kapasiteleri ve farklı tasarım kısıtları olduğundan göz önünde bulundurulması gereken, parçanın<em> iskeletini</em> oluşturan, kilit unsurlar vardır. Bu bölümde tüm makine türlerine uyan kısıtlamalardan bahsedeceğim.</p>
+<p> Öncelikli olarak her şeyi 3B modelleme programında çizilebiliyor oluşumuz bunun 3b baskı ortamında basılabileceği anlamına gelmez. </p>
+<div class="row">
+    <div class="col-md-6">
+        <p><strong>Çıkıntılar</strong></p>
+<p>Her çıkıntı bulunduğu zemine belli bir açı ile bağlıdır. 3b makinelerin destek malzemesi olmadan üretebileceği bir açı sınırı vardır. Desteğin üzerine yazdırılan katmanlar genellikle daha pürüzlü bir yüzey kaplamasına sahip olduğundan, <span style="text-decoration: underline;">bir modelin çıkıntılarını sınırlamak iyi bir uygulamadır.</span></p>
+        <img src="/img/3boyutlu-yazilar-baski.jpg" alt=""></div>
+    <div class="col-md-6">
+        <p><strong>Set (duvar, yüzey) Kalınlıkları</strong></p>
+        <p>Her makinenin doğru biçimde üretebileceği yüzey inceliği sınırı da vardır. Her zaman modele kalınlıklar eklemek gereklidir. <span style="text-decoration: underline;">0.8 mm den kalın duvarlar</span> tüm 3b süreçlerinde doğru şekilde basılabilir.</p>
+        <img src="/img/Wall-Thickness.jpg" alt="">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <p><strong>Fiziksel</strong> <strong>Değişim</strong></p>
+        <p>Kullanılan malzemeler eritilir, sinterlenir veya lazerle taranır ve katılaştırılır. Malzemenin ısınması ve soğuması, baskı sırasında parçaların bükülmesine neden olabilir. Büyük, düz yüzeyler özellikle eğrilmeye eğilimli olabilir. Doğru makine kalibrasyonu kullanılarak ve parçan ile baskı yatağı arasında yeterli yüzey yapışması sağlanarak eğrilmeden tipik olarak kaçınılabilir. <span style="text-decoration: underline;">Büyük düz yüzeylerden kaçınmalı ve 3B modele yuvarlak köşeler eklenmeli.</span></p>
+        <img src="/img/3-boyutlu-yazici-uygulamalari.jpg" alt="">
+    </div>
+    <div class="col-md-6">
+        <p><strong>Detay</strong> <strong>Oranı</strong></p>
+        <p>Karmaşık ayrıntılara sahip bir 3B model oluştururken, her 3B yazım işleminin üretebileceği minimum boyutunu akılda tutmak önemlidir. Minimum ayrıntı seviyesi, her bir 3B yazdırma işleminin yeteneklerine ve mekaniğine ve seçilen katman yüksekliğine bağlıdır.</br>Kullanılan süreç ve malzemeler, baskınızın hızı ve maliyeti üzerinde bir etkiye sahip olacaktır, bu nedenle model için daha <span style="text-decoration: underline;">küçük ayrıntıların kritik olup olmadığını belirlemek önemli bir tasarım kararıdır.</span></p>
+        <img src="/img/3-boyutlu-cikti.jpg" alt="">
+    </div>
+</div>
+
+<button
+class="btn markutbtn"
+data-target="#my-collapse"
+data-toggle="collapse"
+aria-expanded="false"
+aria-controls="my-collapse"
+>
+Kaynaklar
+</button>
+<div id="my-collapse" class="collapse">
+<pre> <small><code>  
+    https://www.3Dhubs.com/guides/3D-printing/#:~:text=Every 3D printer builds parts,term Additive Manufacturing comes from
+
+    https://www.3dhubs.com/guides/3d-printing/
+    
+    https://tr.wikipedia.org/wiki/Üç_boyutlu_baskı
+    
+    https://builder3Dprinters.com/industrial-3D-printers/?gclid=Cj0KCQjwit_8BRCoARIsAIx3Rj45akQM3Jpf7WM-3eqgfZiA0MAzJDpa7FNqTDQsy58oun6JCK8FS2YaAjgNEALw_wcB
+    
+    https://i.materialise.com/blog/en/3D-printing-product-design/
+    
+    https://en.wikipedia.org/wiki/3D_printing
+    
+    https://3dlaboratorio.es/eng/3d-printing-examples.htm
+    
+    https://www.apics.org/apics-for-individuals/apics-magazine-home/magazine-detail-page/2018/07/03/principles-of-3d-printing
+    
+    http://unfold.be/pages/ceramic-3d-printing
+    
+    https://manufactur3dmag.com/3d-printing-technology-choice-fdm-v-s-sla-v-s-sls/
+    
+    https://3dprint.com/60563/you-sls-printer-for-2000/
+    
+    https://www.industryweek.com/technology-and-iiot/article/21961555/take-5-qa-with-chuck-hull-cofounder-3d-systems
+    
+    https://3dprint.com/72171/first-3d-printer-chuck-hull/
+    
+    https://3dinsider.com/3d-printing-materials/
+    
+    https://www.manufacturingglobal.com/technology/evolution-3d-printing-manufacturing
+    
+    https://www.3dhubs.com/knowledge-base/additive-manufacturing-technologies-overview/
+    
+    https://en.wikipedia.org/wiki/Applications_of_3D_printing#Manufacturing_applications
+    
+    https://3dprinting.com/what-is-3d-printing/#Consumer-Products
+    
+    https://amfg.ai/industrial-applications-of-3d-printing-the-ultimate-guide/#tab-con-4
+    
+    https://www.researchgate.net/publication/327760995_Watching_and_Safeguarding_Your_3D_Printer_Online_Process_Monitoring_Against_Cyber-Physical_Attacks/figures?lo=1&utm_source=google&utm_medium=organic
+    
+    https://en.wikipedia.org/wiki/Powder_bed_and_inkjet_head_3D_printing
+    
+    https://www.researchgate.net/publication/328672825_PRODUCTION_FACTORS_INFLUENCING_MECHANICAL_AND_PHYSICAL_PROPERTIES_OF_FDM_PRINTED_EMBOSSING_DIES/figures?lo=1&utm_source=google&utm_medium=organic
+    
+    https://technologystudent.com/despro_3/stereo1.html
+    
+    https://make.3dexperience.3ds.com/processes/material-jetting
+    
+    https://www.3dnatives.com/en/directed-energy-deposition-ded-3d-printing-guide-100920194/
+    
+    https://www.lboro.ac.uk/research/amrg/about/the7categoriesofadditivemanufacturing/sheetlamination/
+    
+    https://www.livescience.com/40310-laminated-object-manufacturing.html#:~:text=Laminated object manufacturing (LOM) is,the California-based Helisys Inc.&text=During the LOM process%2C layers,computer-controlled laser or blade.
+    
+    https://cdn.mos.cms.futurecdn.net/nqXauKJdtfR8tmqLCfbyc3-970-80.jpg.webp
+    
+    https://www.3dhubs.com/knowledge-base/key-design-considerations-3d-printing/
+    
+    https://i.materialise.com/en/3d-printing-materials/abs/design-guide
+    
+    https://markamuduru.com/4-tuketim-urunu-kategorisi/
+    
+    https://newsroom.porsche.com/en/2020/products/porsche-3d-printed-bodyform-full-bucket-seat-concept-study-19996.html
+    
+    https://www.crea3d.com/en/module/psblog/module-psblog-blog?id=13&controllerUri=blog
+    
+    https://www.multi-circuit-boards.eu/en/pricing/printed-circuit-boards.html
+    
+    https://www.elektor.com/voltera-v-one-desktop-pcb-printer
+    
+    https://www.medicalexpo.com/prod/lima-corporate/product-94137-599193.html
+    
+    https://www.medicalexpo.com/prod/lima-corporate/product-94137-740028.html
+    
+    https://www.limamemorial.org/health-library/HIE Multimedia-TextOnly/3/100006
+    
+    https://www.researchgate.net/publication/276370694_Additive_manufacturing_of_Trabecular_Titanium_orthopedic_implants/figures?lo=1
+    
+    https://www.additivemanufacturing.media/columns/10-years-producing-hip-implants-through-am
+    
+    https://digital.hbs.edu/platform-rctom/submission/organovo-bioprinting-tissue-to-speed-up-drug-development/,
+    
+    https://redshift.autodesk.com/3d-printed-organs-bioficial-heart/
+    
+    https://interestingengineering.com/the-science-fiction-world-of-3d-printed-organs
+  </code></small></pre>
+</div>
+
+</div>
