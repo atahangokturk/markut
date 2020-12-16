@@ -23,10 +23,11 @@
 </div>
 {{ end }}{{ end }}</div></div>
 -->
-<div class="text-center mt-6">
-    <h2>Dergimize Eklenen En Son Sayılar</h2>
-    <h3>Tasarım Dergimiz Her Ayın 1'inde Online Çıkmaktadır.</h3>
-    <p>Endüstriyel tasarımı bağlamında genel tasarım disiplinleriyle ilgili içerikleri sizlere sunuyoruz.</p>
+<div class="text-center mt-6 ">
+        <h1>Endüstriyel Tasarım Dergisi: Markut</h1>
+    <h2 class="mt-1">Dergimize Eklenen En Son Sayılar</h2>
+    <h3 class="mt-1">Tasarım Dergimiz Her Ayın 1'inde Online Çıkmaktadır.</h3>
+    <p>Endüstriyel tasarımı bağlamında <strong>genel tasarım disiplinleriyle</strong> ilgili içerikleri sizlere sunuyoruz.</p>
 </div>
 <div class="container-fluid sayilar">
  {{ range ( where .Site.RegularPages "Type" "kapak" )}}
@@ -40,7 +41,7 @@
                         <div class="icindekiler">içindekiler</div>
                         <ul class="list-group">
                         {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}  
-                        <li class="list-group-item contents">{{ .Title | markdownify }}</li>                        
+                        <li class="list-group-item contents"><a href="{{.Permalink}}"><strong><span class="text-muted">{{.Params.sayfa}}</span></strong></a> {{ .Title | markdownify }}</li>                      
                         {{ end }}
                         </ul><a href="{{ .Permalink }}" class="btn markutbtn" type="button">sayıyı oku</a>
                 </div>
