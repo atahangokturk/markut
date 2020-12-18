@@ -57,6 +57,10 @@ h6 {
   letter-spacing: 1px;
 }
 pre code{color: #c30000;}
+.container img{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 html,
 body {
   font-size: 16px !important;
@@ -210,6 +214,9 @@ img {
 a.nav-link {
   color: #000;
   padding-bottom: 0px;
+}
+a.nav-link:hover {
+font-weight: 700;
 }
 .mt-6 {
   margin-top: 6em;
@@ -607,8 +614,23 @@ text-decoration: underline;
   border-bottom: 1px #000 solid;
   width: 400px;
 }
+.mrkt-menu-s{
+  padding: 5px 10px 10px;
+  font-size: 17px;
+  border-bottom: 1px #000 solid;
+  width: 80px;
+}
+.mrkt-menu-s a:hover{
+  font-weight: 700;
+}
+.dropdown-menu{
+  min-width: 4rem;
+}
 .mrkt-menu a{
   padding: 5px 5px 10px;
+}
+.mrkt-menu a:hover{
+  font-weight: 700;
 }
 #myBtn {
   display: none; /* Hidden by default */
@@ -699,8 +721,9 @@ article a:hover {
   50%{transform: rotateZ(-1deg);}
   100%{transform: rotateZ(0deg);}
 }
+/*
 #background{
-  animation: backk 3s ease-in infinite;
+  animation: backk 2s ease-in infinite;
   transform-origin: center;
 }
 @keyframes backk{
@@ -708,7 +731,21 @@ article a:hover {
   50%{ transform:skew(180deg,179deg) rotate(1deg);}
   100%{ transform:skew(179deg,179deg) rotate(1deg);}
 }
+*/
 
+#darkmodeicon{
+  z-index: 1;
+  animation: darkmodemrkt 2s ease-in ;
+}
+@keyframes darkmodemrkt{
+  0%{transform:  translateY(90px)  }
+  80%{transform:  translateY(90px)  }
+  100%{transform: translateY(0px) }
+}
+
+svg{
+  z-index: 100;
+}
 svg .stm0 {fill: rgb(0, 0, 0)13, 14, 14);}
 svg .stm0:hover {fill: rgb(95, 95, 95);}
 
@@ -757,8 +794,8 @@ svg .stm0:hover {fill: rgb(95, 95, 95);}
   margin-top: 7px;
 }
 [data-theme='dark'] {
-  background-color: rgb(27, 27, 27) !important;
-  color: #eee;
+  background-color: rgb(39, 39, 39) !important;
+  color: rgb(224, 224, 224);
 }
 
 [data-theme='dark'] .bg-light {
@@ -871,7 +908,9 @@ svg .stm0:hover {fill: rgb(95, 95, 95);}
 [data-theme="dark"] .mdarkmode {color: #ffffff;}
 [data-theme="dark"] svg .stm0 {fill: #ffffff;}
 [data-theme="dark"] svg .stm1 {fill: #000000;}
-
+[data-theme="dark"] .onde .desc {color: #afafaf;}
+[data-theme="dark"] .toc .desc {color: #afafaf;}
+[data-theme="dark"] .footerdesc {color: #afafaf;}
 
 @media screen and (min-width: 2560px ) {
   .markutcvr{
