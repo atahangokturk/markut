@@ -34,7 +34,8 @@
   <div class="row markutsayi post {{ .Scratch.Get `postClass` }}">
                 <div class="col-md-6">
                 <div class="markutcvr">
-                        <a href="{{ .Permalink }}"><img class="img-fluid" src="{{.Params.thumb}}" alt="Markut Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} Kapak Tasarımı"></a>
+                        {{ if isset .Params "thumb"}}<a href="{{ .Permalink }}"><img class="img-fluid" src="{{.Params.thumb}}" alt="Markut Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} Kapak Tasarımı"></a>{{end}}
+                        <a href="{{ .Permalink }}">{{.Content}}</a>
                 </div>
                 </div>
                 <div class="col-md-6">

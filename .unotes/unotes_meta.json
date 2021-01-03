@@ -12,42 +12,96 @@
       "name": "content",
       "isOrdered": true,
       "folders": {
-        "sayi": {
-          "name": "sayi",
-          "isOrdered": true,
-          "folders": {
-            "sayi-0": {
-              "name": "sayi-0",
-              "isOrdered": true,
-              "folders": {},
-              "files": {
-                "0": 0,
-                "1": 1,
-                "2": 2,
-                "3": 3,
-                "4": 4,
-                "5": 5,
-                "6": 6,
-                "7": 7,
-                "8": 8
-              }
-            },
-            "sayi-1": {
-              "name": "sayi-1",
-              "isOrdered": true,
-              "folders": {},
-              "files": {
-                "0": 1,
-                "1": 0,
-                "2": 2,
-                "a": 3
-              }
-            }
-          },
-          "files": {}
-        },
         "tags": {
           "name": "tags",
+          "isOrdered": true,
+          "folders": {},
+          "files": {}
+        },
+        "blog": {
+          "name": "blog",
+          "isOrdered": true,
+          "folders": {},
+          "files": {}
+        },
+        "dergi": {
+          "name": "dergi",
+          "isOrdered": true,
+          "folders": {
+            "deneme": {
+              "name": "deneme",
+              "isOrdered": true,
+              "folders": {},
+              "files": {}
+            },
+            "sayi-5": {
+              "name": "sayi-5",
+              "isOrdered": true,
+              "folders": {
+                "3d-yazicilar": {
+                  "name": "3d-yazicilar",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                },
+                "beyin-firtinasi": {
+                  "name": "beyin-firtinasi",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                },
+                "ikonik-tasarimlar-lego": {
+                  "name": "ikonik-tasarimlar-lego",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                },
+                "jukebox": {
+                  "name": "jukebox",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                },
+                "kapak": {
+                  "name": "kapak",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                },
+                "liter-of-light": {
+                  "name": "liter-of-light",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                },
+                "minimalizm": {
+                  "name": "minimalizm",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                },
+                "shakers": {
+                  "name": "shakers",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                },
+                "tasarimda-malzeme-karton": {
+                  "name": "tasarimda-malzeme-karton",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                }
+              },
+              "files": {}
+            }
+          },
+          "files": {
+            "_index": 0
+          }
+        },
+        "yazar": {
+          "name": "yazar",
           "isOrdered": true,
           "folders": {},
           "files": {}

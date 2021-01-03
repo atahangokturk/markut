@@ -198,7 +198,10 @@ img {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
 }
-
+figcaption {
+  font-size: 90%;
+  color: #6c757d;
+}
 .markutnav {
   border-bottom: 1px solid #000;
 }
@@ -734,7 +737,7 @@ article a:hover {
 }
 @keyframes backk{
   0%{ transform:skew(179deg,179deg) rotate(1deg); }
-  50%{ transform:skew(180deg,179deg) rotate(1deg);}
+  50%{ transform:skew(180deg,179deg) rotate(1deg); -webkit-transform:skew(180deg,179deg) rotate(1deg); -moz-transform:skew(180deg,179deg) rotate(1deg); -ms-transform:skew(180deg,179deg) rotate(1deg); -o-transform:skew(180deg,179deg) rotate(1deg); }
   100%{ transform:skew(179deg,179deg) rotate(1deg);}
 }
 */
@@ -893,15 +896,7 @@ svg .stm0:hover {fill: rgb(95, 95, 95);}
 [data-theme='dark'] .modalback {
   background-color: rgb(27, 27, 27) !important;
 }
-[data-theme="dark"] .bg-grey {
-	color: rgb(15, 15, 15);
-  }
-  [data-theme="dark"] .bg-yellow {
-	color: rgb(15, 15, 15);
-  }
-  [data-theme="dark"] .bg-green {
-	color: rgb(15, 15, 15);
-  }
+
   [data-theme="dark"] #side-menu {
     background-color: rgb(15, 15, 15);
     color: rgb(15, 15, 15);
@@ -1023,13 +1018,13 @@ svg .stm0:hover {fill: rgb(95, 95, 95);}
   }
 }
 .bg-yellow {
-  background-color: #fff1c5;
+  background-color: #e5ff002f;
 }
 .bg-green {
-  background-color: #e9ffda;
+  background-color: #00ce3427;
 }
 .bg-grey {
-  background-color: rgb(241, 241, 241);
+  background-color: rgba(0, 0, 0, 0.055);
 }
 @media screen and (max-width: 375px){
   .navbar-toggler{
@@ -1044,6 +1039,14 @@ svg .stm0:hover {fill: rgb(95, 95, 95);}
   background-repeat: no-repeat;
   width: 100%;
   height: 80vh;
+  background-attachment: fixed;
+}
+.bg-mrkt-top{
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
   background-attachment: fixed;
 }
 .grecaptcha-badge {

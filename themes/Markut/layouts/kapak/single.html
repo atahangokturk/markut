@@ -1,7 +1,5 @@
 {{ partial "head.html" . }}
 {{ partial "header-sayi.html" . }}
-{{.Content}}
-
  <div class="container markutkapak">
             <div class="row">
               <div class="col-md-6">
@@ -13,7 +11,7 @@
               <div class="kapakok">↓</div>
             </div>
               <div class="col-md-6">
-                <div class="markutcover"><img class="img-fluid" src="{{.Params.thumb}}" alt="Markut Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} Kapak Tasarımı"></div>
+                <div class="markutcover">{{ if isset .Params "thumb"}} <img class="img-fluid" src="{{.Params.thumb}}" alt="Markut Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} Kapak Tasarımı">{{end}}{{.Content}}</div>
               </div>
             </div>
 </div>
