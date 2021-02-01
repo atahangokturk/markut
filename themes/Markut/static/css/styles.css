@@ -800,6 +800,11 @@ svg .stm0:hover {fill: rgb(95, 95, 95);}
   border-radius: 20px;
   padding: 15px 0px ;
 }
+.maildesvg{
+  z-index: -1;
+  margin: 0 auto;
+  margin-bottom: -135px;
+}
 .custom-switch {
   margin-top: 7px;
 }
