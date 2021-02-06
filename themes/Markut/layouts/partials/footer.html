@@ -116,18 +116,18 @@
     <small>ücretsizdir.</small>
 </div>
 <hr>
-        <div class="footericon"><img loading="lazy" src="/img/logo-color.svg" alt="Markut Logo"></div>
+        <div class="footericon"><img loading="lazy" src="{{.Site.BaseURL}}img/logo-color.svg" alt="Markut Logo"></div>
         <div class="footerlogo">MARKUT</div>
         <div class="footersur">Marmara Kreatif Ürün Tasarım Ekibi</div>
         <p class="footerdesc"><strong>Markut</strong>, Marmara Kreatif Ürün Tasarım ekibidir. Ekibimizle Ağustos 2020'de online <strong>endüstriyel tasarım dergimizi</strong> bu platformda yayınlamaya başladık. Dergimiz, endüstri tasarımı bağlamında <strong>genel tasarım</strong> disiplinleriyle de ilişkili olarak içerikler üretmektedir. İçeriklerimizi başka platformlarda paylaşırken kaynak olarak <a href="https://www.markut.net">Markut.net</a> ibaresinin geçmesi gerekmektedir.</p>
         <ul class="list-inline footerlinks">
-            <li class="list-inline-item"><a href="/iletisim/">İletişim</a></li>| 
-            <li class="list-inline-item"><a href="/hakkimizda/">Hakkımızda</a></li>| 
-            <li class="list-inline-item"><a href="/reklam-sponsorluk/">Reklam ve Sponsorluk</a></li>| 
-            <li class="list-inline-item"><a href="/bize-gonder/">Bize Gönder</a></li>| 
-            <li class="list-inline-item"><a href="/okuyucu-sozlesmesi/">Okuyucu Sözleşmesi</a></li>| 
-            <li class="list-inline-item"><a href="/yazar/">Yazarlar</a></li>| 
-            <li class="list-inline-item"><a href="/tags/">Etiketler</a></li>| 
+            <li class="list-inline-item"><a href="{{.Site.BaseURL}}iletisim/">İletişim</a></li>| 
+            <li class="list-inline-item"><a href="{{.Site.BaseURL}}hakkimizda/">Hakkımızda</a></li>| 
+            <li class="list-inline-item"><a href="{{.Site.BaseURL}}reklam-sponsorluk/">Reklam ve Sponsorluk</a></li>| 
+            <li class="list-inline-item"><a href="{{.Site.BaseURL}}bize-gonder/">Bize Gönder</a></li>| 
+            <li class="list-inline-item"><a href="{{.Site.BaseURL}}okuyucu-sozlesmesi/">Okuyucu Sözleşmesi</a></li>| 
+            <li class="list-inline-item"><a href="{{.Site.BaseURL}}yazar/">Yazarlar</a></li>| 
+            <li class="list-inline-item"><a href="{{.Site.BaseURL}}tags/">Etiketler</a></li>| 
             <li class="list-inline-item"><div class="custom-control custom-switch m-0 ml-0 pl-2 mdarkmode">
               <input type="checkbox" class="custom-control-input " id="darkSwitch" />
               <label for="darkSwitch">Karanlık Mod</label>
@@ -144,7 +144,7 @@
         <div class="copyright"><a href="{{.Site.BaseURL}}">Markut.net</a>  <a href="/dergi/">/dergi</a> | Copyright © 2020-2021 | Markut tarafından tasarlandı.</div>
     </div></footer>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="{{.Site.BaseURL}}/bootstrap/bootstrap.min.js" defer='defer'></script>
+    <script src="{{.Site.BaseURL}}bootstrap/bootstrap.min.js" defer='defer'></script>
     <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-embed.js" defer='defer'>
     </script>
 
@@ -158,8 +158,8 @@
   gtag('config', 'UA-122967892-3');
 </script>
     {{end}}
-<script src="{{.Site.BaseURL}}/js/jquery.clever-infinite-scroll.js"></script>
-<script src="{{.Site.BaseURL}}/js/dark-mode-switch.min.js"></script>
+<script src="{{.Site.BaseURL}}js/jquery.clever-infinite-scroll.js"></script>
+<script src="{{.Site.BaseURL}}js/dark-mode-switch.min.js"></script>
 <script>
   $('#contentsWrapper').cleverInfiniteScroll({
       contentsWrapperSelector: '#contentsWrapper',

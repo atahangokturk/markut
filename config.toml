@@ -5,6 +5,7 @@ theme = "Markut"
 #10 şubat 2020
 timeout= 60000
 pygmentsUseClassic = false
+relativeURLs = true
 [caches]
 [caches.getjson]
 [caches.getCSV]
