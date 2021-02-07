@@ -28,12 +28,6 @@
           "name": "dergi",
           "isOrdered": true,
           "folders": {
-            "deneme": {
-              "name": "deneme",
-              "isOrdered": true,
-              "folders": {},
-              "files": {}
-            },
             "sayi-5": {
               "name": "sayi-5",
               "isOrdered": true,
@@ -94,6 +88,43 @@
                 }
               },
               "files": {}
+            },
+            "sayi-6": {
+              "name": "sayi-6",
+              "isOrdered": true,
+              "folders": {
+                "bakalit": {
+                  "name": "bakalit",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                },
+                "bic-cristal": {
+                  "name": "bic-cristal",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                },
+                "dieter-rams": {
+                  "name": "dieter-rams",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                },
+                "kitsch": {
+                  "name": "kitsch",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                },
+                "malzeme-seramik": {
+                  "name": "malzeme-seramik",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {}
+                }
+              },
+              "files": {}
             }
           },
           "files": {
@@ -126,7 +157,26 @@
     "layouts": {
       "name": "layouts",
       "isOrdered": true,
-      "folders": {},
+      "folders": {
+        "_default": {
+          "name": "_default",
+          "isOrdered": true,
+          "folders": {},
+          "files": {}
+        },
+        "partials": {
+          "name": "partials",
+          "isOrdered": true,
+          "folders": {},
+          "files": {}
+        },
+        "shortcodes": {
+          "name": "shortcodes",
+          "isOrdered": true,
+          "folders": {},
+          "files": {}
+        }
+      },
       "files": {}
     },
     "resources": {
