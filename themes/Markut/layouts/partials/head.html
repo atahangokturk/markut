@@ -7,8 +7,8 @@
 		<title>{{$seotitle := .Params.seotitle}}{{ if isset .Params "seotitle" }}{{$seotitle}}{{else}}{{.Title}}{{ end }}{{ if .IsHome }} | Endüstriyel Tasarım Dergisi {{ .Site.Params.Tagline }}{{ else }} - {{ .Site.Title }}{{ end }}
 		</title>
 		<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}"/>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="{{.Site.BaseURL}}css/styles.min.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="{{.Site.BaseURL}}css/styles.css" />
 		{{ with .Params.robotsdisallow }}
 		<meta name="robots" content="noindex, nofollow" />
 		{{ else }}
