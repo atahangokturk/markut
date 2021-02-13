@@ -7,13 +7,11 @@
 		<title>{{$seotitle := .Params.seotitle}}{{ if isset .Params "seotitle" }}{{$seotitle}}{{else}}{{.Title}}{{ end }}{{ if .IsHome }} | Endüstriyel Tasarım Dergisi {{ .Site.Params.Tagline }}{{ else }} - {{ .Site.Title }}{{ end }}
 		</title>
 		<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}"/>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://unpkg.com/bootstrap@4.1.1/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="{{.Site.BaseURL}}css/styles.css" />
 		{{ with .Params.robotsdisallow }}
 		<meta name="robots" content="noindex, nofollow" />
-		{{ else }}
-		<meta name="robots" content="index, follow" />
-		{{ end }}
+		{{ else }}<meta name="robots" content="index, follow" />{{ end }}
 		<!-- Favicon -->
 		<link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png" />
 		<link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png" />
@@ -32,31 +30,19 @@
 		<meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png" />
 		<meta name="theme-color" content="#ffffff" />
 		<link rel="canonical" href="{{ .Permalink }}" />
-
+		{{ if .IsHome }} {{else}}
 		<script src="https://unpkg.com/valine@1.4.14/dist/Valine.min.js" defer='defer'></script>
-
+		{{end}}
 		<!-- Twitter Card -->
 		<meta name="twitter:card" content="summary" />
-		<meta
-			name="twitter:description"
-			content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}"
-		/>
-		<meta
-			name="twitter:title"
-			content="{{ .Title }} {{ if .IsHome }}| Endüstriyel Tasarım Dergisi {{ .Site.Params.Tagline }}{{ else }}| {{ .Site.Title }}{{ end }}"
-		/>
+		<meta name="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}"/>
+		<meta name="twitter:title" content="{{ .Title }} {{ if .IsHome }}| Endüstriyel Tasarım Dergisi {{ .Site.Params.Tagline }}{{ else }}| {{ .Site.Title }}{{ end }}"/>
 
 		<!-- OG data -->
 		<meta property="og:locale" content="tr_TR" />
 		<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
-		<meta
-			content="{{ .Title }} {{ if .IsHome }}| Endüstriyel Tasarım Dergisi {{ .Site.Params.Tagline }}{{ else }}| {{ .Site.Title }}{{ end }}"
-			property="og:title"
-		/>
-		<meta
-			content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}"
-			property="og:description"
-		/>
+		<meta content="{{ .Title }} {{ if .IsHome }}| Endüstriyel Tasarım Dergisi {{ .Site.Params.Tagline }}{{ else }}| {{ .Site.Title }}{{ end }}" property="og:title"/>
+		<meta content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" property="og:description" />
 		<meta property="og:url" content="{{ .Permalink }}" />
 		<meta property="og:site_name" content="{{ .Site.Title }}" />
 		{{ range .Params.categories }}
