@@ -4,7 +4,7 @@
 	 viewBox="0 0 283.5 283.5" style="enable-background:new 0 0 283.5 283.5;" xml:space="preserve">
     <style>
  #markut{
-   animation: markutlogo 6s ease infinite;
+   animation: markutlogo 10s ease infinite;
  }
  @keyframes markutlogo{
   0%{ transform: rotateZ(0deg) translateY(0px) translateX(2px); -webkit-transform: rotateZ(0deg) translateY(0px) translateX(2px); -moz-transform: rotateZ(0deg) translateY(0px) translateX(2px); -ms-transform: rotateZ(0deg) translateY(0px) translateX(2px); -o-transform: rotateZ(0deg) translateY(0px) translateX(2px); }

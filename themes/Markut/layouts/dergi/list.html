@@ -42,7 +42,7 @@
                         <div class="icindekiler">içindekiler</div>
                         <ul class="list-group">
                         {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}  
-                        <li class="list-group-item contents"><a href="{{.Permalink}}"><strong><span class="text-muted">{{.Params.sayfa}}</span></strong></a> {{ .Title | markdownify }}</li>                      
+                        <li class="list-group-item contents"><a href="{{.Permalink}}"><strong><span>{{.Params.sayfa}}</span></strong></a> {{ .Title | markdownify }}</li>                      
                         {{ end }}
                         </ul><a href="{{ .Permalink }}" class="btn markutbtn" type="button">sayıyı oku</a>
                 </div>

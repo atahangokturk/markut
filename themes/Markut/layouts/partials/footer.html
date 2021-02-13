@@ -146,22 +146,11 @@
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer="defer"></script>
     <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-embed.js" defer='defer'>
-
-
     </script>
 
-    {{ if not (in (.Site.BaseURL | string) "localhost") }}
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122967892-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-122967892-3');
-</script>
-    {{end}}
-<script src="{{.Site.BaseURL}}js/jquery.clever-infinite-scroll.js"></script>
 <script src="{{.Site.BaseURL}}js/dark-mode-switch.min.js"></script>
+{{ if .IsHome }} {{else}}
+<script src="{{.Site.BaseURL}}js/jquery.clever-infinite-scroll.js"></script>
 <script>
   $('#contentsWrapper').cleverInfiniteScroll({
       contentsWrapperSelector: '#contentsWrapper',
@@ -169,6 +158,7 @@
       nextSelector: '#next',
   });
 </script>
+{{end}}
 <script>
   //Get the button:
 mybutton = document.getElementById("myBtn");
