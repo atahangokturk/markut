@@ -926,6 +926,9 @@ svg{
     line-break: 5px;
     margin-top: 7px;
   }
+  .gecis .sayfa {
+    margin-top: 28px;
+  }
   .gecis .titya {
     padding-left: 80px;
   }
@@ -969,8 +972,6 @@ svg{
   }
   .gecis .sayfa {
     font-size: 46px;
-    text-shadow: -2px -2px 0 #000000, 1px -1px 0 #afafaf, -1px 1px 0 #afafaf,
-      1px 1px 0 #afafaf;
   }
   .gecis .titya {
     padding-left: 60px;
