@@ -5,23 +5,23 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: content/dergi
+  label: Dergi İçerikleri
+  create: all
+  match: "**/*"
+- type: directory
   path: content
-  label: Pages
+  label: Sayfalar
   create: all
   match: "*"
 - type: directory
   path: content/yazar
-  label: Yazar
+  label: Yazarlar
   create: all
   match: "**/*"
 - type: directory
   path: content/tags
   label: Tags
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/dergi
-  label: Dergi
   create: all
   match: "**/*"
 - type: directory
