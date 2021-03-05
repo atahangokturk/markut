@@ -30,6 +30,19 @@
 {{ range $filtered }}
 <a href="{{.Permalink}}" id="next"></a>
 {{ end }}
+
+<div class="text-center mt-5">
+  <a href="{{.Site.BaseURL}}reklam-sponsorluk/">
+  <picture>
+           <source media='(min-width: 401px)'
+           srcset='{{$.Site.Params.areklampc}}'/>
+           <source media='(max-width: 400px)'
+           srcset='{{$.Site.Params.areklamph}}'/>
+           <img class="p-3 bg-yellow" src='{{$.Site.Params.areklamph}}' alt="MARKUT Dergi Sponsoru"/>
+  </picture>
+  </a>
+</div>
+
  <div class="container toc">
   <div class="icindekiler">içindekiler</div>
   {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}
@@ -40,6 +53,19 @@
   <div class="kapakoku">Devam Et</div>
   <div class="kapakok">↓</div>
 </div>
+
+<div class="text-center mt-5">
+  <a href="{{.Site.BaseURL}}reklam-sponsorluk/">
+  <picture>
+           <source media='(min-width: 401px)'
+           srcset='{{$.Site.Params.breklampc}}'/>
+           <source media='(max-width: 400px)'
+           srcset='{{$.Site.Params.breklamph}}'/>
+           <img class="p-3 bg-yellow" src='{{$.Site.Params.breklamph}}' alt="MARKUT Dergi Sponsoru"/>
+  </picture>
+  </a>
+</div>
+
 <div id="contentsWrapper">
     <div class="content"> 
        

@@ -41,6 +41,21 @@
            {{ end }}
       {{end}}
         {{.Content}}
+
+<!-- C Reklam Alanı-->
+<div class="text-center mt-5 mb-5">
+          <a href="{{.Site.BaseURL}}reklam-sponsorluk/">
+          <picture>
+                   <source media='(min-width: 401px)'
+                   srcset='{{$.Site.Params.creklampc}}'/>
+                   <source media='(max-width: 400px)'
+                   srcset='{{$.Site.Params.creklamph}}'/>
+                   <img class="p-3 bg-yellow" src='{{$.Site.Params.breklamph}}' alt="MARKUT Dergi Sponsoru"/>
+          </picture>
+          </a>
+ </div>
+ <!-- C Reklam Alanı Bitiş-->
+
         {{$yorum:= .Params.yorum}}
         {{ if eq $yorum "var" }}
         <h3 class="text-center">Markut Ekibinden Sevgiyle...</h3>
@@ -58,7 +73,30 @@
      {{- end }}
      {{ $related := .Site.RegularPages.RelatedIndices . "tags" "date" | first 3 }}
       {{ with $related }}
+
       <div class="text-center pb-5">
+      <!-- D Reklam Alanı-->
+      <div class="container">
+       <div class="row">
+        <div class="col-md-4">  <div class="text-center mt-5 mb-5">
+          <a href="/reklam-sponsorluk/">
+                   <img class="p-3 bg-yellow" src='{{$.Site.Params.d3reklamph}}' alt="MARKUT Dergi Sponsoru"/>
+          </a>
+        </div></div>
+        <div class="col-md-4"><div class="text-center mt-5 mb-5">
+          <a href="/reklam-sponsorluk/">
+                   <img class="p-3 bg-yellow" src='{{$.Site.Params.d2reklamph}}' alt="MARKUT Dergi Sponsoru"/>
+          </a>
+        </div></div>
+        <div class="col-md-4"> <div class="text-center mt-5 mb-5">
+          <a href="/reklam-sponsorluk/">
+                   <img class="p-3 bg-yellow" src='{{$.Site.Params.d1reklamph}}' alt="MARKUT Dergi Sponsoru"/>
+          </a></div>
+        </div>
+        </div>
+       </div>
+      <!-- D Reklam Alanı Bitiş-->
+
       <h3>İlginizi Çekebilir</h3>
       <ul class="list-unstyled">
         {{ range . }}

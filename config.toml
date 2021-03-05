@@ -19,6 +19,20 @@ maxAge = "1m"
   tag = "tags"
 [params]
 description ="Markut, endüstriyel tasarım dergisidir. Endüstri tasarımı bağlamında genel tasarım disiplinleriyle de ilişkili olarak içerikler üreten online dergidir."
+areklampc = "/img/a-sponsor.png"
+areklamph = "/img/a-rsponsor.png"
+
+breklampc = "/img/b-sponsor.png"
+breklamph = "/img/b-rsponsor.png"
+
+creklampc = "/img/c-sponsor.png"
+creklamph = "/img/c-rsponsor.png"
+
+d1reklamph = "/img/d-rsponsor.png"
+
+d2reklamph = "/img/d-rsponsor.png"
+
+d3reklamph ="/img/d-rsponsor.png"
 
 [markup]
   defaultMarkdownHandler = "goldmark"
