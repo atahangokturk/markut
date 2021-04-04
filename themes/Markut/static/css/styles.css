@@ -550,6 +550,7 @@ text-decoration: underline;
 .toc .desc {
   font-size: 14px;
   letter-spacing: 1px;
+  text-align: justify;
   margin-top: 10px;
   color: #686868;
 }
@@ -581,6 +582,7 @@ text-decoration: underline;
 .onde .desc {
   font-size: 14px;
   letter-spacing: 1px;
+  text-align: justify;
   margin-top: 10px;
   color: #686868;
 }
