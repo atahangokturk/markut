@@ -85,7 +85,7 @@
    animation: alt-duman 10s ease infinite;
  }
  @keyframes alt-duman{
-  0%{transform-origin: center; transform:  translateY(-150px) translateX(-80px) scale(0.1); -webkit-filter: blur(0px);}
+  0%{transform-origin: center; transform:  translateY(-150px) translateX(-50px) scale(0.1); -webkit-filter: blur(0px);}
   100%{transform-origin: center; transform: translateY(-160px) translateX(-30px) scale(3); -webkit-filter: blur(10px);}
 }      
 
@@ -93,7 +93,7 @@
    animation: ust-duman 10s ease infinite;
  }
  @keyframes ust-duman{
-  0%{transform-origin: center; transform:  translateY(-150px) translateX(-80px) scale(0.1); -webkit-filter: blur(0px);}
+  0%{transform-origin: center; transform:  translateY(-150px) translateX(-50px) scale(0.1); -webkit-filter: blur(0px);}
   100%{transform-origin: center; transform: translateY(-190px) translateX(-30px) scale(3); -webkit-filter: blur(10px);}
 } 
 
@@ -355,7 +355,7 @@
     <linearGradient id="linear-gradient-11" x1="219.41" y1="565.6" x2="226.63" y2="565.6" xlink:href="#linear-gradient"/>
     <linearGradient id="linear-gradient-12" x1="224.46" y1="569.24" x2="230.4" y2="569.24" xlink:href="#linear-gradient"/>
   </defs>
-  <rect class="cls-1" width="841.89" height="1190.55"/>
+  <rect id="arkaplan" class="cls-1" width="841.89" height="1190.55"/>
   <rect id="golge" class="cls-2" width="841.89" height="1190.55"/>
   <g id="koltuk">
     <path class="cls-3" d="M487.31,550.85l36.6,1.52L554.24,550l-38.44-2.14Z"/>
