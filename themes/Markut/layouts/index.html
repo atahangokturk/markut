@@ -39,7 +39,7 @@
                                <div class="icindekiler">içindekiler</div>
                                <ul class="list-group">
                                {{ range first 35 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}  
-                               <li class="list-group-item contents"><a href="{{.Permalink}}"><strong><span>{{.Params.sayfa}}</span></strong></a> |   {{ .Title | markdownify }}</a></li>                        
+                               <li class="list-group-item contents"><a href="{{.Permalink}}"><strong><span>{{.Params.sayfa}}</span></strong> |   {{ .Title | markdownify }}</a></li>                        
                                {{ end }}
                                </ul><a href="{{ .Permalink }}" class="btn markutbtn" type="button">Sayıyı Oku</a>
                        </div></div>
@@ -60,7 +60,7 @@
                                <div class="icindekiler">içindekiler</div>
                                <ul class="list-group">
                                {{ range first 35 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}  
-                               <li class="list-group-item contents"><a href="{{.Permalink}}"><strong><span>{{.Params.sayfa}}</span></strong></a> |   {{ .Title | markdownify }}</a></li>                        
+                               <li class="list-group-item contents"><a href="{{.Permalink}}"><strong><span>{{.Params.sayfa}}</span></strong> |   {{ .Title | markdownify }}</a></li>                        
                                {{ end }}
                                </ul><a href="{{ .Permalink }}" class="btn markutbtn" type="button">Sayıyı Oku</a>
                        </div>
