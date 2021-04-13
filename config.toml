@@ -3,7 +3,7 @@ languageCode = "tr-tr"
 title = "Markut"
 theme = "Markut"
 #10 şubat 2020
-timeout= 60000
+timeout= 120000
 pygmentsUseClassic = false
 relativeURLs = true
 [caches]
