@@ -1,6 +1,6 @@
 {{ partial "head.html" . }}
 {{ partial "header.html" . }}
-<div class="text-center mt-6">
+<div class="text-center mt-5">
         <a href="{{.Site.BaseURL}}reklam-sponsorluk/" target="_blank" rel="noopener noreferrer">
         <picture>
                  <source media='(min-width: 401px)'
@@ -11,7 +11,78 @@
         </picture>
         </a>
 </div>
+<div id="carouselExampleIndicators" class="carousel slide mt-3 text-dark" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active text-dark"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+  </ol>
+  <div class="carousel-inner bg-grey">
 
+        {{ range first 1 ( where .Site.RegularPages "Type" "kapak" )}}
+
+         <div class="carousel-item active markutsayi post {{ .Scratch.Get `postClass` }} mt-md-5 mb-md-5">
+                    <div class="row">
+                <div class="col-md-6">
+                       <div class="markutcvr text-right">
+                         {{ if isset .Params "thumb"}}<a href="{{ .Permalink }}"><img loading="lazy" class="img-fluid" src="{{.Params.thumb}}" alt="Markut Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} Kapak Tasarımı"></a>{{end}}
+                               <a href="{{ .Permalink }}">{{.Content}}</a>
+                       </div>
+                       </div>
+                   <div class="col-md-5 ml-4">
+                               <div class="icindekiler">içindekiler</div>
+                               <ul class="list-group">
+                               {{ range first 35 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}  
+                               <li class="list-group-item contents"><a href="{{.Permalink}}"><strong><span>{{.Params.sayfa}}</span></strong></a> |   {{ .Title | markdownify }}</a></li>                        
+                               {{ end }}
+                               </ul><a href="{{ .Permalink }}" class="btn markutbtn" type="button">Sayıyı Oku</a>
+                       </div></div>
+               </div>
+        {{ end }}
+
+        {{ range after 1 ( where .Site.RegularPages "Type" "kapak" )}}
+
+         <div class="carousel-item markutsayi post {{ .Scratch.Get `postClass` }} mt-md-5 mb-md-4">
+                    <div class="row">
+                         <div class="col-md-6 ">
+                         <div class="markutcvr text-right">
+                         {{ if isset .Params "thumb"}}<a href="{{ .Permalink }}"><img loading="lazy" class="img-fluid" src="{{.Params.thumb}}" alt="Markut Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} Kapak Tasarımı"></a>{{end}}
+                               <a href="{{ .Permalink }}">{{.Content}}</a>
+                       </div>
+                       </div>
+                       <div class="col-md-5 ml-4">
+                               <div class="icindekiler">içindekiler</div>
+                               <ul class="list-group">
+                               {{ range first 35 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}  
+                               <li class="list-group-item contents"><a href="{{.Permalink}}"><strong><span>{{.Params.sayfa}}</span></strong></a> |   {{ .Title | markdownify }}</a></li>                        
+                               {{ end }}
+                               </ul><a href="{{ .Permalink }}" class="btn markutbtn" type="button">Sayıyı Oku</a>
+                       </div>
+               </div></div>
+        {{ end }}
+
+  </div>
+
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+
+<!-- ESKİ
 <div class="container-fluid sayilar">
  {{ range ( where .Site.RegularPages "Type" "kapak" )}}
   <div class="row markutsayi post {{ .Scratch.Get `postClass` }}">
@@ -32,7 +103,7 @@
         </div>
  {{ end }}
 </div>
-
+-->
 <!-- B Reklam Sponsor -->
 <div class="text-center mt-3 mb-5">
         <a href="{{.Site.BaseURL}}reklam-sponsorluk/" target="_blank" rel="noopener noreferrer">

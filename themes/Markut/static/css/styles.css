@@ -87,7 +87,7 @@ h6 {
   letter-spacing: 0.2px;
 }
 li{
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .display-5{
 font-size: 32px;
@@ -336,11 +336,28 @@ color: white;
   letter-spacing: 1px;
   border-color: #fff;
   padding-left: 0px;
-  padding-top: 2px;
+  padding-top: 1px;
 }
 .contents a strong span{
   color: #686868;
 }
+.list-group-item {
+  background-color: transparent;
+
+  border: 0px;}
+.carousel-indicators li{
+  background-color: #000;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 40px;
+  border: #000000 solid 10px;
+  color: #000;
+  background-color: #000;
+}
+
+
 .markutbtn {
   border-radius: 30px;
   border-style: solid;
@@ -348,7 +365,6 @@ color: white;
   padding-left: 25px;
   padding-right: 25px;
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: #fff;
   color: #000;
   border: 2px solid #000;
   letter-spacing: 3px;
