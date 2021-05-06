@@ -110,7 +110,6 @@ letter-spacing: 1px;
 pre code{color: #c30000;}
 .container img{
   margin-top: 10px;
-  margin-bottom: 10px;
 }
 html,
 body {
@@ -167,6 +166,12 @@ blockquote p {
 a {
   color: #333333;
   font-family: 'Roboto Condensed', sans-serif;
+}
+.container p a{
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #f7c421;
+  -moz-text-decoration-color: #f7c421;
 }
 a:hover {
   color: #000000;
