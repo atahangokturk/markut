@@ -173,6 +173,9 @@ a {
   text-decoration-color: #f7c421;
   -moz-text-decoration-color: #f7c421;
 }
+.row{
+  margin-bottom: 50px;
+}
 a:hover {
   color: #000000;
 }
