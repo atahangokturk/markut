@@ -1,5 +1,7 @@
 {{ partial "head.html" . }}
 {{ partial "header.html" . }}
+
+<!--
 <div class="text-center mt-5">
         <a href="{{.Site.BaseURL}}reklam-sponsorluk/" target="_blank" rel="noopener noreferrer">
         <picture>
@@ -11,6 +13,10 @@
         </picture>
         </a>
 </div>
+-->
+
+{{ partial "reklam/areklam.html" . }}
+
 <div id="markutdergi" class="carousel slide mt-3 text-dark" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#markutdergi" data-slide-to="0" class="active text-dark"></li>
@@ -22,6 +28,7 @@
     <li data-target="#markutdergi" data-slide-to="6"></li>
     <li data-target="#markutdergi" data-slide-to="7"></li>
     <li data-target="#markutdergi" data-slide-to="8"></li>
+    <li data-target="#markutdergi" data-slide-to="9"></li>
   </ol>
   <div class="carousel-inner bg-grey">
 
@@ -31,18 +38,19 @@
                     <div class="row">
                 <div class="col-md-6">
                        <div class="markutcvr text-right">
-                         {{ if isset .Params "thumb"}}<a href="{{ .Permalink }}"><img class="img-fluid" src="{{.Params.thumb}}" alt="Markut Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} Kapak Tasarımı"></a>{{end}}
+                         {{ if isset .Params "kapak"}}<a href="{{ .Permalink }}"><img class="img-fluid mt-3" src="{{.Params.kapak}}" alt="Markut Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} Kapak Tasarımı"></a>{{end}}
                                <a href="{{ .Permalink }}">{{.Content}}</a>
                        </div>
                        </div>
-                   <div class="col-md-5 ml-4">
-                               <div class="icindekiler">içindekiler</div>
+                <div class="col-md-5 ml-4">
+                               <div class="icindekiler mt-3">içindekiler</div>
                                <ul class="list-group">
                                {{ range first 35 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}  
                                <li class="list-group-item contents"><a href="{{.Permalink}}"><strong><span>{{.Params.sayfa}}</span></strong> |   {{ .Title | markdownify }}</a></li>                        
                                {{ end }}
                                </ul><a href="{{ .Permalink }}" class="btn markutbtn" type="button">Sayıyı Oku</a>
-                       </div></div>
+                       </div>
+                </div>
                </div>
         {{ end }}
 
@@ -52,12 +60,12 @@
                     <div class="row">
                          <div class="col-md-6 ">
                          <div class="markutcvr text-right">
-                         {{ if isset .Params "thumb"}}<a href="{{ .Permalink }}"><img class="img-fluid" src="{{.Params.thumb}}" alt="Markut Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} Kapak Tasarımı"></a>{{end}}
+                         {{ if isset .Params "thumb"}}<a href="{{ .Permalink }}"><img class="img-fluid mt-3" src="{{.Params.thumb}}" alt="Markut Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} Kapak Tasarımı"></a>{{end}}
                                <a href="{{ .Permalink }}">{{.Content}}</a>
                        </div>
                        </div>
                        <div class="col-md-5 ml-4">
-                               <div class="icindekiler">içindekiler</div>
+                               <div class="icindekiler mt-3">içindekiler</div>
                                <ul class="list-group">
                                {{ range first 35 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}  
                                <li class="list-group-item contents"><a href="{{.Permalink}}"><strong><span>{{.Params.sayfa}}</span></strong> |   {{ .Title | markdownify }}</a></li>                        
@@ -104,20 +112,11 @@
  {{ end }}
 </div>
 -->
-<!-- B Reklam Sponsor -->
-<div class="text-center mt-3 mb-5">
-        <a href="{{.Site.BaseURL}}reklam-sponsorluk/" target="_blank" rel="noopener noreferrer">
-        <picture>
-                 <source media='(min-width: 401px)'
-                 srcset='{{$.Site.Params.breklampc}}'/>
-                 <source media='(max-width: 400px)'
-                 srcset='{{$.Site.Params.breklamph}}'/>
-                 <img class="p-3 bg-yellow" src='{{$.Site.Params.breklamph}}' alt="MARKUT Dergi Sponsoru"/>
-        </picture>
-        </a>
-</div>
-<!-- B Reklam Sponsor Bitiş-->
 
+
+{{ partial "reklam/breklam.html" . }}
+
+<!--
 <div class="container onde mb-5">
         <div class="icindekiler text-center">Dergiden Öne Çıkan Sayfalar</div>
         <div class="row mt-5">
@@ -132,6 +131,33 @@
  {{ end }}
  </div>
 </div>
+-->
+
+
+
+
+<div class="container onde mb-5 mt-6">
+        <div class="icindekiler text-center">Dergiden Öne Çıkan Sayfalar</div>
+        <div class="row">
+{{ $paginator := .Paginate ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
+{{ range $paginator.Pages }}
+<div class="col-md-6 mt-5"><article>    
+        <a href="{{ .Permalink }}"><img loading="lazy" class="img-fluid thumb" src="{{.Params.thumb}}" alt="{{ .Title | markdownify }}" width="700px" height="300px">
+         <h2 class="title">{{ .Title | markdownify }}</h2>
+         <p class="yazar">{{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Params.title }}</a>{{ end }}{{ end }} | <time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time> | Sayı {{ range .Params.sayi }}{{ . }}{{ end }}</p>
+         <p class="desc">{{ .Params.aciklama | plainify | htmlUnescape }}</p>
+       </a>
+         </article></div>
+{{ end }}
+</div>
+</div>
+<div class="container">
+        <div class="text-center m-auto">
+        {{ template "_internal/pagination.html" . }}
+        </div>        
+</div>
+
 {{.Content}}
 {{ partial "mailde.html" . }}
+{{ partial "abone-ol.html" . }}
 {{ partial "footer.html" . }}

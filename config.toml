@@ -1,11 +1,13 @@
 baseURL = "https://www.markut.net/"
 languageCode = "tr-tr"
-title = "Markut"
+title = "Markut Dergi"
 theme = "Markut"
 #10 şubat 2020
 timeout= 120000
 pygmentsUseClassic = false
 relativeURLs = true
+paginatePath = "sayfa"
+paginate = 8
 [caches]
 [caches.getjson]
 [caches.getCSV]
@@ -19,20 +21,33 @@ maxAge = "1m"
   tag = "tags"
 [params]
 description ="Markut, endüstriyel tasarım dergisidir. Endüstri tasarımı bağlamında genel tasarım disiplinleriyle de ilişkili olarak içerikler üreten online dergidir."
-areklampc = "/img/a-sponsor.png"
-areklamph = "/img/a-rsponsor.png"
 
-breklampc = "/img/b-sponsor.png"
-breklamph = "/img/b-rsponsor.png"
 
-creklampc = "/img/c-sponsor.png"
-creklamph = "/img/c-rsponsor.png"
+areklamimg = "/img/markut-dergimizin-parcasi.jpg"
+areklamurl = "/reklam-sponsorluk/"
+areklamtitle = "Dergimizin Bir Parçası Olun"
+areklamdesc = "Dergimize reklam vererek ürünüzü, içeriğinizi öne çıkarabilirsiniz. A reklam alanına şimdi reklam verebilirsiniz."
 
-d1reklamph = "/img/d-rsponsor.png"
+breklamimg = "/img/markut-dergimizin-parcasi.jpg"
+breklamurl = "/reklam-sponsorluk/"
+breklamtitle = "Dergimizin Bir Parçası Olun"
+breklamdesc = "Dergimize reklam vererek ürünüzü, içeriğinizi öne çıkarabilirsiniz. B reklam alanına şimdi reklam verebilirsiniz."
 
-d2reklamph = "/img/d-rsponsor.png"
+creklamimg = "/img/markut-dergimizin-parcasi.jpg"
+creklamurl = "/reklam-sponsorluk/"
+creklamtitle = "Dergimizin Bir Parçası Olun"
+creklamdesc = "Dergimize reklam vererek ürünüzü, içeriğinizi öne çıkarabilirsiniz. C reklam alanına şimdi reklam verebilirsiniz."
 
-d3reklamph ="/img/d-rsponsor.png"
+d1reklamimg = "/img/markut-dergimizin-parcasi.jpg"
+d1reklamurl = "/reklam-sponsorluk/"
+d1reklamtitle = "Dergimizin Bir Parçası Olun"
+d1reklamdesc = "Dergimize reklam vererek ürünüzü, içeriğinizi öne çıkarabilirsiniz. D1 reklam alanına şimdi reklam verebilirsiniz."
+
+d2reklamimg = "/img/reklam-markut-thumbnail.jpg"
+d2reklamurl = "/reklam-sponsorluk/"
+d2reklamtitle = "MARKUT'un Yanında Uçun"
+d2reklamdesc = "Dergimize reklam vererek ürünüzü, içeriğinizi öne çıkarabilirsiniz. D2 reklam alanına şimdi reklam verebilirsiniz."
+
 
 [markup]
   defaultMarkdownHandler = "goldmark"
@@ -95,3 +110,7 @@ d3reklamph ="/img/d-rsponsor.png"
     endLevel = 3
     ordered = false
     startLevel = 2
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "RSS"]

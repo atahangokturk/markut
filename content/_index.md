@@ -2,5 +2,7 @@
 title = "Markut"
 description="Markut, endüstriyel tasarım dergisidir. Endüstri tasarımı bağlamında genel tasarım disiplinleriyle de ilişkili olarak içerikler üreten online dergidir."
 sayfa="Ana Sayfa"
-tags=["anasayfa"]
+yazar=["Markut"]
+tags=["dergi"]
+thumb="/img/markut-b-dergimizin-parcasi.jpg"
 +++

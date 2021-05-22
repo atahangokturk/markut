@@ -42,19 +42,7 @@
       {{end}}
         {{.Content}}
 
-<!-- C Reklam Alanı-->
-<div class="text-center mt-5 mb-5">
-          <a href="{{.Site.BaseURL}}reklam-sponsorluk/">
-          <picture>
-                   <source media='(min-width: 401px)'
-                   srcset='{{$.Site.Params.creklampc}}'/>
-                   <source media='(max-width: 400px)'
-                   srcset='{{$.Site.Params.creklamph}}'/>
-                   <img class="p-3 bg-yellow" src='{{$.Site.Params.breklamph}}' alt="MARKUT Dergi Sponsoru"/>
-          </picture>
-          </a>
- </div>
- <!-- C Reklam Alanı Bitiş-->
+        {{ partial "reklam/creklam.html" . }}
 
         {{$yorum:= .Params.yorum}}
         {{ if eq $yorum "var" }}
@@ -62,9 +50,13 @@
           {{partial "comment.html" . }}
         {{ end }}
      </div>
-     <section class="bg-light mt-5">
+     <section class="bg-light mt-3"><br>
+      {{ partial "abone-ol.html" . }}
+      <br>
+      {{ partial "reklam/dreklam.html" . }}
+
      {{- if .Params.tags }}
-        <ul class="list-inline text-center pt-5">
+        <ul class="list-inline text-center pt-3">
          {{- range .Params.tags }}
          {{- $href := print (absURL "tags/") (urlize .) }}
          <li class="list-inline-item"><a href="{{ $href }}"><button class="btn markutbtn" type="button">#{{.}}</button></a></li>
@@ -74,29 +66,9 @@
      {{ $related := .Site.RegularPages.RelatedIndices . "tags" "date" | first 3 }}
       {{ with $related }}
 
+     
+     
       <div class="text-center pb-5">
-      <!-- D Reklam Alanı-->
-      <div class="container">
-       <div class="row">
-        <div class="col-md-4">  <div class="text-center mt-5 mb-5">
-          <a href="/reklam-sponsorluk/">
-                   <img class="p-3 bg-yellow" src='{{$.Site.Params.d3reklamph}}' alt="MARKUT Dergi Sponsoru"/>
-          </a>
-        </div></div>
-        <div class="col-md-4"><div class="text-center mt-5 mb-5">
-          <a href="/reklam-sponsorluk/">
-                   <img class="p-3 bg-yellow" src='{{$.Site.Params.d2reklamph}}' alt="MARKUT Dergi Sponsoru"/>
-          </a>
-        </div></div>
-        <div class="col-md-4"> <div class="text-center mt-5 mb-5">
-          <a href="/reklam-sponsorluk/">
-                   <img class="p-3 bg-yellow" src='{{$.Site.Params.d1reklamph}}' alt="MARKUT Dergi Sponsoru"/>
-          </a></div>
-        </div>
-        </div>
-       </div>
-      <!-- D Reklam Alanı Bitiş-->
-
       <h3>İlginizi Çekebilir</h3>
       <ul class="list-unstyled">
         {{ range . }}

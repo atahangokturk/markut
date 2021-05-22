@@ -25,18 +25,21 @@
 		{{ if .IsHome }} {{else}}
 		<script src="https://unpkg.com/valine@1.4.14/dist/Valine.min.js" defer='defer'></script>
 		{{end}}
+
 		<!-- Twitter Card -->
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}"/>
 		<meta name="twitter:title" content="{{ .Title }} {{ if .IsHome }}| Endüstriyel Tasarım Dergisi {{ .Site.Params.Tagline }}{{ else }}| {{ .Site.Title }}{{ end }}"/>
+		<meta property="twitter:image" content='{{ if isset .Params "thumb"}} {{.Site.BaseURL}}{{.Params.thumb}} {{end}}'>
 
-		<!-- OG data -->
+		<!-- Open Graph / Facebook -->
 		<meta property="og:locale" content="tr_TR" />
 		<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 		<meta content="{{ .Title }} {{ if .IsHome }}| Endüstriyel Tasarım Dergisi {{ .Site.Params.Tagline }}{{ else }}| {{ .Site.Title }}{{ end }}" property="og:title"/>
 		<meta content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" property="og:description" />
 		<meta property="og:url" content="{{ .Permalink }}" />
 		<meta property="og:site_name" content="{{ .Site.Title }}" />
+		<meta property="og:image" content='{{ if isset .Params "thumb"}} {{.Site.BaseURL}}{{.Params.thumb}} {{end}}'>
 		{{ range .Params.categories }}
 		<meta property="article:section" content="{{ . }}" />
 		{{ end }} {{ if isset .Params "date" }}

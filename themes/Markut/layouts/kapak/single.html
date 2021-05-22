@@ -11,7 +11,7 @@
               <div class="kapakok">↓</div>
             </div>
               <div class="col-md-6">
-                <div class="markutcover">{{ if isset .Params "thumb"}} <img class="img-fluid" src="{{.Params.thumb}}" alt="Markut Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} Kapak Tasarımı">{{end}}{{.Content}}</div>
+                <div class="markutcover">{{ if isset .Params "kapak"}} <img class="img-fluid" src="{{.Params.kapak}}" alt="Markut Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} Kapak Tasarımı">{{end}}{{.Content}}</div>
               </div>
             </div>
 </div>
@@ -31,17 +31,7 @@
 <a href="{{.Permalink}}" id="next"></a>
 {{ end }}
 
-<div class="text-center mt-5">
-  <a href="{{.Site.BaseURL}}reklam-sponsorluk/">
-  <picture>
-           <source media='(min-width: 401px)'
-           srcset='{{$.Site.Params.areklampc}}'/>
-           <source media='(max-width: 400px)'
-           srcset='{{$.Site.Params.areklamph}}'/>
-           <img class="p-3 bg-yellow" src='{{$.Site.Params.areklamph}}' alt="MARKUT Dergi Sponsoru"/>
-  </picture>
-  </a>
-</div>
+{{ partial "reklam/areklam.html" . }}
 
  <div class="container toc">
   <div class="icindekiler">içindekiler</div>
@@ -54,17 +44,7 @@
   <div class="kapakok">↓</div>
 </div>
 
-<div class="text-center mt-5">
-  <a href="{{.Site.BaseURL}}reklam-sponsorluk/">
-  <picture>
-           <source media='(min-width: 401px)'
-           srcset='{{$.Site.Params.breklampc}}'/>
-           <source media='(max-width: 400px)'
-           srcset='{{$.Site.Params.breklamph}}'/>
-           <img class="p-3 bg-yellow" src='{{$.Site.Params.breklamph}}' alt="MARKUT Dergi Sponsoru"/>
-  </picture>
-  </a>
-</div>
+{{ partial "reklam/breklam.html" . }}
 
 <div id="contentsWrapper">
     <div class="content"> 

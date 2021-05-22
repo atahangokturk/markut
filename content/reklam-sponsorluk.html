@@ -1,5 +1,5 @@
 +++
-title = "Reklam ve Sponsorluk"
+title = "Dergiye Reklam Ver"
 url = "reklam-sponsorluk/"
 type="page"
 +++
@@ -173,8 +173,6 @@ type="page"
     <p>Önceki Sayılarda Yayınlanır.</p>
     <p>Aylık Tahmini Gösterim Sayısı: 1600 - 2500</p>
     <p>Dönüşüm Oranı: Yüksek</p>
-    <p>Bilgisayar: 728x90 px</p>
-    <p>Mobil: 300x250 px</p>
 <p class="h6">1 Ay: 350 TL</p>
 <p class="h6">3 Ay: 840 TL</p>
 <small class="text-muted">(%20 indirimli)</small>
@@ -186,8 +184,6 @@ type="page"
     <p>Önceki Sayılarda Yayınlanır.</p>
     <p>Aylık Tahmini Gösterim Sayısı: 1200 - 2300</p>
     <p>Dönüşüm Oranı: Yüksek</p>
-    <p>Bilgisayar: 728x90 px</p>
-    <p>Mobil: 300x250 px</p>
     <p class="h6">1 Ay: 270 TL</p>
     <p class="h6">3 Ay: 648 TL</p>
     <small class="text-muted">(%20 indirimli)</small>
@@ -200,8 +196,6 @@ type="page"
 <p>Tüm İç Sayfaların Sonunda Yayınlanır.</p>
 <p>Aylık Tahmini Gösterim Sayısı: 1500 - 2500</p>
 <p>Dönüşüm Oranı: Orta</p>
-<p>Bilgisayar: 728x90 px</p>
-<p>Mobil: 300x250 px</p>
 <p class="h6">1 Ay: 180 TL</p>
 <p class="h6">3 Ay: 432 TL</p>
 <small class="text-muted">(%20 indirimli)</small>
@@ -212,7 +206,6 @@ type="page"
 <p>Tüm Sayfaların İlginizi Çekebilir Alanında Yayınlanır.</p>
 <p>Aylık Tahmini Gösterim Sayısı: 1350 - 2400</p>
 <p>Dönüşüm Oranı: Orta</p>
-<p>Tüm cihazlar: 300x250 px</p>
 <small>*3 reklam veren alanı vardır. Reklamlar; son reklam veren sol tarafta olacak şekilde sıralanır.</small>
 <p class="h6">1 Ay: 75 TL</p>
 <p class="h6">3 Ay: 180 TL</p>
@@ -221,7 +214,18 @@ type="page"
 </div>
 
 <br><br><br>
-
+<!-- A Reklam Alanı-->
+<div class="container mt-6 markutreklam">
+    <div class="row pt-md-3 pb-md-4 bg-sari mt-5">
+      <div class="col-md-6"><a href="#"><img loading="lazy" class="img-fluid thumb" src="/img/markut-dergimizin-parcasi.jpg" alt="Markut Örnek Reklam Alanı Görselidir." width="700px" height="300px">
+       </div>
+      <div class="col-md-6"> <p class="title mt-2 h2">Örnek Reklam Başlığı</p>
+       </a><p class="yazar"><a href="https://www.markut.net/reklam-sponsorluk/" target="_blank" rel="noopener noreferrer">Reklam</a></p>
+       <p class="desc">Bu bir örnek reklam açıklamasıdır. Öne çıkarmak istediğiniz reklamın kısaca tanıtarak okuyucuları reklam hakkında bilgi verebilirsiniz.</p>
+     </div>
+    </div>
+</div>
+<!-- A Reklam Alanı Bitiş-->
 
 <h3>Derginize Sponsor Olarak Reklam Vermek İstiyorum</h3>
 <form class="form-horizontal" name="Reklam" method="POST" data-netlify="true" action="/basarili">
@@ -249,6 +253,14 @@ type="page"
                     </div>
                   </div>
                   <div class="form-group row">
+                    <label for="web" class="col-3 col-form-label">Firma Web Adresi</label> 
+                    <div class="col-9">
+                      <div class="input-group">
+                        <input id="web" name="web" type="text" class="form-control" placeholder="Firma Web adresi. https://..." required="required"> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
                     <label for="hedef" class="col-3 col-form-label">Reklamın Hedef URL</label> 
                     <div class="col-9">
                       <div class="input-group">
@@ -257,10 +269,18 @@ type="page"
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label for="web" class="col-3 col-form-label">Firma Web Adresi</label> 
+                    <label for="reklambasligi" class="col-3 col-form-label">Reklam Başlığı Belirleyin</label> 
                     <div class="col-9">
                       <div class="input-group">
-                        <input id="web" name="web" type="text" class="form-control" placeholder="Firma Web adresi. https://..." required="required"> 
+                        <input id="reklambasligi" name="reklambasligi" type="text" class="form-control" placeholder="Reklamın başlığı belirtin. Çarpıcı bir kaç kelime ekleyin." required="required"> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="reklamaciklamasi" class="col-3 col-form-label">Reklam Açıklaması Belirleyin</label> 
+                    <div class="col-9">
+                      <div class="input-group">
+                        <textarea id="reklamaciklamasi" name="reklamaciklamasi" type="text" class="form-control" placeholder="Reklamın açıklamasını belirtin. Reklamınızı 2-3 cümlede belirtin." rows="4" required="required"></textarea>
                       </div>
                     </div>
                   </div>
@@ -310,7 +330,7 @@ type="page"
                     <div class="col-9"><br>
                       <div class="input-group">
                         <input id="file" name="file" type="file"> 
-                        <p>Zip veya Rar dosyası olarak 2 reklam görselini bir araya getirerek yükleyiniz. 728x90px ve 300x250px reklam görselini; PNG, JPG, SVG veya GIF formatında yükleyebilirsiniz. Dosya Boyutlarının 250KB'ı geçmemesi rica olunur. D alanına reklam verenlerin 728x90 px reklam görselini göndermelerine gerek yoktur.</p>
+                        <p>Öne çıkarmak istediğiniz görseli seçin. Yatay formatta olmasına dikkat ediniz. 700x300 px olarak kırpılacaktır.</p>
                       </div>
                     </div>
                   </div>
