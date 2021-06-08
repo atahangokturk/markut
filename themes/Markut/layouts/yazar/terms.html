@@ -3,10 +3,21 @@
     <div class="container">
         <header class="page-header markutcontent"><h1>Yazarlar</h1></header>
         <div class="container toc">
-            <ul>
-                {{ range .Data.Pages }}
-                  <li><a href="{{ .Permalink }}">{{ .Params.title }}</a></li>
-                {{ end }}
-                </ul>
-         </div> 
+          <ul>
+          {{ range .Data.Pages }}
+            <li><a href="{{ .Permalink }}">{{ .Params.title }}</a></li>
+          {{ end }}
+          </ul>
+        </div> 
+<!--
+         <div class="row">
+          {{ range .Data.Pages }}
+           <div class="col-md-4 mb-5">
+             <div class="pl-5 pr-5 pb-4 ml-5 mr-5">
+             <img src="{{.Params.photo}}" class="rounded-circle" alt=""></div>
+           <h3 class="mt-0 text-center"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h3></div>
+           {{ end }}
+          </div>
+-->
+          <h3>Konuk Yazarlar</h3>
     {{ partial "footer.html" . }}

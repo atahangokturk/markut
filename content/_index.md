@@ -4,5 +4,6 @@ description="Markut, endüstriyel tasarım dergisidir. Endüstri tasarımı bağ
 sayfa="Ana Sayfa"
 yazar=["Markut"]
 tags=["dergi"]
-thumb="/img/markut-b-dergimizin-parcasi.jpg"
+thumb="/img/markut-dergimizin-parcasi.jpg"
+aciklama="Ana sayfaya geçiş yapabilirsiniz."
 +++

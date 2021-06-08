@@ -37,7 +37,7 @@
   <div class="icindekiler">içindekiler</div>
   {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}
   <div class="icsay">{{.Params.sayfa}}</div> <a href="{{ .RelPermalink }}"><h2 class="title">{{ .Title | markdownify }}</h2></a>
-  <p class="yazar">{{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Params.title }}</a>{{ end }}{{ end }}</p>
+  <p class="yazar">{{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Params.title }}</a>{{ end }}{{ end }} {{if isset .Params "konuk" }}<a href="/yazar">Konuk Yazar, {{.Params.konuk}}</a>{{end}}</p>
   <p class="desc">{{ .Params.aciklama | markdownify }}</p>
   {{ end }}
   <div class="kapakoku">Devam Et</div>

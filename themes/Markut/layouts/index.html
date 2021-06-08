@@ -144,7 +144,7 @@
 <div class="col-md-6 mt-5"><article>    
         <a href="{{ .Permalink }}"><img loading="lazy" class="img-fluid thumb" src="{{.Params.thumb}}" alt="{{ .Title | markdownify }}" width="700px" height="300px">
          <h2 class="title">{{ .Title | markdownify }}</h2>
-         <p class="yazar">{{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Params.title }}</a>{{ end }}{{ end }} | <time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time> | Sayı {{ range .Params.sayi }}{{ . }}{{ end }}</p>
+         <p class="yazar">{{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Params.title }}</a>{{ end }}{{ end }} {{if isset .Params "konuk" }}<a href="/yazar">Konuk Yazar, {{.Params.konuk}}</a>{{end}} | <time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time> | Sayı {{ range .Params.sayi }}{{ . }}{{ end }}</p>
          <p class="desc">{{ .Params.aciklama | plainify | htmlUnescape }}</p>
        </a>
          </article></div>
@@ -156,6 +156,37 @@
         {{ template "_internal/pagination.html" . }}
         </div>        
 </div>
+
+<!--
+<div class="container onde mb-5 mt-6">
+        <div class="icindekiler text-center">Admin SEO Alanı</div>
+        <div class="row">
+                
+                <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">URL</th>
+                    <th scope="col">Başlık</th>
+                    <th scope="col">Seo Başlığı</th>
+                    <th scope="col">Seo Açıklama</th>
+                    <th scope="col">Açıklama</th>
+                  </tr>
+                </thead>
+                <tbody>
+{{ range first 150 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
+                        <tr>
+                                <td>{{ .Params.url }}</td>
+                                <td>{{ .Title | markdownify }}</td>
+                                <td>{{ .Params.seotitle | markdownify }}</td>
+                                <td>{{ .Params.description | markdownify }}</td>
+                                <td>{{ .Params.aciklama | plainify | htmlUnescape }}</td>
+                        </tr>
+{{ end }}                </tbody>
+        </table>
+</div>
+</div>
+-->
+
 
 {{.Content}}
 {{ partial "mailde.html" . }}

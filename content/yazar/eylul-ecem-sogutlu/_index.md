@@ -1,5 +1,5 @@
 ---
 title: Eylül Ecem Söğütlü
-photo: '/yazar/eylul-ecem-sogutlu.jpeg'
+photo: '/yazar/eylul-ecem-sogutlu.jpg'
 instagram: eylulecemsogutlu
 ---

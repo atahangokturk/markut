@@ -11,11 +11,11 @@
           <span class="sayfa">{{ .Params.sayfa }}</span>
              <div class="titya"><a href="{{ .Permalink }}"><h1 class="title">{{ .Params.title}}</h1></a>
              <div class="desc">
-               {{ range $index, $element := .Params.yazar }}{{ with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }}{{ end }}
+               {{ range $index, $element := .Params.yazar }}{{ with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }}{{ end }} {{if isset .Params "konuk" }}<a href="/yazar">Konuk Yazar, {{.Params.konuk}}</a>{{end}} 
              </div>
             </div>
          </div>
-        </div>
+        </div>        
         {{ $number := (float .Params.sayfa) }}
         {{ $anothernumber := 1 }}
         {{ $total := (add $number $anothernumber) }}

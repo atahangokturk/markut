@@ -1,5 +1,5 @@
 ---
 title: Ecem Hasbay
-photo: ""
+photo: "/yazar/ecem-hasbay.jpg"
 instagram:
 ---

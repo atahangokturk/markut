@@ -56,7 +56,7 @@
          <div class="col-md-6 mt-5"><article>    
        <a href="{{ .Permalink }}"><img loading="lazy" class="img-fluid thumb" src="{{.Params.thumb}}" alt="{{ .Title | markdownify }}">   
         <h2 class="title">{{ .Title | markdownify }}</h2>
-        <p class="yazar">{{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Params.title }}</a>{{ end }}{{ end }} | <time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time></p>
+        <p class="yazar">{{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Params.title }}</a>{{ end }}{{ end }} {{if isset .Params "konuk" }}<a href="/yazar">Konuk Yazar, {{.Params.konuk}}</a>{{end}} | <time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time></p>
         <p class="desc">{{ .Params.aciklama | plainify | htmlUnescape }}</p>
       </a>
         </article></div>

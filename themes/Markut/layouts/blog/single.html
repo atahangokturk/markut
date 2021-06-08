@@ -6,7 +6,7 @@
             <div class="offset-md-2 col-md-8 mt-3 blog">
                 <a href="/blog/">/blog</a>
                 <h1 class="title">{{.Title}}</h1>
-                <p class="yazar mb-5">{{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Params.title }}</a>{{ end }}{{ end }} | <time>{{.Date.Day}} {{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time></p>
+                <p class="yazar mb-5">{{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Params.title }}</a>{{ end }}{{ end }} {{if isset .Params "konuk" }}<a href="/yazar">Konuk Yazar, {{.Params.konuk}}</a>{{end}} | <time>{{.Date.Day}} {{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time></p>
                  </div>
                  {{if isset .Params "full"}}
                     {{.Content}}
