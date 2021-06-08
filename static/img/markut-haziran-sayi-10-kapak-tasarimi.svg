@@ -24,9 +24,9 @@
 		animation: sifir 10s ease infinite;
 	  }
 	  @keyframes sifir{
-	   0%{transform-origin: center; transform:  translateY(0px) translateX(0px) scale(0.5); -webkit-filter: blur(20px);}
+	   0%{transform-origin: center; transform:  translateY(0px) translateX(50px) scale(0.5); -webkit-filter: blur(20px);}
 	   50%{transform-origin: center; transform: translateY(0px) translateX(0px) scale(1); -webkit-filter: blur(0px);}
-	   100%{transform-origin: center; transform:  translateY(0px) translateX(0px) scale(0.5); -webkit-filter: blur(20px);}
+	   100%{transform-origin: center; transform:  translateY(0px) translateX(50px) scale(0.5); -webkit-filter: blur(20px);}
 	 } 
 	 
 	 
