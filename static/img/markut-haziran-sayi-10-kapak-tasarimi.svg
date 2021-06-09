@@ -5,10 +5,12 @@
 <style type="text/css">
 	#parlak{
 		animation: parlak 10s ease infinite;
+		-webkit-animation: parlak 10s ease infinite;
+		-moz-animation: parlak 10s ease infinite;
 	  }
 	  @keyframes parlak{
-	   0%{transform-origin: center; -webkit-filter: blur(5px);}
-	   100%{transform-origin: center;  -webkit-filter: blur(7px);}
+	   0%{transform-origin: center; -webkit-filter: blur(5px); -moz-filter: blur(5px); -o-filter: blur(5px); -ms-filter: blur(5px);}
+	   100%{transform-origin: center;  -webkit-filter: blur(7px); -moz-filter: blur(7px); -o-filter: blur(7px); -ms-filter: blur(7px);}
 	 } 
 	 #isin{
 		animation: isin 10s ease infinite;
@@ -22,11 +24,13 @@
 	 
 	   #sifir{
 		animation: sifir 10s ease infinite;
+		-webkit-animation: sifir 10s ease infinite;
+		-moz-animation: sifir 10s ease infinite;
 	  }
 	  @keyframes sifir{
-	   0%{transform-origin: center; transform:  translateY(0px) translateX(50px) scale(0.5); -webkit-filter: blur(20px);}
-	   50%{transform-origin: center; transform: translateY(0px) translateX(0px) scale(1); -webkit-filter: blur(0px);}
-	   100%{transform-origin: center; transform:  translateY(0px) translateX(50px) scale(0.5); -webkit-filter: blur(20px);}
+	   0%{transform-origin: center; transform:  translateY(0px) translateX(50px) scale(0.5); -webkit-filter: blur(20px); -moz-filter: blur(20px); -o-filter: blur(20px); -ms-filter: blur(20px);}
+	   50%{transform-origin: center; transform: translateY(0px) translateX(0px) scale(1); -webkit-filter: blur(0px); -moz-filter: blur(0px); -o-filter: blur(0px); -ms-filter: blur(0px);}
+	   100%{transform-origin: center; transform:  translateY(0px) translateX(50px) scale(0.5); -webkit-filter: blur(20px); -moz-filter: blur(20px); -o-filter: blur(20px); -ms-filter: blur(20px);}
 	 } 
 	 
 	 
