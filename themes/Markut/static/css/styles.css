@@ -169,7 +169,7 @@ a {
 }
 .container p a{
   text-decoration: underline;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 2px;
   text-decoration-color: #f7c421;
   -moz-text-decoration-color: #f7c421;
 }
@@ -304,7 +304,7 @@ color: white;
 }
 
 .navbar {
-  z-index: 1;
+  z-index: 2;
   background-color: #ffffff;
 }
 .sayilar {
@@ -413,8 +413,8 @@ footer {
 }
 footer a {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 16px;
-  letter-spacing: 2px;
+  font-size: 15px;
+  letter-spacing: 1px;
   color: #000;
 }
 footer a:hover {
@@ -443,7 +443,7 @@ footer a:hover {
 }
 .footerdesc {
   color: #686868;
-  font-size: 16px;
+  font-size: 15px;
   max-width: 800px;
   margin: 0 auto;
   margin-top: 25px;
@@ -1004,7 +1004,14 @@ svg{
     margin-left: 50%;
   }
 }
-
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .footerlogo{
+    font-size: 48px;
+  }
+  .footersur{
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 768px) {
   .gecis .title {
     font-size: 28px;
