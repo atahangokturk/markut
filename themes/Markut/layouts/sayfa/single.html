@@ -44,7 +44,14 @@
         {{.Content}}
 
         {{ partial "reklam/creklam.html" . }}
-
+        <script> 
+          $('.slb').simplebox({
+              fadeSpeed: 300, // default is 400ms, applied to all fade animations in the plugin
+              darkMode: true, // default is false
+              postfix: "_full", // default is ""
+              hqClass: "highres" // default is "hq"
+          });
+          </script>
         {{$yorum:= .Params.yorum}}
         {{ if eq $yorum "var" }}
         <h3 class="text-center">Markut Ekibinden Sevgiyle...</h3>
@@ -67,8 +74,6 @@
      {{ $related := .Site.RegularPages.RelatedIndices . "tags" "date" | first 3 }}
       {{ with $related }}
 
-     
-     
       <div class="text-center pb-5">
       <h3>İlginizi Çekebilir</h3>
       <ul class="list-unstyled">
