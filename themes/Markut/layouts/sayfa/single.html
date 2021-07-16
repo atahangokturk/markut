@@ -14,6 +14,7 @@
                {{ range $index, $element := .Params.yazar }}{{ with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }}{{ end }} {{if isset .Params "konuk" }}<a href="/yazar">Konuk Yazar, {{.Params.konuk}}</a>{{end}} 
              </div>
             </div>
+            {{ partial "share-buttons.html" . }}
          </div>
         </div>        
         {{ $number := (float .Params.sayfa) }}

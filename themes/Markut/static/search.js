@@ -92,7 +92,7 @@ var searchFn = function () {
         }
         lastTerm = term;
         if (term.length < minChars) {
-            $("#results").html('<p class=\"text-center\">Anahtar kelime girin</p>'); // solda <p>No items found.</p> bu vardı
+            $("#results").html('<p class=\"text-center\">Anahtar kelimenin tamamını girin</p>'); // solda <p>No items found.</p> bu vardı
             $("#btnGo").attr("disabled", true);
             return;
         }
