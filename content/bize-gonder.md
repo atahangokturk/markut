@@ -2,6 +2,7 @@
 title = "Bize Gönder"
 url = "bize-gonder/"
 type="page"
+yazar=["markut"]
 +++
 
 Dergimizde yayınlanmak üzere içerik gönderimi yapabilirsiniz. **<a href="mailto:editor@markut.net">editor@markut.net</a>** adresine mail gönderebilirsiniz.

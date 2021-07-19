@@ -59,7 +59,12 @@
         {{ end }}
      </div>
      <section class="bg-light mt-3"><br>
-      {{ partial "abone-ol.html" . }}
+      <div class="container">
+      <p class="text-muted text-center"><small>Bu makale <time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time> tarihinde MARKUT Dergi Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} altında {{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }} <a href="{{ .Permalink }}">{{ .Params.title }}</a> {{ end }}{{ end }} {{if isset .Params "konuk" }}<a href="/yazar">Konuk Yazar, {{.Params.konuk}}</a>{{end}}  tarafından yazılmıştır. Sayının devamını aşağı kaydırararak okuyabilirsiniz. Üst menüden diğer sayılarımızı okuyabilir, <a href="https://www.markut.net/">buraya tıklayarak anasayfaya</a> dönebilir veya alt bölümdeki formu doldurarak dergimize abone olabilirsiniz.</small>
+      </p>
+      <div class="text-center">{{ partial "share-buttons.html" . }}</div>
+  </div>
+        {{ partial "abone-ol.html" . }}
       <br>
       {{ partial "reklam/dreklam.html" . }}
 

@@ -2,6 +2,7 @@
 title = "Okuyucu Sözleşmesi"
 url = "okuyucu-sozlesmesi/"
 type="page"
+yazar=["markut"]
 +++
 Dergimiz ücretsiz olarak içerik hizmeti vermektedir.
 

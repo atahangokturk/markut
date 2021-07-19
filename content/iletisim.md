@@ -2,6 +2,7 @@
 title = "İletişim"
 url = "iletisim/"
 type="page"
+yazar=["markut"]
 +++
 Mail yoluyla iletişime geçmek için **<a href="mailto:bilgi@markut.net">bilgi@markut.net</a>** adresini kullanabilirsiniz.
 

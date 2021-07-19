@@ -35,6 +35,32 @@
 {{ template "_internal/pagination.html" . }}
 </div>
 
-
+<div class="container onde mb-5 mt-6">
+  <div class="icindekiler text-center">Admin SEO Alanı</div>
+  <div class="row">
+          
+          <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">URL</th>
+              <th scope="col">Başlık</th>
+              <th scope="col">Seo Başlığı</th>
+              <th scope="col">Seo Açıklama</th>
+              <th scope="col">Açıklama</th>
+            </tr>
+          </thead>
+          <tbody>
+{{ range first 150 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
+                  <tr>
+                          <td>{{ .Params.url }}</td>
+                          <td>{{ .Title | markdownify }}</td>
+                          <td>{{ .Params.seotitle | markdownify }}</td>
+                          <td>{{ .Params.description | markdownify }}</td>
+                          <td>{{ .Params.aciklama | plainify | htmlUnescape }}</td>
+                  </tr>
+{{ end }}                </tbody>
+  </table>
+</div>
+</div>
 {{ partial "abone-ol.html" . }}
     {{ partial "footer.html" . }}
