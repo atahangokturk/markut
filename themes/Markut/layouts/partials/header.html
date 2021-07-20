@@ -12,6 +12,16 @@
       <!--  Use flexbox utility classes to change how the child elements are justified  -->
         <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
           <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-center" href="#" data-toggle="dropdown">
+               Sayılar {{ range .Params.sayi }}{{ . }}{{ end }}
+              </a>
+              <div class="dropdown-menu">
+                {{ range ( where .Site.RegularPages "Type" "kapak" )}}
+                <div class="mrkt-menu-s"><a href="{{.Permalink}}">Sayı {{ range .Params.sayi }}{{ . }}{{ end }}</a></div>
+                {{ end }}
+              </div>
+            </li>   
                 <li class="nav-item">
                   <a class="nav-link" href="{{.Site.BaseURL}}hakkimizda/">Hakkımızda</a>
                 </li>
@@ -21,16 +31,16 @@
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#" data-toggle="modal" data-target="#arama"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 18 18">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-              </svg> Arama Yap</a>
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#arama">
+                <svg version="1.1" width="20px" height="20px" fill="CurrentColor" viewBox="0 0 70 70" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m55.146 51.887-13.558-14.101c3.486-4.144 5.396-9.358 5.396-14.786 0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c0.571 0.593 1.339 0.92 2.162 0.92 0.779 0 1.518-0.297 2.079-0.837 1.192-1.147 1.23-3.049 0.083-4.242zm-31.162-45.887c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z"/>
+               </svg> Arama Yap</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" data-toggle="modal" data-target="#aboneol">Abone Ol</a>
             </li>
             <li class="nav-item"><div class="custom-control custom-switch">
               <input type="checkbox" class="custom-control-input" id="darkSwitch" />
-              <label class="mb-0 idarkmode" for="darkSwitch">
+              <label class="mb-0 idarkmode" for="darkSwitch" title="Karanlık Moda Geçin">
                 <img src="/img/logo-dark-mode-v2.svg" alt="Markut icon, karanlık mod için buton.">
               </label>
             </div></li>
