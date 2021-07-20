@@ -42,8 +42,31 @@
            {{ end }}
       {{end}}
         {{.Content}}
-
         {{ partial "reklam/creklam.html" . }}
+        {{ $number := (float .Params.sayfa) }}
+        {{ $anothernumber := 1 }}
+        {{ $total := (add $number $anothernumber) }}
+        {{ $totalsub := (sub $number $anothernumber) }} 
+        {{ $zeooo := trim $total " " }} 
+    {{$pardate := .Params.date}}
+    {{$zero := "0"}}
+     {{ $zeo := trim $total " " }}
+     {{ $full := printf "%s%s" "0" $zeo }}
+     {{if gt 10 $total}}
+         {{ $v1 := where .Site.Pages "Params.sayfa" $full }}
+         {{ $v2 := where .Site.Pages "Params.date" $pardate }}
+         {{ $filtered := $v1 | intersect $v2 }}
+        {{ range $filtered }}
+        <div class="h2 text-center"><a href="{{.Permalink}}"><button class="btn markutbtn"><strong>Sonraki Sayfaya Geç:</strong> <br> {{.Title}}</button></a></div>
+        {{ end }}
+          {{else}}
+          {{ $z1 := where .Site.Pages "Params.sayfa" $zeo }}
+          {{ $z2 := where .Site.Pages "Params.date" $pardate }}
+          {{ $filter := $z1 | intersect $z2 }}
+         {{ range $filter }}
+         <a href="{{.Permalink}}" id="next"></a>
+           {{ end }}
+      {{end}}
         <script> 
           $('.slb').simplebox({
               fadeSpeed: 300, // default is 400ms, applied to all fade animations in the plugin
@@ -67,7 +90,6 @@
         {{ partial "abone-ol.html" . }}
       <br>
       {{ partial "reklam/dreklam.html" . }}
-
      {{- if .Params.tags }}
         <ul class="list-inline text-center pt-3">
          {{- range .Params.tags }}

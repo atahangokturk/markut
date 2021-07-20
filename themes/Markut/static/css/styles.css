@@ -167,6 +167,12 @@ a {
   color: #333333;
   font-family: 'Roboto Condensed', sans-serif;
 }
+.container-fluid p a{
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #f7c421;
+  -moz-text-decoration-color: #f7c421;
+}
 .container p a{
   text-decoration: underline;
   text-decoration-thickness: 2px;

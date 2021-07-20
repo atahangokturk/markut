@@ -1,5 +1,4 @@
 <button onclick="topFunction()" id="myBtn" title="Yukarı Çık">↑</button>
-
 <div class="modal" id="arama" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content modalback">
@@ -95,7 +94,6 @@
            <div class="footerlogo">MARKUT</div>
            <div class="footersur">Marmara Kreatif Ürün Tasarım Ekibi</div> <p class="footerdesc">        <strong>Markut</strong>, Marmara Kreatif Ürün Tasarım ekibidir. Ekibimizle Ağustos 2020'de online <strong>endüstriyel tasarım dergimizi</strong> bu platformda yayınlamaya başladık. Dergimiz, endüstri tasarımı bağlamında <strong>genel tasarım</strong> disiplinleriyle de ilişkili olarak içerikler üretmektedir.</p>
        </div>
-
       <div class="col-md-8">
                 <div class="row mb-0 mt-md-4 mt-4">
               <div class="col-md-4 col-sm-6 col-6 text-center mb-4">
@@ -139,23 +137,21 @@
            </div>
           </div>
         </div>
-</div>
-       
-
-
-       
-
-      
+</div>    
         <div class="copyright"><a href="{{.Site.BaseURL}}">Markut.net</a>  <a href="/dergi/">/dergi</a> | Copyright © 2020-2021 | Markut tarafından tasarlandı.</div>
     </div>
-
   </footer>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="{{.Site.BaseURL}}bootstrap/bootstrap.min.js" defer='defer'></script>
     <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-embed.js" defer='defer'>
     </script>
-
 <script src="{{.Site.BaseURL}}js/dark-mode-switch.min.js"></script>
+<script>$('.slb').simplebox({
+  fadeSpeed: 400, // default is 400ms, applied to all fade animations in the plugin
+  darkMode: true, // default is false
+  postfix: "_full", // default is ""
+  hqClass: "highres" // default is "hq"
+});</script>
 {{ if .IsHome }} {{else}}
 <script src="{{.Site.BaseURL}}js/jquery.clever-infinite-scroll.js"></script>
 <script>
@@ -188,18 +184,11 @@ function topFunction() {
 }
 
 </script>
+
 <script>$('#dergi a').on('click', function (e) {
   e.preventDefault()
   $(this).tab('show')
 })
-
-
-$('.slb').simplebox({
-    fadeSpeed: 300, // default is 400ms, applied to all fade animations in the plugin
-    darkMode: true, // default is false
-    postfix: "_full", // default is ""
-    hqClass: "highres" // default is "hq"
-});
 </script>
 
 </body>
