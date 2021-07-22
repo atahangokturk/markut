@@ -3,7 +3,21 @@
     {{ partial "header.html" . }}
     <div class="container">
     <div class="onde mb-5">
-        <header class="page-header markutcontent"><h1>{{ .Title }}</h1><div class="title list-inline-item"><a href="/tags/">Etiketler Sayfasına Geri Dönün</a></div></header>
+        <div class="page-header markutcontent"><h1>{{ .Title }}</h1>
+          <div class="title list-inline-item"><a href="/tags/">Etiketler Sayfasına Geri Dönün</a></div>
+          </div>
+          {{ if isset .Params "etiketimg"}}
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 mt-5"><img src="{{.Params.etiketimg}}" alt="{{.Title}}"></div>
+              <div class="col-md-8">{{.Content}}</div>
+            </div>
+          </div>
+          {{else}}
+          <div class="container markutcontent mt-1">
+            {{.Content}}
+          </div>
+          {{end}}
 <!--
         <div class="row mt-4">
          {{ range first 2 .Pages }}
@@ -17,21 +31,20 @@
  {{ end }}
  </div>
 -->
-
- <div class="container onde mb-5">
-  <div class="row mt-5">
-{{ $paginator := .Paginate .Pages }}
-{{ range $paginator.Pages }}
-<div class="col-md-6 mt-5"><article>    
-  <a href="{{ .Permalink }}"><img loading="lazy" class="img-fluid thumb" src="{{.Params.thumb}}" alt="{{ .Title | markdownify }}" width="700px" height="300px">
-   <h2 class="title">{{ .Title | markdownify }}</h2>
-   <p class="yazar">{{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Params.title }}</a>{{ end }}{{ end }} {{if isset .Params "konuk" }}<a href="/yazar">Konuk Yazar, {{.Params.konuk}}</a>{{end}} | <time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time> | Sayı {{.Params.sayi}}</p>
-   <p class="desc">{{ .Params.aciklama | plainify | htmlUnescape }}</p>
- </a>
-   </article></div>
-{{ end }}
-</div>
-</div>
+      <div class="container onde mb-5">
+        <div class="row mt-5">
+      {{ $paginator := .Paginate .Pages }}
+      {{ range $paginator.Pages }}
+      <div class="col-md-6 mt-5"><article>    
+        <a href="{{ .Permalink }}"><img loading="lazy" class="img-fluid thumb" src="{{.Params.thumb}}" alt="{{ .Title | markdownify }}" width="700px" height="300px">
+         <h2 class="title">{{ .Title | markdownify }}</h2>
+         <p class="yazar">{{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Params.title }}</a>{{ end }}{{ end }} {{if isset .Params "konuk" }}<a href="/yazar">Konuk Yazar, {{.Params.konuk}}</a>{{end}} | <time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time> | Sayı {{ range .Params.sayi }}{{ . }}{{ end }}</p>
+         <p class="desc">{{ .Params.aciklama | plainify | htmlUnescape }}</p>
+       </a>
+         </article></div>
+      {{ end }}
+      </div>
+      </div>
 {{ template "_internal/pagination.html" . }}
 </div>
 

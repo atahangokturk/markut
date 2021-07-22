@@ -133,6 +133,24 @@
 </div>
 -->
 
+<div class="container onde mb-4 mt-6 bg-green p-md-3">
+    <div class="icindekiler text-center mt-3">Bu Ayın Yazısı</div>
+    <div class="row ">
+         {{ range .Site.Pages }}
+         {{ if in .Params.tags "anasayfa" }}
+         <div class="col-md-6 mt-3"><article>    
+                 <a href="{{ .Permalink }}"><img loading="lazy" class="img-fluid thumb" src="{{.Params.thumb}}" alt="{{ .Title | markdownify }}" width="700px" height="300px">
+                </a>
+                  </article></div>
+                  <div class="col-md-6 mt-3">
+                 <a href="{{ .Permalink }}"><h2 class="title">{{ .Title | markdownify }}</h2></a>
+                    <p class="yazar">{{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Params.title }}</a>{{ end }}{{ end }} {{if isset .Params "konuk" }}<a href="/yazar">Konuk Yazar, {{.Params.konuk}}</a>{{end}} | <time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time> | Sayı {{ range .Params.sayi }}{{ . }}{{ end }}</p>
+                    <p class="desc">{{ .Params.aciklama | plainify | htmlUnescape }}</p>
+                  </div>
+         {{ end }}
+         {{ end }}
+     </div>
+</div>
 
 
 
@@ -144,7 +162,10 @@
 <div class="col-md-6 mt-5"><article>    
         <a href="{{ .Permalink }}"><img loading="lazy" class="img-fluid thumb" src="{{.Params.thumb}}" alt="{{ .Title | markdownify }}" width="700px" height="300px">
          <h2 class="title">{{ .Title | markdownify }}</h2>
-         <p class="yazar">{{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Params.title }}</a>{{ end }}{{ end }} {{if isset .Params "konuk" }}<a href="/yazar">Konuk Yazar, {{.Params.konuk}}</a>{{end}} | <time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time> | Sayı {{ range .Params.sayi }}{{ . }}{{ end }}</p>
+         <p class="yazar mt-md-2 mb-md-2">{{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}<a href="{{ .Permalink }}">{{ .Params.title }}</a>{{ end }}{{ end }} {{if isset .Params "konuk" }}<a href="/yazar">Konuk Yazar, {{.Params.konuk}}</a>{{end}} | <time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time> | Sayı {{ range .Params.sayi }}{{ . }}{{ end }}</p>
+         <div>{{- range .Params.tags }}{{- $href := print (absURL "tags/") (urlize .) }}
+                <div class="etiket"><a href="{{ $href }}">#{{.}}</a></div>
+        {{- end }}</div>
          <p class="desc">{{ .Params.aciklama | plainify | htmlUnescape }}</p>
        </a>
          </article></div>

@@ -310,7 +310,7 @@ color: white;
 }
 
 .navbar {
-  z-index: 2;
+  z-index: 999;
   background-color: #ffffff;
 }
 .sayilar {
@@ -381,7 +381,7 @@ color: white;
   font-family: 'Roboto Condensed', sans-serif;
   color: #000;
   border: 2px solid #000;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .markutbtn:hover {
@@ -870,6 +870,22 @@ svg{
   margin-top: 7px;
 }
 
+.etiket {
+  font-weight: bold;
+  font-size: 14px; 
+  letter-spacing: 2.12px;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.etiket a {
+  color: #afafaf;
+}
+.etiket a:hover {
+  color: #585858;
+}
+
+
 .carousel-control-next, .carousel-control-prev{
   align-items: unset;
 }
@@ -1016,6 +1032,10 @@ svg{
   }
   .footersur{
     font-size: 12px;
+  }
+  .nav-item {
+    padding-top: 15px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1175,4 +1195,4 @@ svg{
   #share-buttons > div.mail > svg {height: 14px; margin-top: 11px;}
 
   /* Simplexo - Lightbox css*/
-  #overlay,.cross{will-change:transform}#overlay,.center,.cross{top:0;right:0}.cross{position:fixed;margin:30px 55px 0 0;cursor:pointer;transition:.3s all ease-in-out;z-index:99;opacity:1}.cross::after,.cross::before{position:absolute;content:'';width:35px;height:2px}.cross::after{-webkit-transform:rotate(45deg);transform:rotate(45deg)}.cross::before{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.cross--light::after,.cross--light::before{background-color:#000}.cross--dark::after,.cross--dark::before{background-color:#fff}.slb{box-shadow:2px 2px 12px 1px rgba(0,0,0,.2);cursor:-webkit-zoom-in;cursor:zoom-in}.slb--invert{box-shadow:2px 2px 12px 1px rgba(255,255,255,.3)}.slb--opened{cursor:auto}.pop-in{-webkit-animation:pop-in 250ms;-moz-animation:pop-in 250ms;-ms-animation:pop-in 250ms}.pop-out{-webkit-animation:pop-out 250ms;-moz-animation:pop-out 250ms;-ms-animation:pop-out 250ms}#overlay{display:none;width:100vw;height:100vh;position:fixed;left:0;bottom:0;pointer-events:none;cursor:pointer;z-index:100}.center{max-height:95%;max-width:95%;position:absolute;bottom:0;left:0;margin:auto}@-webkit-keyframes pop-in{0%{opacity:0;-webkit-transform:scale(.5);transform:scale(.5)}100%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}@keyframes pop-in{0%{opacity:0;-webkit-transform:scale(.5);transform:scale(.5)}100%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}@-webkit-keyframes pop-out{0%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}100%{opacity:0;-webkit-transform:scale(.5);transform:scale(.5)}}@keyframes pop-out{0%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}100%{opacity:0;-webkit-transform:scale(.5);transform:scale(.5)}}
+  #overlay,.cross{will-change:transform}#overlay,.center,.cross{top:0;right:0}.cross{position:fixed;margin:30px 55px 0 0;cursor:pointer;transition:.3s all ease-in-out;z-index:99;opacity:1}.cross::after,.cross::before{position:absolute;content:'';width:35px;height:2px}.cross::after{-webkit-transform:rotate(45deg);transform:rotate(45deg)}.cross::before{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.cross--light::after,.cross--light::before{background-color:#000}.cross--dark::after,.cross--dark::before{background-color:#fff}.slb{cursor:-webkit-zoom-in;cursor:zoom-in}.slb--invert{box-shadow:0px 0px 200px 1px rgba(255, 255, 255, 0.123)}.slb--opened{cursor:auto}.pop-in{-webkit-animation:pop-in 250ms;-moz-animation:pop-in 250ms;-ms-animation:pop-in 250ms}.pop-out{-webkit-animation:pop-out 250ms;-moz-animation:pop-out 250ms;-ms-animation:pop-out 250ms}#overlay{display:none;width:100vw;height:100vh;position:fixed;left:0;bottom:0;pointer-events:none;cursor:pointer;z-index:9999;overflow: auto;}.center{max-height:95%;max-width:95%;position:absolute;bottom:0;left:0;margin:auto}@-webkit-keyframes pop-in{0%{opacity:0;-webkit-transform:scale(.5);transform:scale(.5)}100%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}@keyframes pop-in{0%{opacity:0;-webkit-transform:scale(.5);transform:scale(.5)}100%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}@-webkit-keyframes pop-out{0%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}100%{opacity:0;-webkit-transform:scale(.5);transform:scale(.5)}}@keyframes pop-out{0%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}100%{opacity:0;-webkit-transform:scale(.5);transform:scale(.5)}}

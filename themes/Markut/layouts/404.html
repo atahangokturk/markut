@@ -1,0 +1,11 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+{{ define "main"}}
+    <main id="main">
+      <div>
+       <h2 id="title"><a href="{{ "/" | relURL }}">Ana Sayfaya Dön</a></h2>
+      </div>
+    </main>
+{{ end }}
+{{ partial "abone-ol.html" . }}
+{{ partial "footer.html" . }}
