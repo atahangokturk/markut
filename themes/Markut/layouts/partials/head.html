@@ -32,8 +32,8 @@
 		<meta name="twitter:site" content="@markutworks" />
 		<meta name="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}"/>
 		<meta name="twitter:title" content="{{ .Title }} {{ if .IsHome }}| Endüstriyel Tasarım Dergisi {{ .Site.Params.Tagline }}{{ else }}| {{ .Site.Title }}{{ end }}"/>
-		<meta name="twitter:image" content="{{ if isset .Params "thumb"}}{{.Site.BaseURL}}{{.Params.thumb}}{{end}}">
-		<meta name="twitter:image:src" content="{{ if isset .Params "thumb"}}{{.Site.BaseURL}}{{.Params.thumb}}{{end}}">
+		<meta name="twitter:image" content="{{ if isset .Params "thumb"}}https://www.markut.net{{.Params.thumb}}{{end}}">
+		<meta name="twitter:image:src" content="{{ if isset .Params "thumb"}}https://www.markut.net{{.Params.thumb}}{{end}}">
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:locale" content="tr_TR" />
