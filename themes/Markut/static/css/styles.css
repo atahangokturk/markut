@@ -234,14 +234,24 @@ img {
 .mavi {
   color: #221dbf;
 }
+.bg-mavi {
+  background-color: #221dbf;
+}
 
 .sari {
   color: #f3c420;
+}
+.bg-markut-sari {
+  background-color: #f3c420;
 }
 
 .kirmizi {
   color: #c30000;
 }
+.bg-kirmizi {
+  background-color: #c30000;
+}
+
 .bg-gri {
   background-color: #eeeeee;
 }
@@ -385,8 +395,8 @@ color: white;
 }
 
 .markutbtn:hover {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color: #f7c421;
+  color: rgb(0, 0, 0);
   border-color: #000;
 }
 .markutbtn:active {
@@ -408,6 +418,10 @@ color: white;
 .emailoctopus-form-row-subscribe .markutbtn{
   width: 300px;
   background-color: #f7c421;
+}
+.emailoctopus-form-row-subscribe .markutbtn:hover{
+  width: 300px;
+  background-color: #d6a812;
 }
 
 .markutcvr {
