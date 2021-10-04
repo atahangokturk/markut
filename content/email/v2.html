@@ -1,11 +1,3 @@
-
-<!DOCTYPE html>
-<html lang="tr">
-		<meta name="robots" content="noindex, nofollow" />
-	</head>
-<body>
-
-{{ range first 14 ( where .Site.RegularPages "Type" "kapak" )}}<hr><hr><hr><hr>
 <!DOCTYPE html>
 <html
    xmlns="http://www.w3.org/1999/xhtml"
@@ -174,9 +166,9 @@
                                              <tr>
                                                 <td style="width: 142px">
                                                    <img
-                                                      alt="Markut Logosu"
+                                                      alt=""
                                                       height="auto"
-                                                      src="https://www.markut.net/logo/dark-markut@2x.png"
+                                                      src="https://www.markut.net/logo/dark-markut@0.5x.png"
                                                       style="
                                                          border: 0;
                                                          display: block;
@@ -203,11 +195,11 @@
                </tbody>
             </table>
          </div>
-         <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="{{.Params.renk}}" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+         <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#F2F2F9" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
          <div
             style="
-               background: {{.Params.renk}};
-               background-color: {{.Params.renk}};
+               background: #f2f2f9;
+               background-color: #f2f2f9;
                margin: 0px auto;
                max-width: 600px;
             "
@@ -219,8 +211,8 @@
                cellspacing="0"
                role="presentation"
                style="
-                  background: {{.Params.renk}};
-                  background-color: {{.Params.renk}}
+                  background: #f2f2f9;
+                  background-color: #f2f2f9;
                   width: 100%;
                "
             >
@@ -303,9 +295,9 @@
                                              <tr>
                                                 <td style="width: 366px">
                                                    <img
-                                                      alt="Markut Sayı Çıktı İllustrasyonu"
+                                                      alt=""
                                                       height="auto"
-                                                      src="https://www.markut.net/img/{{.Params.emailimg}}"
+                                                      src="/ekim.png"
                                                       style="
                                                          border: 0;
                                                          display: block;
@@ -343,7 +335,7 @@
                                              color: #616161;
                                           "
                                        >
-                                          <h2>MARKUT {{ range .Params.sayi }}{{ . }}{{ end }}. SAYISI ÇIKTI!</h2>
+                                          <h2>MARKUT 13. SAYISI ÇIKTI!</h2>
                                        </div>
                                     </td>
                                  </tr>
@@ -370,9 +362,9 @@
                                              <tr>
                                                 <td style="width: 550px">
                                                    <img
-                                                      alt="Markut {{ range .Params.sayi }}{{ . }}{{ end }}.Sayı Kapak Tasarımı"
+                                                      alt=""
                                                       height="auto"
-                                                      src="https://www.markut.net{{.Params.thumb}}"
+                                                      src="https://www.markut.net/img/markut-eylul-2021-sayi-13.png"
                                                       style="
                                                          border: 0;
                                                          display: block;
@@ -411,12 +403,14 @@
                                           "
                                        >
                                           <strong
-                                             >{{.Params.aciklama | plainify}}</strong
+                                             >'İyi yönlendirilmiş bir hayal
+                                             gücü, büyük işlerin
+                                             kaynağıdır.'</strong
                                           ><br /><br /><br />
                                           <h2>İçindekiler</h2>
                                        </div>
                                     </td>
-                                 </tr>{{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}  
+                                 </tr>
                                  <tr>
                                     <td
                                        align="center"
@@ -440,9 +434,9 @@
                                              <tr>
                                                 <td style="width: 550px">
                                                    <img
-                                                      alt="{{ .Title | markdownify }}"
+                                                      alt=""
                                                       height="auto"
-                                                      src="https://www.markut.net{{.Params.thumb}}"
+                                                      src="https://www.markut.net/img/fordizm-thumbnail.jpg"
                                                       style="
                                                          border: 0;
                                                          display: block;
@@ -486,7 +480,7 @@
                                                 margin-bottom: 0px;
                                              "
                                           >
-										  {{.Params.sayfa}} | {{ .Title | markdownify }}
+                                             01 | Kitlesel Üretim: Fordizm
                                           </h3>
                                           <h5
                                              style="
@@ -494,11 +488,175 @@
                                                 color: #909090;
                                              "
                                           >
-										  {{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}{{ .Params.title }}{{ end }}{{ end }} {{if isset .Params "konuk" }}Konuk Yazar, {{.Params.konuk}}{{end}}
+                                             Atahan Göktürk Güner
                                           </h5>
                                        </div>
                                     </td>
-                                 </tr>{{end}}
+                                 </tr>
+                                 <tr>
+                                    <td
+                                       align="center"
+                                       style="
+                                          font-size: 0px;
+                                          padding: 10px 25px;
+                                          word-break: break-word;
+                                       "
+                                    >
+                                       <table
+                                          border="0"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          role="presentation"
+                                          style="
+                                             border-collapse: collapse;
+                                             border-spacing: 0px;
+                                          "
+                                       >
+                                          <tbody>
+                                             <tr>
+                                                <td style="width: 550px">
+                                                   <img
+                                                      alt=""
+                                                      height="auto"
+                                                      src="https://www.markut.net/img/ford-model-t-thumbnail.jpg"
+                                                      style="
+                                                         border: 0;
+                                                         display: block;
+                                                         outline: none;
+                                                         text-decoration: none;
+                                                         height: auto;
+                                                         width: 100%;
+                                                         font-size: 13px;
+                                                      "
+                                                      width="550"
+                                                   />
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td
+                                       align="left"
+                                       style="
+                                          font-size: 0px;
+                                          padding: 10px 25px;
+                                          word-break: break-word;
+                                       "
+                                    >
+                                       <div
+                                          style="
+                                             font-family: Roboto, Helvetica,
+                                                sans-serif;
+                                             font-size: 16px;
+                                             font-weight: 300;
+                                             line-height: 24px;
+                                             text-align: left;
+                                             color: #616161;
+                                          "
+                                       >
+                                          <h3
+                                             style="
+                                                margin-top: 0px;
+                                                margin-bottom: 0px;
+                                             "
+                                          >
+                                             02 | İkonik Arabalar: Ford Model T
+                                          </h3>
+                                          <h5
+                                             style="
+                                                margin-top: 0px;
+                                                color: #909090;
+                                             "
+                                          >
+                                             Mücahit Vasfi Baş
+                                          </h5>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td
+                                       align="center"
+                                       style="
+                                          font-size: 0px;
+                                          padding: 10px 25px;
+                                          word-break: break-word;
+                                       "
+                                    >
+                                       <table
+                                          border="0"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          role="presentation"
+                                          style="
+                                             border-collapse: collapse;
+                                             border-spacing: 0px;
+                                          "
+                                       >
+                                          <tbody>
+                                             <tr>
+                                                <td style="width: 550px">
+                                                   <img
+                                                      alt=""
+                                                      height="auto"
+                                                      src="https://www.markut.net/img/ileri-donusum-tasarim-thumbnail.jpg"
+                                                      style="
+                                                         border: 0;
+                                                         display: block;
+                                                         outline: none;
+                                                         text-decoration: none;
+                                                         height: auto;
+                                                         width: 100%;
+                                                         font-size: 13px;
+                                                      "
+                                                      width="550"
+                                                   />
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td
+                                       align="left"
+                                       style="
+                                          font-size: 0px;
+                                          padding: 10px 25px;
+                                          word-break: break-word;
+                                       "
+                                    >
+                                       <div
+                                          style="
+                                             font-family: Roboto, Helvetica,
+                                                sans-serif;
+                                             font-size: 16px;
+                                             font-weight: 300;
+                                             line-height: 24px;
+                                             text-align: left;
+                                             color: #616161;
+                                          "
+                                       >
+                                          <h3
+                                             style="
+                                                margin-top: 0px;
+                                                margin-bottom: 0px;
+                                             "
+                                          >
+                                             03 | İleri Dönüşüm İle Tasarım
+                                          </h3>
+                                          <h5
+                                             style="
+                                                margin-top: 0px;
+                                                color: #909090;
+                                             "
+                                          >
+                                             Hilal Doruk
+                                          </h5>
+                                       </div>
+                                    </td>
+                                 </tr>
                               </tbody>
                            </table>
                         </div>
@@ -1287,7 +1445,3 @@
       </div>
    </body>
 </html>
-
-
-<hr><hr><hr>
-{{end}}
