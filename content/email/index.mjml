@@ -1,0 +1,107 @@
+<mjml>
+<mj-head>
+    <mj-title>Markut Dergi</mj-title>
+    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:300,500"></mj-font>
+    <mj-attributes>
+      <mj-all font-family="Roboto, Helvetica, sans-serif"></mj-all>
+      <mj-text font-weight="300" font-size="16px" color="#616161" line-height="24px"></mj-text>
+      <mj-section padding="0px"></mj-section>
+    </mj-attributes>
+</mj-head>
+<mj-body background-color="#ffffff">
+<mj-section>
+ <mj-column width="100%">
+     <mj-image src="https://www.markut.net/logo/dark-markut@0.5x.png" alt="" width="142px" />
+ </mj-column>
+</mj-section>
+    <mj-section background-color="#F2F2F9">
+    <mj-column width="100%">
+            <mj-text align="center">
+        Sayın okuyucumuz, <br>
+        Yeni sayımız çıktı. Keyifle okumanızı dileriz.
+    </mj-text>
+    <mj-image src="/ekim.png" alt="" width="366px"/>
+    <mj-text align="center">
+        <h2>MARKUT 13. SAYISI ÇIKTI!</h2>
+    </mj-text>
+    <mj-image src="https://www.markut.net/img/markut-eylul-2021-sayi-13.png" alt="" />
+    <mj-text align="center">
+        <strong>'İyi yönlendirilmiş bir hayal gücü, büyük işlerin kaynağıdır.'</strong>
+    <br><br><br>
+    <h2>İçindekiler</h2>
+    </mj-text>
+        <mj-image src="https://www.markut.net/img/fordizm-thumbnail.jpg"alt="" />
+    <mj-text>
+        <h3 style="margin-top:0px; margin-bottom:0px;">01 | Kitlesel Üretim: Fordizm</h3>
+        <h5 style="margin-top:0px;color:#909090">Atahan Göktürk Güner</h5>
+    </mj-text>
+
+
+    <mj-image src="https://www.markut.net/img/ford-model-t-thumbnail.jpg"alt="" />
+    <mj-text>
+        <h3 style="margin-top:0px; margin-bottom:0px;">02 | İkonik Arabalar: Ford Model T</h3>
+        <h5 style="margin-top:0px;color:#909090">Mücahit Vasfi Baş</h5>
+    </mj-text>
+
+        <mj-image src="https://www.markut.net/img/ileri-donusum-tasarim-thumbnail.jpg"alt="" />
+    <mj-text>
+        <h3 style="margin-top:0px; margin-bottom:0px;">03 | İleri Dönüşüm İle Tasarım</h3>
+        <h5 style="margin-top:0px;color:#909090">Hilal Doruk</h5>
+    </mj-text>
+    </mj-column>
+
+        <mj-column width="100%">
+        <mj-button border-radius="50px" color="#ffffff" background-color="#000000" href="{{.Permalink}}" >
+            Sayıyı okuyun ↗
+        </mj-button> 
+        </mj-column>
+
+    <mj-column width="100%" padding-bottom="30px" padding-top="30px">
+        <mj-text align="center">
+            <strong>Markut Ekibinden Sevgiyle...</strong><br>
+            <small>Bize destek olmak için arkadaşlarınıza bizden bahsederseniz çok memnun oluruz.</small>
+        </mj-text>
+    </mj-column>
+
+
+    <mj-column width="100%" padding-bottom="30px">
+    <mj-text align="center" padding-bottom="0px">
+      <small><strong>Bizi sosyal medyada takip etmek istemez misiniz?</strong></small> 
+    </mj-text>
+    <mj-social icon-size="40px">
+    <mj-social-element name="instagram" background-color="#000000" href="https://www.instagram.com/markutworks/"></mj-social-element>   
+    <mj-social-element name="linkedin-noshare" background-color="#000000" href="https://www.linkedin.com/company/markut/"></mj-social-element>   
+    <mj-social-element name="twitter-noshare" background-color="#000000" href="https://twitter.com/markutworks"></mj-social-element>   
+    <mj-social-element name="tumblr-noshare" background-color="#000000" href="https://markutworks.tumblr.com/"></mj-social-element>   
+    </mj-social>
+    </mj-column>
+
+    </mj-section>  
+
+    <mj-section padding-top="50px">
+    <mj-column width="33%">
+          <mj-text align="center">
+          <a style="color:#000000"  href="https://www.markut.net/reklam-sponsorluk"><strong>Reklam ve Sponsorluk</strong></a>
+        </mj-text>
+    </mj-column>
+     <mj-column width="33%">
+          <mj-text align="center">
+            <a style="color:#000000"  href="https://www.markut.net/hakkimizda">Hakkımızda</a>
+        </mj-text>
+    </mj-column>    
+    <mj-column width="33%">
+          <mj-text align="center">
+           <a style="color:#000000"  href="https://www.markut.net/iletisim">İletişim</a>
+        </mj-text>
+    </mj-column>   
+    </mj-section>
+
+    <mj-section>
+        <mj-column width="100%" padding-top="20px">
+            <mj-text align="center">
+              <small>MARKUT | Endüstriyel Tasarım Dergisi | 2021</small> 
+            </mj-text>
+        </mj-column>
+    </mj-section>
+</mj-body>
+</mjml>

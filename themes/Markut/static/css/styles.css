@@ -109,7 +109,7 @@ letter-spacing: 1px;
 }
 pre code{color: #c30000;}
 .container img{
-  margin-top: 10px;
+  margin-top: 20px;
 }
 html,
 body {
@@ -250,6 +250,9 @@ img {
 }
 .bg-kirmizi {
   background-color: #c30000;
+}
+.bg-kirmizi-saydam{
+  background-color: #c300001f;
 }
 
 .bg-gri {
@@ -1148,7 +1151,7 @@ svg{
   background-color: #ffee0021;
 }
 .bg-green {
-  background-color: #00ce3427;
+  background-color: #37a55227;
 }
 .bg-grey {
   background-color: rgba(0, 0, 0, 0.055);

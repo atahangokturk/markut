@@ -5,4 +5,5 @@ aciklama ="Markut, endüstriyel tasarım dergisidir. Endüstri tasarımı bağla
 thumb="/img/uzaktan-tasarim-egitimi-roportaj.jpg"
 yazar=["Markut"]
 tags=["dergi"]
+robotsdisallow= "true"
 +++
