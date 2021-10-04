@@ -95,7 +95,16 @@
         </mj-text>
       </mj-column>
     </mj-section>
-
+    <mj-section>
+      <mj-column width="100%" padding-top="20px">
+        <mj-text>
+          <small>Bu mail Markut'a abone olduğunuz için gönderilmiştir. Dilediğiniz zaman
+            <a style="color:#000000" href="{{UnsubscribeURL}}">abonelikten çıkabilirsiniz.</a>
+            {{SenderInfo}}</small>
+          <small><a style="color:#eeeeee" href="{{RewardsURL}}">EmailOctopus Aracılığıyla.</a></small>
+        </mj-text>
+      </mj-column>
+    </mj-section>
     <mj-section>
       <mj-column width="100%" padding-top="20px">
         <mj-text align="center">
