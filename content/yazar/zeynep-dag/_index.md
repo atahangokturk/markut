@@ -2,7 +2,7 @@
 title: Zeynep Dağ
 photo: "/yazar/zeynep-dag.jpg"
 instagram: zeynepdag99
-mail: zezeydag@gmail.com
+mail: zeyneppdag99@gmail.com
 linkedin: zeynep-dağ
 behance: zeynepdag
 ---
