@@ -5,7 +5,10 @@
         <div class="toc">
             <div class="row">
                 <div class="col-md-4"><img src="{{ .Params.photo }}" class="mt-5" alt="" width="200px"/>
-                 <br><a href="https://www.instagram.com/{{.Params.instagram}}" target="_blank" rel="noopener noreferrer">@{{.Params.instagram}}</a>
+                {{ if isset .Params "mail"}} <br><a href="mailto:{{.Params.mail}}">{{.Params.mail}}</a>{{end}}
+                {{ if isset .Params "linkedin"}} <br><a href="https://www.linkedin.com/in/{{.Params.linkedin}}/" target="_blank" rel="noopener noreferrer">Linkedin</a>{{end}}
+                {{ if isset .Params "behance"}} <br><a href="https://www.behance.net/{{.Params.behance}}" target="_blank" rel="noopener noreferrer">Behance</a>{{end}}
+                {{ if isset .Params "instagram"}} <br><a href="https://www.instagram.com/{{.Params.instagram}}" target="_blank" rel="noopener noreferrer">Instagram</a>{{end}}
            </div>
 <div class="col-md-8"><h2>Hakkında</h2>
     {{ .Content }}
