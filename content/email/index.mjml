@@ -37,9 +37,9 @@
         </mj-text>
 
 
-        <mj-image src="https://www.markut.net/img/ford-model-t-thumbnail.jpg" alt="" />
+        <mj-image href="https://www.google.com" src="https://www.markut.net/img/ford-model-t-thumbnail.jpg" alt="" />
         <mj-text>
-          <h3 style="margin-top:0px; margin-bottom:0px;">02 | İkonik Arabalar: Ford Model T</h3>
+          <h3 style="margin-top:0px; margin-bottom:0px;"><a href="https://www.markut.net/" style="color:#000000">02 | İkonik Arabalar: Ford Model T </a></h3>
           <h5 style="margin-top:0px;color:#909090">Mücahit Vasfi Baş</h5>
         </mj-text>
 
