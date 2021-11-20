@@ -337,6 +337,22 @@ color: white;
   letter-spacing: 3px;
   margin-top: -12px;
 }
+.icindekiler p{
+  font-weight: 700;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 24px;
+  color: #818181;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.icindekiler h3{
+  font-weight: 700;
+  font-size: 24px;
+  color: #afafaf;
+  letter-spacing: 1px;
+  margin-top: 0px;
+}
 .sayilar li {
   margin-top: 5px;
 }
@@ -360,7 +376,6 @@ color: white;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 18px;
   color: #000000;
-  letter-spacing: 1px;
   border-color: #fff;
   padding-left: 0px;
   padding-top: 1px;
@@ -379,11 +394,14 @@ color: white;
   font-size: 20px;
   padding: 10px;
   border-radius: 40px;
-  border: #000000 solid 10px;
+  border: #000000 solid 12px;
   color: #000;
   background-color: #000;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
 }
-
 
 .markutbtn {
   border-radius: 30px;
@@ -835,8 +853,16 @@ article a:hover {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
   letter-spacing: 0.7px;
+  text-decoration-line: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-color: #f3c420;
+  -moz-text-decoration-color: #f3c420;
+  -moz-text-decoration-line: underline;
 }
-
+.markutreklam .title :hover{
+  text-decoration-color: #000000;
+  -moz-text-decoration-color: #000000;
+}
 /* Svg */
 
 svg{

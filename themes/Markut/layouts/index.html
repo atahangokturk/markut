@@ -15,9 +15,18 @@
 </div>
 -->
 
-{{ partial "reklam/areklam.html" . }}
+<div class="container bg-green">
+              <div class="bg-mrkt" style="background: url(/img/kalp-duyuru.svg); background-repeat: no-repeat; background-position-y: bottom; max-height: calc(800px - 350 * (100vw - 320px) / 1180); height: none;">
+                <div class="pl-md-5 pr-md-5 pt-md-5 mt-md-5">     
+                <div class="offset-md-4 col-md-8 offset-1 col-10"><h3 class="mt-md-5 mt-0">Duyuru!</h3>
+                             <p>Sayın okuyucularımız, okulumuzun açılmasıyla birlikte yeni sayı için bir çay molası verdik. Kasım sayımız yayınlanmayacaktır. Yaşattığımız bu aksaklıktan dolayı özür dileriz. Yakında yeni projeler ve gelişmeler olacak. Lütfen takipte kalınız. <br><br> Markut ekibinden sevgiyle...</p>
+                     </div>
+             </div> </div>   
+     </div>
 
-<div id="markutdergi" class="carousel slide mt-3 text-dark" data-ride="carousel">
+
+{{ partial "reklam/areklam.html" . }}
+<div id="markutdergi" class="carousel slide mt-1 text-dark" data-ride="carousel" data-interval="8400">
   <ol class="carousel-indicators">
     <li data-target="#markutdergi" data-slide-to="0" class="active text-dark"></li>
     <li data-target="#markutdergi" data-slide-to="1"></li>
@@ -29,12 +38,17 @@
     <li data-target="#markutdergi" data-slide-to="7"></li>
     <li data-target="#markutdergi" data-slide-to="8"></li>
     <li data-target="#markutdergi" data-slide-to="9"></li>
+    <li data-target="#markutdergi" data-slide-to="10"></li>
+    <li data-target="#markutdergi" data-slide-to="11"></li>
+    <li data-target="#markutdergi" data-slide-to="12"></li>
+    <li data-target="#markutdergi" data-slide-to="13"></li>
+    <li data-target="#markutdergi" data-slide-to="14"></li>
   </ol>
   <div class="carousel-inner bg-grey">
 
         {{ range first 1 ( where .Site.RegularPages "Type" "kapak" )}}
 
-         <div class="carousel-item active markutsayi post {{ .Scratch.Get `postClass` }} mt-md-5 mb-md-5">
+         <div class="carousel-item active markutsayi post {{ .Scratch.Get `postClass` }} mt-md-3 mb-md-1">
                     <div class="row">
                 <div class="col-md-6">
                        <div class="markutcvr text-right">
@@ -43,7 +57,9 @@
                        </div>
                        </div>
                 <div class="col-md-5 ml-4">
-                               <div class="icindekiler mt-3">içindekiler</div>
+                        <div class="icindekiler mt-3"><h3>Tasarım Dergisi Yeni Sayı!</h3></div>
+                                <div class="icindekiler mt-1"><p>Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} | <time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time></p></div>
+                               <div class="icindekiler mt-1">içindekiler</div>
                                <ul class="list-group">
                                {{ range first 35 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}  
                                <li class="list-group-item contents"><a href="{{.Permalink}}"><strong><span>{{.Params.sayfa}}</span></strong> |   {{ .Title | markdownify }}</a></li>                        
@@ -56,7 +72,7 @@
 
         {{ range after 1 ( where .Site.RegularPages "Type" "kapak" )}}
 
-         <div class="carousel-item markutsayi post {{ .Scratch.Get `postClass` }} mt-md-5 mb-md-4">
+         <div class="carousel-item markutsayi post {{ .Scratch.Get `postClass` }} mt-md-3 mb-md-1">
                     <div class="row">
                          <div class="col-md-6 ">
                          <div class="markutcvr text-right">
@@ -65,7 +81,9 @@
                        </div>
                        </div>
                        <div class="col-md-5 ml-4">
-                               <div class="icindekiler mt-3">içindekiler</div>
+                        <div class="icindekiler mt-3"><h3>Tasarım Dergisi</h3></div>
+                        <div class="icindekiler mt-1"><p>Sayı: {{ range .Params.sayi }}{{ . }}{{ end }} | <time>{{ index $.Site.Data.months_data.months .Date.Month }} {{ .Date.Year }}</time></p></div>
+                               <div class="icindekiler mt-0">içindekiler</div>
                                <ul class="list-group">
                                {{ range first 35 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}  
                                <li class="list-group-item contents"><a href="{{.Permalink}}"><strong><span>{{.Params.sayfa}}</span></strong> |   {{ .Title | markdownify }}</a></li>                        
@@ -209,6 +227,6 @@
 </div>
 -->
 {{.Content}}
-{{ partial "mailde.html" . }}
+{{ partial "mailde.html" . }} <br><br><br>
 {{ partial "abone-ol.html" . }}
 {{ partial "footer.html" . }}

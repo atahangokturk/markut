@@ -1,11 +1,11 @@
 <!-- A Reklam Alanı-->
-<div class="container-fluid mt-6 markutreklam">
+<div class="container-fluid mt-5 markutreklam">
     <div class="row pt-md-3 pb-md-4 bg-sari mt-5">
-      <div class="col-md-6 text-right"><a href="{{$.Site.Params.areklamurl}}"><img loading="lazy" class="img-fluid thumb" src="{{$.Site.Params.areklamimg}}" alt="Markut A Reklam Alanı Görselidir." width="700px" height="300px">
-       </div>
-      <div class="col-md-6 mgen"> <p class="title mt-2 h2">{{$.Site.Params.areklamtitle}}</p>
-       </a><p class="yazar"><a href="https://www.markut.net/reklam-sponsorluk/" target="_blank" rel="noopener noreferrer">Reklam</a></p>
-       <p class="desc">{{$.Site.Params.areklamdesc}}</p>
+      <div class="col-md-6 text-right"><a href="{{$.Site.Params.areklamurl}}" target="_blank"><img loading="lazy" class="img-fluid thumb pt-3" src="{{$.Site.Params.areklamimg}}" alt="Markut A Reklam Alanı Görselidir." width="700px" height="300px">
+        </a></div>
+      <div class="col-md-6 mgen"> <a href="{{$.Site.Params.areklamurl}}" target="_blank"><p class="title mt-2 pt-2 h2">{{$.Site.Params.areklamtitle}}</p></a>
+      <p class="yazar"><a href="https://www.markut.net/reklam-sponsorluk/" target="_blank" rel="noopener noreferrer">Reklam</a></p>
+       <a href="{{$.Site.Params.areklamurl}}" target="_blank"><p class="desc">{{$.Site.Params.areklamdesc}}</p></a>
      </div>
     </div>
 </div>
