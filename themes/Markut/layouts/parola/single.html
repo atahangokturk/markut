@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Markut - Kurumsal</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name= "robots" content = "noindex nofollow">
+</head>
+
+<style>
+
+body {
+	color: rgb(223, 223, 223);
+}
+
+.box {
+	border-radius: 3px;
+	background: rgba(54, 54, 54, 0.7); margin: auto; padding: 12px;
+}
+
+.lightbox {
+	zoom: 1.5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(10, 10, 10, 0.87);
+	text-align: center;
+	margin: auto;
+
+}
+
+div.horizontal {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
+
+div.vertical {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+::-webkit-input-placeholder {
+   color: rgb(214, 214, 214);
+   text-align: center;
+}
+
+::-moz-placeholder {
+   color: #955;
+   text-align: center;
+}
+
+:-ms-input-placeholder {
+   color: #955;
+   text-align: center;
+}
+
+.form-control {
+    padding: 6px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+    resize: none;
+}
+.form-control:hover{
+	background-color: rgb(110, 110, 110);
+}
+
+</style>
+
+<body>
+
+	<div id="loginbox" class="lightbox" >
+		<div class="horizontal">
+			<div class="vertical">
+				<div class="box">
+					<div><img src="https://www.markut.net/logo/svg/markut-white-line-icon.svg" height="120px" alt=""></div>
+					<h3 style="font-family: 'Roboto Condensed', sans-serif; font-weight: 400; font-size:24px; margin-top: 0px;">MARKUT KURUMSAL</h3>
+					<input style="margin-bottom: 16px; text-align: center;" id="password" type="password" class="form-control" placeholder="Şifre" /> <br />
+					<button id="loginbutton" style="color: #ccc;" type="button" class="form-control">Giriş Yap</button><br><br>
+					<small style="font-size:8px">Giriş yapmanız halinde gizlilik sözleşmesini kabul etmiş sayılırsınız.</small><br>
+					<p id="wrongPassword" style="display: none">Hatalı Şifre</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+
+	 <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
+
+	<script type="text/javascript">
+	"use strict";
+
+
+	function loadPage(pwd) {
+
+		var hash= pwd;
+		hash= Sha1.hash(pwd);
+		var url= hash + "/index.html";
+
+		$.ajax({
+			url : url,
+			dataType : "html",
+			success : function(data) {
+
+				window.location= url;
+
+			},
+			error : function(xhr, ajaxOptions, thrownError) {
+
+
+				parent.location.hash= hash;
+
+				//$("#wrongPassword").show();
+				$("#password").attr("placeholder","Hatalı Şifre");
+				$("#password").val("");
+			}
+		});
+	}
+
+
+	$("#loginbutton").on("click", function() {
+		loadPage($("#password").val());
+	});
+	$("#password").keypress(function(e) {
+		if (e.which == 13) {
+
+			loadPage($("#password").val());
+		}
+	});
+	$("#password").focus();
+
+	</script>
+
+</body>
+</html>
