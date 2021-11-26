@@ -1,11 +1,11 @@
 <!-- B Reklam Alanı-->
 <div class="container-fluid markutreklam">
-    <div class="row pt-md-3 pb-md-4 bg-sari mt-5">
+    <div class="row pt-md-3 pb-md-4 bg-sari mt-5" style="background-color: {{$.Site.Params.breklamrenk}};">
         <div class="col-md-6 text-right"><a href="{{$.Site.Params.breklamurl}}" target="_blank"><img loading="lazy" class="img-fluid thumb pt-3" src="{{$.Site.Params.breklamimg}}" alt="Markut B Reklam Alanı Görselidir." width="700px" height="300px">
          </a></div>
         <div class="col-md-6 mgen"> <a href="{{$.Site.Params.breklamurl}}" target="_blank" rel="noopener noreferrer"><p class="title mt-2 pt-2 h2">{{$.Site.Params.breklamtitle}}</p></a>
          <p class="yazar"><a href="https://www.markut.net/reklam-sponsorluk/" target="_blank" rel="noopener noreferrer">Reklam</a></p>
-         <a href="{{$.Site.Params.breklamurl}}" target="_blank" rel="noopener noreferrer"><p class="desc">{{$.Site.Params.breklamdesc}}</p></a>
+         <a href="{{$.Site.Params.breklamurl}}" target="_blank" rel="noopener noreferrer"><p class="desc">{{$.Site.Params.breklamdesc | markdownify}}</p></a>
        </div>
       </div>
      </div>
