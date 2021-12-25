@@ -931,6 +931,95 @@ svg{
   color: #585858;
 }
 
+.yorum-title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #686868;
+  letter-spacing: 1.2px;
+}
+
+
+/*Silersin Burayı */
+:root {
+  --accent: #F18260;
+  --purple: #252431;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.form-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.is-hidden {
+  display: none !important;
+}
+
+
+@keyframes rotate {
+ 100% { transform: rotate(360deg); }
+}
+
+@keyframes dash {
+ 0% { stroke-dasharray: 1,200; stroke-dashoffset: 0; }
+ 50% { stroke-dasharray: 89,200; stroke-dashoffset: -35; }
+ 100% { stroke-dasharray: 89,200; stroke-dashoffset: -124; }
+}
+
+.loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+}
+
+.loading-spinner svg {
+  position: relative;
+  animation: rotate 2s linear infinite;
+  height: 50px;
+  width: 50px;
+}
+
+.loading-spinner circle {
+  stroke: var(--accent);
+  stroke-dasharray: 1,200;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  animation: dash 1.5s ease-in-out infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .carousel-control-next, .carousel-control-prev{
   align-items: unset;
@@ -1050,7 +1139,7 @@ svg{
 [data-theme="dark"] .onde .desc {color: #afafaf;}
 [data-theme="dark"] .toc .desc {color: #afafaf;}
 [data-theme="dark"] .footerdesc {color: #afafaf;}
-
+[data-theme="dark"] .text-dark {color: #808080!important}
 
 [data-theme="dark"] .page-item.disabled .page-link{
   background-color: transparent;

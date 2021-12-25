@@ -1,12 +1,104 @@
 <div class="container">
-  <h2 class="text-center"><b>{{ range .Params.sayi }}{{ . }}{{ end }}. sayıya gelen yorumlar</b></h2>
-  <script src="https://unpkg.com/valine@1.4.14/dist/Valine.min.js"></script>
-<div id="vcomment"></div>
+
+  <h2 class="text-center">{{ range .Params.sayi }}{{ . }}{{ end }}. Sayıya Yorum Yapabilirsiniz</h2>
+ 
+  <!--Form Gönderme-->
+<div class="form-container">
+    <div class="row mt-4">
+      <div class="col-md-8 offset-md-2"> 
+        <form name="submit-to-google-sheet">
+           <input type='hidden' name='post_id' value='{{.Params.url}}' />
+            <div class="row mb-0">
+              <div class="col-md-5 "><label class="w-100"><input type='text' name='name' class="form-control pl-md-5 border-dark" placeholder="Ad Soyad" required></label></div>
+              <div class="col-md-7 text-right"> <label class="w-100"><input type='email' name='email' class="form-control w-100 text-right pr-md-5 border-dark"  placeholder="Mail Adresiniz" required></label></div>
+            </div>
+             <textarea name="message" rows="9" class="form-control pr-md-5 pl-md-5 pt-md-3 pb-md-3 border-dark" placeholder="Size Bir kaç sorumuz var 🎈 Dergimizi Nasıl buluyorsunuz? {{ range .Params.sayi }}{{ . }}{{ end }}. Sayı hakkında ne söylemek istersiniz? Eklemek ve söylemek istediğiniz her şeyi yazabilirsiniz ✨ 
+         {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}
+Sayfa {{.Params.sayfa}} | {{ .Title | markdownify }}{{ end }}" required></textarea>
+          <input type='submit' value='Yorum Yap' class="markutbtn btn mt-3 bg-sari float-right"/>  
+        </form>
+      </div>
+    </div>
+
+<!--Form Gönderildikten Sonra Gösterilecek Bilgi-->
+    <div class="loading js-loading is-hidden">
+      <div class="loading-spinner">
+        <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
+      </div>
+    </div>
+    <h4 class="js-success-message is-hidden text-center text-success">Yorumunuz için teşekkür ederiz. Editör onayından sonra yayınlanacak 🎈</h4>
+    <p class="js-error-message is-hidden">Sistem hatası verdi. Lütfen sonra tekrar deneyin!</p>
+</div>
+
+<!--Formun Gönderilmesini Saylayan Script-->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxcXRhCIjjvEisisoNW-CPVSoI2caFPfc3uYC6QkV8PcGUHxGhWaG6bATZFGXrG92Hz/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const loading = document.querySelector('.js-loading')
+    const successMessage = document.querySelector('.js-success-message')
+    const errorMessage = document.querySelector('.js-error-message')
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      showLoadingIndicator()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => showSuccessMessage(response))
+        .catch(error => showErrorMessage(error))
+    })
+
+    function showLoadingIndicator () {
+      form.classList.add('is-hidden')
+      loading.classList.remove('is-hidden')
+    }
+
+    function showSuccessMessage (response) {
+      console.log('Success!', response)
+      setTimeout(() => {
+        successMessage.classList.remove('is-hidden')
+        loading.classList.add('is-hidden')
+      }, 500)
+    }
+
+    function showErrorMessage (error) {
+      console.error('Error!', error.message)
+      setTimeout(() => {
+        errorMessage.classList.remove('is-hidden')
+        loading.classList.add('is-hidden')
+      }, 500)
+    }
+  </script>
+
+<h4 class="text-center mb-4"><b>{{ range .Params.sayi }}{{ . }}{{ end }}. Sayıya Gelen Yorumlar 🎊</b></h4>
+
+<!--Yorumların Gösterilmesi-->
+{{$postid:= .Params.url }}
+  {{ $url := "https://docs.google.com/spreadsheets/d/e/2PACX-1vSUB-qe4e1iN07tSsN-mAghyRWbEfTaWVejuJL9fRnA38OTCe5fJ1Whw8wHES5K81h2lpRK9wi-_bMw/pub?output=csv" }}
+  {{ $sep := "," }}
+  {{ range $i, $r := getCSV $sep $url }}
+  {{ $hello := index $r 4 }}
+  {{ if eq $hello $postid }}
+  <div class="row mb-3">
+      <div class="col-md-8 offset-md-2 border border-dark rounded pt-3 pb-3"> 
+        <div class="row mb-0 mt-0 pb-0"> 
+          <div class="col-md-8 pb-0 pt-0"><p class="yorum-title p-0 m-0">{{ index $r 2 }}</p> </div> 
+          <div class="col-md-4 text-right mailde-desc pb-0"><time>{{ index $r 0 }}</time></div>
+         </div>
+        <hr>
+        <p class="text-dark">{{ index $r 3 }}</p>
+      </div>
+  </div>
+ {{ end }}
+ {{ end }}
+
+
+
+  <!-- ESKİ YORUM SİSTEMİ
+<div id="vcomments"></div>
     <script>
         new Valine({
-            el: '#vcomment' ,
-            appId: '9ow8JNvStPYbAo5yUuPsJzj1-MdYXbMMI',
-            appKey: 'Jo3wYc6YX2hD3jlkaC6v7unz',
+            el: '#vcomments' ,
+            appId: 'nDl5b262JW9OABBGkNsjQvxk-MdYXbMMI',
+            appKey: 'pOuYXI1y79yhQYoeL9VgwC9A',
             placeholder: 'Sayı ve içerikler hakkında fikrinizi paylaşabilirsiniz',
             lang: 'en',
             avatar: 'monsterid',
@@ -15,8 +107,8 @@
         });
     </script>
 </div>
-
-
+-->
+<br><br>
 <div class="container">
   <div class="row">
         {{ range ( where .Site.RegularPages "Type" "kapak" )}}
