@@ -1,10 +1,11 @@
 +++
 title = "Hakkımızda"
+type = "page"
 url = "hakkimizda/"
-type="page"
-yazar=["markut"]
+yazar = ["markut"]
+
 +++
-Markut, **Atahan Göktürk Güner** tarafından 10 Şubat 2020 tarihinde kurulmuştur.
+Markut, 10 Şubat 2020 tarihinde kurulmuştur.
 
 Markut, Marmara Kreatif Ürün Tasarım ekibidir. Ekibimizle Ağustos 2020'de bu platform altında endüstriyel tasarım dergisine başladık. Dergimiz endüstriyel tasarım bağlamında genel tasarım disiplinleriyle birlikte içerikleri okuyucuya sunmaktadır.
 
