@@ -30,9 +30,9 @@
 {{ range $filtered }}
 <a href="{{.Permalink}}" id="next"></a>
 {{ end }}
-
+<!--
 {{ partial "reklam/areklam.html" . }}
-
+-->
  <div class="container toc">
   <div class="icindekiler">içindekiler</div>
   {{ range first 20 ( where ( where (.Site.Pages.ByParam "sayfa") ".Params.sayi" "intersect" .Params.sayi ) "Permalink" "!=" .Permalink ) }}
@@ -43,9 +43,9 @@
   <div class="kapakoku">Devam Et</div>
   <div class="kapakok">↓</div>
 </div>
-
+<!--
 {{ partial "reklam/breklam.html" . }}
-
+-->
 <div id="contentsWrapper">
     <div class="content"> 
        
