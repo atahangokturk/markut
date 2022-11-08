@@ -6,8 +6,8 @@
 		<!-- prettier-ignore -->
 		<title>{{$seotitle := .Params.seotitle}}{{ if isset .Params "seotitle" }}{{$seotitle}}{{else}}{{.Title}}{{ end }}{{ if .IsHome }} | Endüstriyel Tasarım Dergisi {{ .Site.Params.Tagline }}{{ else }} - {{ .Site.Title }}{{ end }}
 		</title>
-		<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}"/>
-		<meta name="author" content='{{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}{{ .Params.title}}{{ end }}{{ end }}{{if isset .Params "konuk" }}{{.Params.konuk}}{{end}}' />
+	<!--<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}"/>-->
+		<!--<meta name="author" content='{{- range $index, $element := .Params.yazar }}{{- with $.Site.GetPage "taxonomyTerm" (printf "yazar/%s" (urlize .)) }}{{ if gt $index 0 }}, {{ end }}{{ .Params.title}}{{ end }}{{ end }}{{if isset .Params "konuk" }}{{.Params.konuk}}{{end}}' />-->
 		<!-- <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.1.1/dist/css/bootstrap.min.css"> -->
 		<link rel="stylesheet" href="{{.Site.BaseURL}}bootstrap/bootstrap.min.css" />
 		<link rel="stylesheet" href="{{.Site.BaseURL}}css/styles.css" />

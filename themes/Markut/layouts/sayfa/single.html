@@ -42,7 +42,6 @@
            {{ end }}
       {{end}}
         {{.Content}}
-        {{ partial "reklam/creklam.html" . }}
         {{ $number := (float .Params.sayfa) }}
         {{ $anothernumber := 1 }}
         {{ $total := (add $number $anothernumber) }}
@@ -93,7 +92,6 @@
   </div>
         {{ partial "abone-ol.html" . }}
       <br>
-      {{ partial "reklam/dreklam.html" . }}
      {{- if .Params.tags }}
         <ul class="list-inline text-center pt-3">
          {{- range .Params.tags }}
